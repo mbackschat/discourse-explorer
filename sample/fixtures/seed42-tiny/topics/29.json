@@ -1,0 +1,54 @@
+{
+  "id": 29,
+  "title": "Save corruption after pacifying the parrot's whistle",
+  "slug": "save-corruption-after-pacifying-the-parrots-whistle",
+  "category_id": 7,
+  "category_name": "Bug Reports",
+  "created_at": "2025-12-02T00:00:00.000Z",
+  "last_posted_at": "2025-12-05T18:21:00.000Z",
+  "bumped_at": "",
+  "tags": [
+    "voice-acting",
+    "linux"
+  ],
+  "views": 0,
+  "like_count": 0,
+  "posts_count": 2,
+  "reply_count": 0,
+  "pinned": false,
+  "closed": false,
+  "archived": false,
+  "posts": [
+    {
+      "id": 69,
+      "post_number": 1,
+      "username": "rusty_quartermaster",
+      "display_name": "Rusty Quartermaster",
+      "created_at": "2025-12-02T00:00:00.000Z",
+      "updated_at": "2026-04-29T00:05:18.150Z",
+      "cooked": "<p>Hey all, I just ran into a pretty frustrating bug and wondered if anyone else has experienced it or found a workaround. After you pacify the parrot’s whistle in Chapter 3, my save file completely corrupts the next time I try to load it. The game crashes during the loading screen, and I have to start over from the last checkpoint before that point. It’s weird because everything else up to that moment works perfectly fine, and the voice-acting lines right after the whistle sequence sometimes glitch or overlap too.</p>\n<p>I’m playing on Linux, if that matters, and I’ve made sure all my audio drivers are up to date. It seems linked to the parrot’s whistle event itself, since I haven’t seen crashes in other chapters or after different voice-acting triggers. Has anyone else noticed this or maybe has a save file from just after the whistle sequence that doesn’t corrupt? Would love any tips or confirmation so I know whether it’s something on my end or an actual game bug. Thanks!</p>",
+      "plain_text": "Hey all, I just ran into a pretty frustrating bug and wondered if anyone else has experienced it or found a workaround. After you pacify the parrot’s whistle in Chapter 3, my save file completely corrupts the next time I try to load it. The game crashes during the loading screen, and I have to start over from the last checkpoint before that point. It’s weird because everything else up to that moment works perfectly fine, and the voice-acting lines right after the whistle sequence sometimes glitch or overlap too.\nI’m playing on Linux, if that matters, and I’ve made sure all my audio drivers are up to date. It seems linked to the parrot’s whistle event itself, since I haven’t seen crashes in other chapters or after different voice-acting triggers. Has anyone else noticed this or maybe has a save file from just after the whistle sequence that doesn’t corrupt? Would love any tips or confirmation so I know whether it’s something on my end or an actual game bug. Thanks!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    },
+    {
+      "id": 70,
+      "post_number": 2,
+      "username": "scurvy_harpooner",
+      "display_name": "Scurvy Harpooner",
+      "created_at": "2025-12-05T18:21:00.000Z",
+      "updated_at": "2026-04-29T00:05:18.644Z",
+      "cooked": "<p>Hey, I ran into the same issue after getting through the parrot’s whistle section on my Linux setup. It seems like the save file gets corrupted right after the game tries to trigger that voice-acting sequence. The game crashes or the save won’t load afterward. I’m guessing there’s some kind of problem with how the audio cue is handled in the Linux build, maybe the voice files aren’t syncing properly with the save system.</p>\n<p>One thing I tried that helped was disabling the voice-acting temporarily just before the whistle puzzle. Not ideal, but it prevented corruption while still letting me progress. Hopefully the devs can patch this soon because that voice-over really adds a lot to the atmosphere. Until then, backing up your save right before that section is probably your safest bet. Has anyone found a workaround that keeps the voice-acting but avoids the crash? Would love to hear if there’s a trick we’re missing!</p>",
+      "plain_text": "Hey, I ran into the same issue after getting through the parrot’s whistle section on my Linux setup. It seems like the save file gets corrupted right after the game tries to trigger that voice-acting sequence. The game crashes or the save won’t load afterward. I’m guessing there’s some kind of problem with how the audio cue is handled in the Linux build, maybe the voice files aren’t syncing properly with the save system.\nOne thing I tried that helped was disabling the voice-acting temporarily just before the whistle puzzle. Not ideal, but it prevented corruption while still letting me progress. Hopefully the devs can patch this soon because that voice-over really adds a lot to the atmosphere. Until then, backing up your save right before that section is probably your safest bet. Has anyone found a workaround that keeps the voice-acting but avoids the crash? Would love to hear if there’s a trick we’re missing!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    }
+  ],
+  "fetched_at": "2026-04-29T00:08:12.408927+00:00"
+}

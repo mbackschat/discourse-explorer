@@ -1,0 +1,930 @@
+  * { box-sizing: border-box; }
+
+  /* vis.js node + edge tooltip card. The library injects a single
+     div.vis-tooltip into the document body; the default styling has
+     no max-width and runs everything onto one line, so 200-char
+     descriptions look like a giant wrapped strip. The overrides
+     below make it readable: cap width, allow wrapping, honour
+     existing `<br>` in `title` attributes, dark theme to match the
+     viz, light shadow for legibility over the canvas. */
+  /* vis-network 9.1.2 tooltip — text-only (titles render via
+     textContent, so HTML tags would show literally). The CSS just
+     makes the box readable: cap width, allow line wrapping, dark
+     theme, preserve \n as line breaks via white-space: pre-wrap. */
+  div.vis-tooltip {
+    max-width: 360px;
+    background: rgba(22, 22, 40, 0.97) !important;
+    border: 1px solid #444 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 8px 11px !important;
+    color: #ddd !important;
+    font-family: -apple-system, system-ui, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    pointer-events: none !important;
+  }
+
+  /* Loading overlay — visible by default at page load (the initial
+     nodeData.add of ~16k nodes blocks the main thread for 1-3 s) and
+     re-shown when switching to Node view from Category view (same
+     reason: vis.js's full-graph re-render is synchronous). The spinner
+     uses a transform-based @keyframes so the browser's compositor
+     thread keeps animating it even while JS is busy adding nodes. */
+  #loading-overlay {
+    position: fixed; inset: 0; z-index: 5000;
+    background: rgba(16, 16, 32, 0.92);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 14px; color: #ddd;
+    font-family: -apple-system, system-ui, sans-serif;
+    pointer-events: auto;
+  }
+  #loading-overlay.hidden { display: none; }
+  .loading-spinner {
+    width: 48px; height: 48px;
+    border: 4px solid rgba(140, 180, 240, 0.18);
+    border-top-color: #7af;
+    border-radius: 50%;
+    animation: spin 0.85s linear infinite;
+    will-change: transform;
+  }
+  .loading-text { font-size: 13px; color: #aaa; letter-spacing: 0.3px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+
+  /* --- Control panel (left sidebar) --- */
+  #control-panel {
+    position: fixed; top: 10px; left: 10px; z-index: 1000;
+    background: rgba(22,22,40,0.96); padding: 14px 16px; border-radius: 10px;
+    font-family: -apple-system, system-ui, sans-serif; color: #eee;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.6); width: 300px;
+    max-height: calc(100vh - 20px); overflow-y: auto;
+    transition: width 0.2s, padding 0.2s;
+  }
+  #control-panel.minimized { width: auto; padding: 8px 12px; overflow: hidden; }
+  #control-panel.minimized .cp-body { display: none; }
+  #cp-header {
+    display: flex; justify-content: flex-end; align-items: center;
+    margin-bottom: 4px; gap: 8px;
+  }
+  #cp-header span { font-size: 13px; font-weight: 600; }
+
+  /* Segmented Category / Node toggle, pinned to the leftmost slot of the
+     toolbar (so it sits next to the canvas mode it controls, not in the
+     filter sidebar). Visually joined halves; the active half carries the
+     accent color. */
+  #view-toggle-group {
+    display: inline-flex;
+    border: 1px solid #555; border-radius: 4px; overflow: hidden;
+    background: rgba(22,22,40,0.96);
+    box-shadow: 0 1px 6px rgba(0,0,0,0.4);
+  }
+  #view-toggle-group button {
+    border: none; background: transparent; color: #aaa;
+    font-size: 12px; padding: 6px 14px; cursor: pointer;
+    font-family: -apple-system, system-ui, sans-serif; font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  #view-toggle-group button:not(:last-child) {
+    border-right: 1px solid #444;
+  }
+  #view-toggle-group button:hover { background: #2a2a3e; color: #eee; }
+  #view-toggle-group button.active {
+    background: #4a3a60; color: #7af; cursor: default;
+  }
+  #view-toggle-group button.active:hover { background: #4a3a60; }
+  /* Keep the toolbar's box-shadow off the buttons inside the segmented
+     toggle — the wrapper carries the shadow already. */
+  #view-toggle-group button { box-shadow: none; }
+  #cp-toggle {
+    background: none; border: none; color: #999; cursor: pointer;
+    font-size: 16px; padding: 0 4px; line-height: 1;
+  }
+  #cp-toggle:hover { color: #eee; }
+  #control-panel h4 {
+    margin: 14px 0 6px 0; font-size: 11px; text-transform: uppercase;
+    letter-spacing: 1.2px; color: #999; cursor: pointer; user-select: none;
+  }
+  #control-panel h4:first-child { margin-top: 0; }
+  #control-panel h4 .toggle-arrow {
+    font-size: 14px; line-height: 1; margin-right: 6px; display: inline-block;
+    width: 14px; text-align: center; color: #aaa;
+    transition: transform 0.15s;
+  }
+  #control-panel h4:hover .toggle-arrow { color: #ddd; }
+  #control-panel h4 .toggle-arrow.collapsed { transform: rotate(-90deg); }
+  .section-body { overflow: hidden; transition: max-height 0.2s; }
+  .section-body.collapsed { max-height: 0 !important; }
+
+  /* Search */
+  #search-input {
+    width: 100%; padding: 8px 10px; border: 1px solid #555; border-radius: 4px;
+    background: #2a2a3e; color: #eee; font-size: 13px; outline: none;
+  }
+  #search-input:focus { border-color: #7af; }
+  #search-input::placeholder { color: #777; }
+  #search-results { font-size: 11px; color: #aaa; margin-top: 4px; min-height: 16px; }
+  /* Collapse the reserved space when no search has run yet — otherwise the
+     16px min-height plus its margin-top create an awkward gap between the
+     input and the context toggle below. With content (e.g. "1 match"),
+     the original sizing kicks back in. */
+  #search-results:empty { display: none; }
+  /* Strict-vs-context toggle for the search predicate. Default checked
+     (matches + dim 1-hop context); uncheck for matches-only. Lives under
+     the result count so users find it the moment they wonder why the
+     canvas shows more than the match count. */
+  .search-context-toggle {
+    display: flex; align-items: center; gap: 6px;
+    margin-top: 6px; font-size: 10px; color: #888;
+    cursor: pointer; user-select: none;
+  }
+  .search-context-toggle input[type="checkbox"] {
+    margin: 0; cursor: pointer;
+  }
+  .search-context-toggle:hover { color: #ccc; }
+
+  /* Sub-section heading inside a filter list (e.g. "Forum primitives"
+     vs "Discovered"). Small, muted — keeps the section visually grouped
+     without competing with the h4 that owns the filter block. First
+     occurrence has no top-margin so it sits flush under the actions row. */
+  .filter-group-heading {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+    margin: 10px 0 2px 0;
+    padding-top: 6px;
+    border-top: 1px solid #2c2c3e;
+  }
+  .filter-group-heading:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  /* Type checkboxes */
+  .type-filter { display: flex; align-items: center; padding: 3px 0; cursor: pointer; }
+  .type-filter input[type="checkbox"] { margin-right: 8px; accent-color: var(--cat-color); cursor: pointer; }
+  .type-dot { width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; flex-shrink: 0; }
+  .type-label { flex: 1; font-size: 12px; }
+  .type-count { font-size: 11px; color: #888; margin-left: 4px; }
+
+  /* Sliders */
+  .slider-row { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+  .slider-row input[type="range"] { flex: 1; accent-color: #7af; }
+  .slider-val { font-size: 12px; color: #aaa; min-width: 24px; text-align: right; }
+
+  /* Stats */
+  /* At-a-glance stat block: small uppercase label on top, larger
+     tabular-nums value below. Easier to scan than running prose. */
+  #stats {
+    display: flex; flex-wrap: wrap; gap: 16px;
+    margin: 0 0 8px 0; padding-bottom: 8px;
+    border-bottom: 1px solid #2a2a3e;
+  }
+  #stats .stat-block {
+    display: flex; flex-direction: column; min-width: 0;
+    line-height: 1.2;
+  }
+  #stats .stat-label {
+    color: #777; font-size: 9px; text-transform: uppercase;
+    letter-spacing: 0.7px; margin-bottom: 1px; white-space: nowrap;
+  }
+  #stats .stat-value {
+    color: #ccc; font-size: 10px; font-weight: 500;
+    font-variant-numeric: tabular-nums; white-space: nowrap;
+  }
+  #stats .stat-note {
+    color: #f5b97a; font-size: 10px; align-self: center;
+    padding: 0 6px; border-radius: 8px;
+    background: rgba(245, 185, 122, 0.1);
+    border: 1px solid rgba(245, 185, 122, 0.3);
+  }
+  .label-density-count {
+    font-size: 11px; color: #888; margin-bottom: 8px;
+    padding-bottom: 6px; border-bottom: 1px solid #2a2a3e;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Relationship type filters (reuses type-filter styling) */
+  .rel-filter { display: flex; align-items: center; padding: 3px 0; cursor: pointer; }
+  .rel-filter input[type="checkbox"] { margin-right: 8px; accent-color: var(--rel-color); cursor: pointer; }
+  .rel-dot { width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; flex-shrink: 0; }
+  .rel-label { flex: 1; font-size: 12px; }
+
+  /* Unified per-row count: "L (N)". L = visible-now (the dynamic
+     number, brighter); N = graph total (dim, parenthesised). When
+     L == N, the .equal class hides the parens to avoid redundant
+     "3425 (3425)" on unfiltered corpora. JS toggles .equal on every
+     applyFilters pass. Used by both .type-filter and .rel-filter rows. */
+  .row-count { font-size: 11px; color: #888; margin-left: 4px;
+               display: inline-flex; align-items: baseline; gap: 3px;
+               font-variant-numeric: tabular-nums; }
+  .row-count-visible { color: #eee; }
+  .row-count-total { color: #777; }
+  .row-count.equal .row-count-total { display: none; }
+  /* Dim the row when its filter is OFF so the user sees the disabled
+     state at a glance. The +N gain-pill is the cue for "click here to
+     recover". */
+  .type-filter input[type="checkbox"]:not(:checked) ~ .row-count,
+  .rel-filter input[type="checkbox"]:not(:checked) ~ .row-count {
+    opacity: 0.55;
+  }
+
+  /* +N gain-pill on a filter row whose checkbox is OFF — clickable to
+     re-enable the filter. Green to suggest "you'd add these back". */
+  .gain-pill {
+    margin-left: 6px; padding: 1px 6px; border-radius: 9px;
+    background: rgba(80, 200, 120, 0.18); color: #6fdb95;
+    border: 1px solid rgba(80, 200, 120, 0.5);
+    font-size: 10px; font-weight: 600; cursor: pointer;
+    font-variant-numeric: tabular-nums;
+  }
+  .gain-pill:hover { background: rgba(80, 200, 120, 0.30); color: #fff; }
+
+  /* Slider rows show "L (N)" inline + a -drop pill when the threshold
+     hides items. Click to reset. */
+  .slider-count {
+    font-size: 10px; color: #777; margin-left: 6px;
+    font-variant-numeric: tabular-nums;
+  }
+  .drop-pill {
+    margin-left: 6px; padding: 1px 6px; border-radius: 9px;
+    background: rgba(245, 130, 80, 0.16); color: #f58250;
+    border: 1px solid rgba(245, 130, 80, 0.45);
+    font-size: 10px; font-weight: 600; cursor: pointer;
+    font-variant-numeric: tabular-nums;
+  }
+  .drop-pill:hover { background: rgba(245, 130, 80, 0.30); color: #fff; }
+
+  /* Time-window dual-thumb range slider. Two <input type="range"> stacked
+     over a shared track; pointer-events: none on the input itself with
+     pointer-events: auto on the thumb so each thumb is independently
+     grabbable. JS keeps the thumbs from crossing and writes the fill
+     div's left/width to show the active window. */
+  #time-window-readout {
+    font-size: 11px; color: #ccc; margin-bottom: 6px;
+    font-variant-numeric: tabular-nums;
+  }
+  #time-window-label { color: #eee; }
+  .time-slider-row { display: flex; align-items: center; gap: 8px; margin: 4px 0 2px 0; }
+  .time-slider-track {
+    position: relative; flex: 1; height: 28px;
+  }
+  .time-slider-track::before {
+    content: ''; position: absolute; left: 0; right: 0;
+    top: 13px; height: 3px; background: #2a2a3e; border-radius: 2px;
+  }
+  .time-slider-fill {
+    position: absolute; top: 13px; height: 3px;
+    background: #7af; border-radius: 2px; pointer-events: none;
+  }
+  .time-thumb {
+    position: absolute; top: 6px; left: 0; right: 0; width: 100%;
+    height: 16px; appearance: none; -webkit-appearance: none;
+    background: transparent; pointer-events: none; margin: 0;
+  }
+  .time-thumb:focus { outline: none; }
+  .time-thumb::-webkit-slider-runnable-track { background: transparent; height: 16px; }
+  .time-thumb::-moz-range-track { background: transparent; height: 16px; }
+  .time-thumb::-webkit-slider-thumb {
+    -webkit-appearance: none; pointer-events: auto;
+    width: 14px; height: 14px; border-radius: 50%;
+    background: #7af; border: 2px solid #1a1a2e; cursor: pointer;
+    margin-top: 0;
+  }
+  .time-thumb::-moz-range-thumb {
+    pointer-events: auto;
+    width: 14px; height: 14px; border-radius: 50%;
+    background: #7af; border: 2px solid #1a1a2e; cursor: pointer;
+  }
+
+  /* Persistent filter-legend at the bottom of the control panel. */
+  #filter-legend {
+    margin-top: 12px; padding: 8px 0; border-top: 1px solid #333;
+    font-size: 10px; color: #888; line-height: 1.5;
+  }
+  #filter-legend strong { color: #ccc; font-weight: 600; }
+  #filter-legend .pill-legend {
+    display: inline-block; padding: 0 5px; border-radius: 8px;
+    border: 1px solid; font-weight: 600; vertical-align: baseline;
+  }
+  #filter-legend .gain-pill-eg {
+    background: rgba(80, 200, 120, 0.18); color: #6fdb95;
+    border-color: rgba(80, 200, 120, 0.5);
+  }
+  #filter-legend .drop-pill-eg {
+    background: rgba(245, 130, 80, 0.16); color: #f58250;
+    border-color: rgba(245, 130, 80, 0.45);
+  }
+
+  /* --- Detail panel (right sidebar, stacked BELOW toolbar) --- */
+  /* top:56px leaves room for the toolbar at top:10px (≈32px tall + 14px gap).
+     z-index:999 keeps it beneath the toolbar (z-index:999 is the toolbar in
+     CSS, so we match — but the detail panel never overlaps now anyway). */
+  #detail-panel {
+    position: fixed; top: 56px; right: 10px; z-index: 999;
+    background: rgba(22,22,40,0.96); padding: 16px; border-radius: 10px;
+    font-family: -apple-system, system-ui, sans-serif; color: #eee;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.6); width: 380px;
+    max-height: calc(100vh - 66px);
+    overflow-y: auto; display: none; font-size: 13px; line-height: 1.5;
+  }
+  #detail-panel h3 { margin: 4px 0 8px 0; color: #fff; font-size: 16px; }
+  /* Clickable panel titles — recenter the canvas on the inspected node/edge. */
+  #detail-panel h3.detail-title { cursor: pointer; }
+  #detail-panel h3.detail-title:hover { color: #cfd6ff; }
+  /* Sub-section headings inside the detail panel (.connections h4 and
+     siblings). Without this they fall back to the browser's default
+     ~18px h4, which dwarfs the 13px body text. Tightened to match the
+     control-panel section-heading pattern, with generous top margin
+     so adjacent sections breathe. */
+  #detail-panel .connections {
+    margin-top: 22px; padding-top: 12px;
+    border-top: 1px solid #2a2a3e;
+  }
+  #detail-panel .connections:first-of-type {
+    margin-top: 16px; padding-top: 0; border-top: none;
+  }
+  #detail-panel .connections h4 {
+    margin: 0 0 8px 0; font-size: 11px; color: #aaa;
+    text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600;
+  }
+  .entity-badge {
+    display: inline-block; padding: 2px 8px; border-radius: 3px;
+    font-size: 10px; text-transform: uppercase; letter-spacing: 1px;
+    font-weight: 600; cursor: pointer;
+  }
+  .entity-badge:hover { filter: brightness(1.3); }
+  .detail-meta .drillable { cursor: pointer; text-decoration: underline; text-decoration-style: dotted;
+    text-underline-offset: 2px; }
+  .detail-meta .drillable:hover { color: #eee; }
+  .detail-meta { font-size: 11px; color: #999; margin: 6px 0 10px 0; }
+  .detail-desc { color: #ccc; margin-bottom: 12px; }
+  /* Each <SEP>-separated phrase from LightRAG's merged description is
+     rendered as a .desc-phrase wrapper with a thin left-accent border.
+     Phrases beyond the first get a dashed top separator so the boundary
+     is visible even when the previous phrase is itself multi-paragraph
+     (LLM-summarized). Internal <p> children carry within-phrase spacing. */
+  .detail-desc .desc-meta {
+    color: #888; font-size: 10px; font-style: italic;
+    margin-bottom: 8px; cursor: help;
+  }
+  .detail-desc .desc-phrase {
+    margin: 0; padding: 2px 0 2px 10px;
+    border-left: 2px solid rgba(140, 180, 240, 0.18);
+    line-height: 1.4;
+  }
+  .detail-desc .desc-phrase + .desc-phrase {
+    border-top: 1px dashed rgba(140, 180, 240, 0.30);
+    margin-top: 10px; padding-top: 12px;
+  }
+  .detail-desc .desc-phrase p { margin: 0 0 8px 0; }
+  .detail-desc .desc-phrase p:last-child { margin-bottom: 0; }
+  .conn-group h5 { font-size: 12px; margin: 10px 0 4px 0; }
+  .conn-item { padding: 3px 4px; color: #bbb; font-size: 12px; cursor: pointer; border-radius: 3px; }
+  .conn-item:hover { background: rgba(255,255,255,0.08); }
+  .conn-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 4px; }
+  .conn-edge-desc { color: #777; font-size: 11px; }
+  /* Per-row Topic provenance expand. The button collapses the row to one line
+     until clicked; the .conn-topic-detail sibling reveals date/posts/author/excerpt
+     so a Topic neighbor's metadata stays attached to the row that names it
+     instead of duplicating in a separate Source-topics list below. */
+  .conn-expand {
+    background: rgba(140, 180, 240, 0.10);
+    border: 1px solid rgba(140, 180, 240, 0.28);
+    color: #aab8d8; cursor: pointer;
+    font-size: 12px; padding: 1px 8px;
+    margin-left: 6px; line-height: 1.3;
+    border-radius: 3px; vertical-align: middle;
+  }
+  .conn-expand:hover {
+    background: rgba(140, 180, 240, 0.20);
+    border-color: rgba(140, 180, 240, 0.55);
+    color: #fff;
+  }
+  .conn-expand[aria-expanded="true"] {
+    background: rgba(140, 180, 240, 0.22);
+    border-color: rgba(140, 180, 240, 0.60);
+    color: #cfd6ff;
+  }
+  /* Group heading + per-group "Expand all" toggle (Topic group only,
+     and only when ≥2 expandable rows). Sits to the right of the heading. */
+  .conn-group-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin: 10px 0 4px 0; gap: 8px;
+  }
+  .conn-group-header h5 { margin: 0; }
+  .conn-expand-all {
+    background: transparent;
+    border: 1px solid rgba(140, 180, 240, 0.28);
+    color: #aab8d8; cursor: pointer;
+    font-size: 10px; padding: 2px 8px;
+    border-radius: 3px; flex-shrink: 0;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .conn-expand-all:hover {
+    background: rgba(140, 180, 240, 0.12);
+    border-color: rgba(140, 180, 240, 0.55);
+    color: #fff;
+  }
+  .conn-topic-detail {
+    margin: 2px 0 6px 18px; padding: 6px 8px;
+    background: rgba(140, 180, 240, 0.05);
+    border-left: 2px solid rgba(140, 180, 240, 0.25);
+    border-radius: 0 3px 3px 0;
+  }
+  .conn-topic-detail .topic-row-meta { margin-left: 0; }
+  .conn-topic-detail .topic-row-excerpt { margin-top: 4px; }
+  .conn-topic-open {
+    background: transparent; border: 1px solid rgba(140,180,240,0.30);
+    color: #cfd6ff; cursor: pointer; font-size: 10px; padding: 2px 8px;
+    margin-top: 6px; border-radius: 3px;
+  }
+  .conn-topic-open:hover { background: rgba(140,180,240,0.12); border-color: rgba(140,180,240,0.55); }
+
+  /* Residual Source-topics section uses native <details>/<summary>;
+     when topic neighbors above already cover the provenance, this section
+     is collapsed by default and titled "Source topics — not shown above". */
+  details.source-topics-residual { margin-top: 10px; }
+  details.source-topics-residual > summary {
+    cursor: pointer; font-size: 12px; font-weight: 600; color: #cfd6ff;
+    padding: 4px 0; user-select: none;
+    list-style: none;
+  }
+  details.source-topics-residual > summary::-webkit-details-marker { display: none; }
+  details.source-topics-residual > summary::before {
+    content: '\25B8'; display: inline-block; margin-right: 6px;
+    transition: transform 0.15s; color: #888;
+  }
+  details.source-topics-residual[open] > summary::before {
+    transform: rotate(90deg);
+  }
+  details.source-topics-residual > summary:hover { color: #fff; }
+  details.source-topics-residual > summary:hover::before { color: #cfd6ff; }
+  /* Inside <details>, the <summary> already serves as the section header,
+     so suppress the inter-section margin/border that .connections normally
+     uses to separate it from a sibling section above. */
+  #detail-panel details.source-topics-residual > .connections,
+  #detail-panel details.source-topics-residual > .connections:first-of-type {
+    margin-top: 0; padding-top: 0; border-top: none;
+  }
+  /* Source-topic provenance rows in node + edge detail panels.
+     Each row: bold title (link) + small meta line + 2-line excerpt. */
+  .topic-row { padding: 6px 4px 6px 0; border-bottom: 1px dotted #2a2a3e; }
+  .topic-row:last-child { border-bottom: none; }
+  .topic-row-link {
+    color: #cfd6ff; font-weight: 600; text-decoration: none;
+    font-size: 12px;
+  }
+  .topic-row-link:hover { color: #fff; text-decoration: underline; }
+  .topic-row-meta { color: #888; font-size: 10px; margin-left: 6px; }
+  .topic-row-excerpt {
+    color: #aaa; font-size: 11px; line-height: 1.4; margin-top: 3px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .topic-row-more {
+    color: #888; font-size: 10px; font-style: italic; padding: 4px 0 2px 0;
+  }
+  .topic-row { cursor: pointer; border-radius: 3px; padding-left: 4px; padding-right: 4px; }
+  .topic-row:hover { background: rgba(140, 180, 240, 0.10); }
+
+  /* Topic preview modal — opened from the source-topic rows. Avoids
+     file://→file:// link navigation (which Chrome refuses) by rendering
+     the title + meta + excerpt already in GRAPH_META.topicIndex. */
+  #topic-modal {
+    position: fixed; inset: 0; z-index: 4000;
+    background: rgba(10, 10, 20, 0.78);
+    display: none; align-items: center; justify-content: center;
+    font-family: -apple-system, system-ui, sans-serif;
+  }
+  .topic-modal-card {
+    position: relative; width: 80vw; max-width: 1100px;
+    height: 80vh; max-height: 900px;
+    display: flex; flex-direction: column;
+    background: #1f1f33; border: 1px solid #555; border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    padding: 22px 28px; color: #ddd;
+  }
+  .topic-modal-close {
+    position: absolute; top: 8px; right: 12px; cursor: pointer;
+    color: #888; font-size: 22px; background: none; border: none;
+    line-height: 1;
+  }
+  .topic-modal-close:hover { color: #fff; }
+  .topic-modal-title {
+    margin: 0 32px 4px 0; font-size: 16px; color: #fff;
+    line-height: 1.3;
+  }
+  .topic-modal-meta {
+    color: #888; font-size: 11px; margin-bottom: 14px;
+    font-variant-numeric: tabular-nums;
+  }
+  .topic-modal-thread {
+    flex: 1; overflow-y: auto;
+    margin-bottom: 16px; padding-right: 4px;
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  .topic-modal-post {
+    background: rgba(255, 255, 255, 0.04);
+    border-left: 3px solid #4a4a60;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 14px;
+  }
+  .topic-modal-post:first-child { border-left-color: #7af; }
+  .topic-modal-post-meta {
+    color: #9aa3b8; font-size: 11px; font-weight: 600;
+    margin-bottom: 6px;
+    text-transform: none; letter-spacing: 0.2px;
+    font-variant-numeric: tabular-nums;
+  }
+  .topic-modal-post-body {
+    color: #ddd; font-size: 13px; line-height: 1.55;
+    white-space: pre-wrap;
+  }
+  .topic-modal-empty {
+    color: #666; font-style: italic; padding: 10px;
+    background: none; border-left: none;
+  }
+  .topic-modal-actions {
+    display: flex; gap: 8px; flex-wrap: wrap;
+  }
+  /* Cluster summary panel: histogram-row layout shared by Composition + rel-types */
+  .cluster-bar-row {
+    display: grid; grid-template-columns: 110px 1fr 78px;
+    align-items: center; gap: 6px;
+    padding: 2px 4px; cursor: pointer; border-radius: 3px;
+    color: #bbb; font-size: 11px;
+  }
+  .cluster-bar-row:hover { background: rgba(255,255,255,0.08); }
+  .cluster-bar-label {
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .cluster-bar-track {
+    height: 8px; background: rgba(255,255,255,0.06); border-radius: 2px;
+    position: relative; overflow: hidden;
+  }
+  .cluster-bar-fill {
+    display: block; height: 100%; opacity: 0.7; border-radius: 2px;
+  }
+  .cluster-bar-count { color: #888; font-size: 10px; text-align: right; }
+  /* Category-view detail panel: indented bridge rows under each
+     inter-category edge, plus a tiny entity-type chip on hub rows. */
+  .conn-item.bridge-row {
+    padding-left: 18px; color: #aaa; font-size: 11px;
+  }
+  .bridge-arrow { color: #555; margin-right: 4px; }
+  .cat-hub-type {
+    display: inline-block; padding: 0 5px; margin-left: 4px;
+    border: 1px solid rgba(180, 180, 200, 0.25); border-radius: 8px;
+    color: #9aa3b8; font-size: 9px; vertical-align: baseline;
+  }
+  /* Category-edge detail panel: dual-badge header + bridge-edge rows. */
+  .cat-edge-header {
+    display: flex; align-items: center; gap: 8px;
+    margin: 4px 0 6px 0; flex-wrap: wrap;
+  }
+  .cat-edge-arrow {
+    color: #888; font-size: 14px; padding: 0 2px;
+  }
+  .bridge-edge-row {
+    display: flex; flex-wrap: wrap; align-items: baseline;
+    padding: 3px 4px; gap: 4px;
+    color: #ccc; font-size: 12px; cursor: pointer; border-radius: 3px;
+  }
+  .bridge-edge-row:hover { background: rgba(255,255,255,0.06); }
+  .bridge-edge-endpoint {
+    color: #cfd6ff; cursor: pointer; padding: 0 2px; border-radius: 2px;
+  }
+  .bridge-edge-endpoint:hover { background: rgba(140, 180, 240, 0.18); color: #fff; }
+  .bridge-edge-arrow { color: #666; font-size: 11px; }
+  #detail-panel .close-btn {
+    position: absolute; top: 8px; right: 12px; cursor: pointer;
+    color: #888; font-size: 18px; background: none; border: none;
+  }
+  #detail-panel .close-btn:hover { color: #fff; }
+  #detail-nav {
+    display: flex; gap: 4px; margin-bottom: 8px;
+  }
+  #detail-nav button {
+    padding: 3px 10px; border: 1px solid #444; border-radius: 3px;
+    background: transparent; color: #888; cursor: pointer; font-size: 13px;
+    font-family: -apple-system, system-ui, sans-serif; line-height: 1;
+  }
+  #detail-nav button:hover:not(:disabled) { color: #eee; border-color: #666; }
+  #detail-nav button:disabled { color: #444; cursor: default; border-color: #333; }
+
+  /* Detail panel actions */
+  .detail-actions {
+    display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0;
+    padding: 8px 0; border-top: 1px solid #333;
+  }
+  .action-btn {
+    padding: 4px 10px; border: 1px solid #555; border-radius: 4px;
+    background: #2a2a3e; color: #ccc; cursor: pointer; font-size: 11px;
+    font-family: -apple-system, system-ui, sans-serif;
+  }
+  .action-btn:hover { background: #3a3a50; color: #fff; }
+  /* When the action represents an "engaged / locked-on" mode (Focus 1-hop /
+     2-hop). Amber matches the breadcrumb focus-mode-chip so the two
+     surfaces tell the same visual story. */
+  .action-btn.active {
+    background: rgba(245, 185, 122, 0.18);
+    border-color: rgba(245, 185, 122, 0.7);
+    color: #ffd9b3;
+  }
+  .action-btn.active:hover {
+    background: rgba(245, 185, 122, 0.30);
+    color: #fff;
+  }
+
+  /* Split-button: [Copy][▾]. Two .action-btn buttons visually merged. */
+  .copy-split { display: inline-flex; }
+  .copy-split .action-btn { border-radius: 0; }
+  .copy-split .copy-main { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+  .copy-split .copy-toggle {
+    border-top-right-radius: 4px; border-bottom-right-radius: 4px;
+    border-left-width: 0; padding-left: 6px; padding-right: 6px;
+  }
+
+  /* Floating format menu opened by the ▾ toggle. */
+  .copy-menu {
+    position: fixed; z-index: 3000;
+    background: #1f1f33; border: 1px solid #555; border-radius: 4px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+    padding: 4px 0; min-width: 160px;
+    font-family: -apple-system, system-ui, sans-serif; font-size: 12px;
+  }
+  .copy-menu-item {
+    padding: 6px 12px; color: #ccc; cursor: pointer; white-space: nowrap;
+  }
+  .copy-menu-item:hover { background: #2f2f55; color: #fff; }
+
+  /* "At a glance" panel inside the control panel */
+  #glance-panel { font-size: 11px; }
+  #glance-panel .glance-h {
+    color: #888; font-size: 10px; text-transform: uppercase;
+    letter-spacing: 0.5px; margin: 8px 0 3px 0;
+  }
+  #glance-panel .glance-h:first-child { margin-top: 0; }
+  #glance-panel .glance-row {
+    display: flex; align-items: center; padding: 2px 4px;
+    cursor: pointer; border-radius: 3px; color: #ccc;
+  }
+  #glance-panel .glance-row:hover { background: rgba(255,255,255,0.08); }
+  #glance-panel .glance-label {
+    flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    margin-right: 6px;
+  }
+  #glance-panel .glance-count { color: #777; font-size: 10px; }
+  #glance-panel .glance-empty { color: #666; font-style: italic; padding: 4px 0; }
+  #glance-panel .glance-cluster-banner {
+    margin: 0 0 8px 0; padding: 6px 8px; cursor: pointer;
+    background: rgba(140, 180, 240, 0.15); color: #cfe1ff;
+    border: 1px solid rgba(140, 180, 240, 0.5); border-radius: 4px;
+  }
+  #glance-panel .glance-cluster-banner:hover { background: rgba(140, 180, 240, 0.28); }
+  #glance-panel .glance-cluster-title { font-weight: 600; font-size: 11px; }
+  #glance-panel .glance-cluster-sub { color: #9eb8de; font-size: 10px; margin-top: 1px; }
+
+  /* Detail-panel meta-line additions: rank badge + connection-stat note */
+  .rank-badge {
+    display: inline-block; padding: 0 6px; margin-left: 4px;
+    background: rgba(255,255,255,0.06); border-radius: 3px;
+    font-size: 10px; color: #aaa; letter-spacing: 0.2px;
+  }
+  .conn-stat { color: #d8a04a; font-size: 11px; }
+  .articulation-badge {
+    display: inline-block; padding: 0 6px; margin-left: 6px;
+    background: rgba(245, 130, 80, 0.18); color: #f58250;
+    border: 1px solid rgba(245, 130, 80, 0.5); border-radius: 3px;
+    font-size: 9px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .community-badge {
+    display: inline-block; padding: 0 6px; margin-left: 6px;
+    background: rgba(140, 180, 240, 0.10); color: #8cb4f0;
+    border: 1px solid rgba(140, 180, 240, 0.35); border-radius: 3px;
+    font-size: 10px; cursor: pointer;
+  }
+  .community-badge:hover { background: rgba(140, 180, 240, 0.20); }
+  .community-badge.active {
+    background: rgba(140, 180, 240, 0.30); color: #cfe1ff;
+    border-color: rgba(140, 180, 240, 0.7);
+  }
+  .community-badge.active:hover { background: rgba(140, 180, 240, 0.4); }
+  /* Per-entity time-range chip in the node detail panel meta line.
+     Source-post time across the node's topic provenance + incident edges. */
+  .time-range-chip {
+    display: inline-block; padding: 0 6px; margin-left: 6px;
+    background: rgba(255, 200, 120, 0.10); color: #d8a04a;
+    border: 1px solid rgba(255, 200, 120, 0.30); border-radius: 3px;
+    font-size: 10px; font-variant-numeric: tabular-nums;
+  }
+
+  /* "Related" section — Personalized PageRank results above the connections list. */
+  .related-heading {
+    font-size: 12px; margin: 12px 0 4px 0; color: #c0c0e0;
+    cursor: help; text-decoration: underline; text-decoration-style: dotted;
+    text-underline-offset: 3px;
+  }
+  .related-section { margin-bottom: 8px; }
+  .related-1hop {
+    display: inline-block; padding: 0 4px; margin-left: 4px;
+    background: rgba(255,255,255,0.08); color: #888;
+    border-radius: 2px; font-size: 9px;
+  }
+
+  /* Inline rel-chip on each connection row — clickable to filter the
+     canvas to that rel-bucket. Border colour is set inline (per-rel). */
+  .rel-chip {
+    display: inline-block; font-size: 9px; padding: 0 4px;
+    border: 1px solid; border-radius: 2px; cursor: pointer;
+    transition: background 100ms;
+  }
+  .rel-chip:hover { background: rgba(255,255,255,0.10); }
+
+  /* Edge detail panel */
+  .edge-detail-card { padding: 4px 0 8px 0; }
+  .edge-detail-card + .edge-detail-card {
+    border-top: 1px solid #333; margin-top: 12px; padding-top: 12px;
+  }
+  .edge-endpoints { font-size: 13px; line-height: 1.7; margin: 4px 0 6px 0; }
+  .edge-endpoint { padding: 2px 4px; cursor: pointer; border-radius: 3px; }
+  .edge-endpoint:hover { background: rgba(255,255,255,0.08); }
+  .edge-arrow { color: #666; padding: 0 4px; }
+  .edge-rel-chip {
+    display: inline-block; padding: 1px 7px; border-radius: 3px;
+    border: 1px solid #666; font-size: 10px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .edge-phrase-list {
+    padding-left: 18px; margin: 6px 0; color: #ccc; font-size: 12px;
+  }
+  .edge-phrase-list li { margin: 2px 0; }
+
+  /* Path display */
+  .path-step { padding: 4px 0; }
+  .path-arrow { color: #666; font-size: 14px; padding-left: 10px; }
+
+  /* Select all/none */
+  .type-actions { display: flex; gap: 8px; margin-bottom: 4px; }
+  .type-actions button {
+    padding: 2px 8px; border: 1px solid #444; border-radius: 3px;
+    background: transparent; color: #999; cursor: pointer; font-size: 10px;
+    font-family: -apple-system, system-ui, sans-serif;
+  }
+  .type-actions button:hover { color: #eee; border-color: #666; }
+
+  /* Category mode dims node-level controls */
+  #control-panel.category-mode .cp-body {
+    opacity: 0.3; pointer-events: none;
+  }
+
+  /* Pathfind status bar */
+  #pathfind-status {
+    position: fixed; bottom: 50px; left: 50%; transform: translateX(-50%);
+    z-index: 1001; background: #3a3a60; color: #eee; padding: 8px 20px;
+    border-radius: 6px; font-family: -apple-system, system-ui, sans-serif;
+    font-size: 13px; box-shadow: 0 2px 12px rgba(0,0,0,0.6); display: none;
+  }
+  #pathfind-status button {
+    margin-left: 12px; padding: 2px 8px; border: 1px solid #666;
+    border-radius: 3px; background: transparent; color: #aaa; cursor: pointer;
+    font-size: 11px;
+  }
+
+  /* --- Table view overlay --- */
+  #table-view {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 2000;
+    background: rgba(16,16,32,0.98); display: none; flex-direction: column;
+    font-family: -apple-system, system-ui, sans-serif; color: #eee;
+  }
+  #table-view.active, #conn-table-view.active { display: flex; }
+  #conn-table-view {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 2000;
+    background: rgba(16,16,32,0.98); display: none; flex-direction: column;
+    font-family: -apple-system, system-ui, sans-serif; color: #eee;
+  }
+  #table-header {
+    display: flex; align-items: center; gap: 12px; padding: 12px 20px;
+    border-bottom: 1px solid #333; flex-shrink: 0;
+  }
+  #table-header h3 { margin: 0; font-size: 15px; flex-shrink: 0; }
+  #table-search, #conn-table-search {
+    padding: 6px 10px; border: 1px solid #555; border-radius: 4px;
+    background: #2a2a3e; color: #eee; font-size: 13px; outline: none;
+    width: 280px;
+  }
+  #table-search:focus, #conn-table-search:focus { border-color: #7af; }
+  #table-count, #conn-table-count { font-size: 11px; color: #888; flex: 1; }
+  #table-close, #conn-table-close {
+    padding: 6px 14px; border: 1px solid #555; border-radius: 4px;
+    background: #2a2a3e; color: #ccc; cursor: pointer; font-size: 12px;
+  }
+  #table-close:hover, #conn-table-close:hover { background: #3a3a50; color: #fff; }
+  #table-wrap { flex: 1; overflow: auto; padding: 0 20px 20px; }
+  #data-table, #conn-data-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  #data-table th, #conn-data-table th {
+    position: sticky; top: 0; background: #1a1a2e; padding: 8px 10px;
+    text-align: left; cursor: pointer; user-select: none; white-space: nowrap;
+    border-bottom: 2px solid #444; color: #aaa; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  #data-table th:hover, #conn-data-table th:hover { color: #eee; }
+  #data-table th .sort-arrow, #conn-data-table th .sort-arrow { margin-left: 4px; font-size: 9px; }
+  #data-table td, #conn-data-table td {
+    padding: 6px 10px; border-bottom: 1px solid #262640; max-width: 400px;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    color: #ddd;
+  }
+  #data-table td strong, #conn-data-table td strong { color: #eee; }
+  #data-table tr, #conn-data-table tr { cursor: pointer; }
+  #data-table tr:hover, #conn-data-table tr:hover { background: rgba(255,255,255,0.04); }
+  #data-table tr.selected, #conn-data-table tr.selected { background: rgba(100,140,255,0.12); }
+  #data-table tr.hidden-node td, #conn-data-table tr.hidden-node td { color: #666; }
+  #data-table tr.hidden-node td strong, #conn-data-table tr.hidden-node td strong { color: #777; }
+  #data-table .cat-dot, #conn-data-table .cat-dot { display: inline-block; width: 8px; height: 8px;
+    border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+
+  /* --- Toolbar (top-right) --- */
+  #toolbar {
+    position: fixed; top: 10px; right: 10px; z-index: 999;
+    display: flex; gap: 6px;
+  }
+  #toolbar > button {
+    padding: 6px 12px; border: 1px solid #555; border-radius: 4px;
+    background: rgba(22,22,40,0.96); color: #eee; cursor: pointer; font-size: 12px;
+    font-family: -apple-system, system-ui, sans-serif;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.4);
+  }
+  #toolbar > button:hover { background: #3a3a50; }
+  #toolbar > button.active { background: #4a3a60; border-color: #7af; color: #7af; }
+  #toolbar > select {
+    padding: 6px 28px 6px 12px; border: 1px solid #555; border-radius: 4px;
+    background: rgba(22,22,40,0.96); color: #eee; cursor: pointer; font-size: 12px;
+    font-family: -apple-system, system-ui, sans-serif;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.4);
+    -webkit-appearance: none; -moz-appearance: none; appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='%23eee' d='M0 0l5 6 5-6z'/></svg>");
+    background-repeat: no-repeat; background-position: right 10px center;
+  }
+  #toolbar > select:hover { background-color: #3a3a50; }
+  #toolbar > select option { background: #1a1a2e; color: #eee; }
+
+  /* --- Breadcrumb (above toolbar, right-aligned) --- */
+  #breadcrumb {
+    position: fixed; top: 48px; right: 10px; z-index: 998;
+    background: rgba(22,22,40,0.9); color: #ccc;
+    padding: 5px 10px; border: 1px solid #333; border-radius: 4px;
+    font-family: -apple-system, system-ui, sans-serif; font-size: 11px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.4);
+    max-width: 60vw; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+  }
+  .breadcrumb-seg { cursor: pointer; color: #7af; }
+  .breadcrumb-seg:hover { text-decoration: underline; }
+  .breadcrumb-seg.current { color: #eee; cursor: default; font-weight: 600; }
+  .breadcrumb-seg.current:hover { text-decoration: none; }
+  .breadcrumb-sep { color: #555; margin: 0 2px; }
+  .cluster-lock-chip {
+    display: inline-flex; align-items: stretch; margin-left: 8px;
+    background: rgba(140, 180, 240, 0.30); color: #cfe1ff;
+    border: 1px solid rgba(140, 180, 240, 0.7); border-radius: 10px;
+    font-size: 10px; font-weight: 600; letter-spacing: 0.2px;
+    overflow: hidden;
+  }
+  .cluster-lock-chip-label {
+    padding: 1px 6px 1px 8px; cursor: pointer;
+  }
+  .cluster-lock-chip-label:hover { background: rgba(140, 180, 240, 0.30); }
+  .cluster-lock-chip-close {
+    padding: 1px 7px 1px 5px; cursor: pointer;
+    border-left: 1px solid rgba(140, 180, 240, 0.4);
+    color: #b8cdf0; font-weight: 700;
+  }
+  .cluster-lock-chip-close:hover { background: rgba(255, 120, 120, 0.35); color: #fff; }
+  /* Focus-mode chip — mirrors cluster-lock-chip but in amber so the two
+     are visually distinguishable at a glance when both are active. Sits
+     after any cluster-lock chip in the breadcrumb. */
+  .focus-mode-chip {
+    display: inline-flex; align-items: stretch; margin-left: 8px;
+    background: rgba(245, 185, 122, 0.22); color: #ffd9b3;
+    border: 1px solid rgba(245, 185, 122, 0.7); border-radius: 10px;
+    font-size: 10px; font-weight: 600; letter-spacing: 0.2px;
+    overflow: hidden;
+  }
+  .focus-mode-chip-label {
+    padding: 1px 6px 1px 8px; cursor: pointer;
+  }
+  .focus-mode-chip-label:hover { background: rgba(245, 185, 122, 0.35); }
+  .focus-mode-chip-close {
+    padding: 1px 7px 1px 5px; cursor: pointer;
+    border-left: 1px solid rgba(245, 185, 122, 0.4);
+    color: #f0c89c; font-weight: 700;
+  }
+  .focus-mode-chip-close:hover { background: rgba(255, 120, 120, 0.35); color: #fff; }

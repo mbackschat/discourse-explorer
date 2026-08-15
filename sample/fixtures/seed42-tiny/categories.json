@@ -1,0 +1,104 @@
+{
+  "fetched_at": "2026-04-29T00:07:53.304920+00:00",
+  "categories": [
+    {
+      "id": 3,
+      "name": "Staff",
+      "slug": "staff",
+      "description": "Private category for staff discussions. Topics are only visible to admins and moderators.",
+      "topic_count": 2,
+      "post_count": 0,
+      "color": "E45735",
+      "parent_category_id": null,
+      "subcategory_ids": []
+    },
+    {
+      "id": 4,
+      "name": "General",
+      "slug": "general",
+      "description": "Create topics here that don’t fit into any other existing category.",
+      "topic_count": 1,
+      "post_count": 0,
+      "color": "25AAE2",
+      "parent_category_id": null,
+      "subcategory_ids": []
+    },
+    {
+      "id": 6,
+      "name": "Help & Hints",
+      "slug": "help-hints",
+      "description": null,
+      "topic_count": 4,
+      "post_count": 0,
+      "color": "BF1E2E",
+      "parent_category_id": null,
+      "subcategory_ids": []
+    },
+    {
+      "id": 8,
+      "name": "Show & Tell",
+      "slug": "show-tell",
+      "description": null,
+      "topic_count": 5,
+      "post_count": 0,
+      "color": "BF1E2E",
+      "parent_category_id": null,
+      "subcategory_ids": []
+    },
+    {
+      "id": 9,
+      "name": "Speedruns & Challenges",
+      "slug": "speedruns-challenges",
+      "description": null,
+      "topic_count": 3,
+      "post_count": 0,
+      "color": "BF1E2E",
+      "parent_category_id": null,
+      "subcategory_ids": []
+    },
+    {
+      "id": 5,
+      "name": "Announcements",
+      "slug": "announcements",
+      "description": null,
+      "topic_count": 5,
+      "post_count": 0,
+      "color": "BF1E2E",
+      "parent_category_id": null,
+      "subcategory_ids": []
+    },
+    {
+      "id": 7,
+      "name": "Bug Reports",
+      "slug": "bug-reports",
+      "description": null,
+      "topic_count": 10,
+      "post_count": 0,
+      "color": "BF1E2E",
+      "parent_category_id": null,
+      "subcategory_ids": []
+    },
+    {
+      "id": 10,
+      "name": "Translations & Localization",
+      "slug": "translations-localization",
+      "description": null,
+      "topic_count": 3,
+      "post_count": 0,
+      "color": "BF1E2E",
+      "parent_category_id": null,
+      "subcategory_ids": []
+    },
+    {
+      "id": 2,
+      "name": "Site Feedback",
+      "slug": "site-feedback",
+      "description": "Discussion about this site, its organization, how it works, and how we can improve it.",
+      "topic_count": 0,
+      "post_count": 0,
+      "color": "808281",
+      "parent_category_id": null,
+      "subcategory_ids": []
+    }
+  ]
+}

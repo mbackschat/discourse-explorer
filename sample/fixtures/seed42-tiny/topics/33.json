@@ -1,0 +1,55 @@
+{
+  "id": 33,
+  "title": "Softlock when interacting with the disgraced quartermaster",
+  "slug": "softlock-when-interacting-with-the-disgraced-quartermaster",
+  "category_id": 7,
+  "category_name": "Bug Reports",
+  "created_at": "2026-01-17T00:00:00.000Z",
+  "last_posted_at": "2026-01-24T22:27:00.000Z",
+  "bumped_at": "",
+  "tags": [
+    "voice-acting",
+    "feature-request",
+    "windows"
+  ],
+  "views": 0,
+  "like_count": 0,
+  "posts_count": 2,
+  "reply_count": 0,
+  "pinned": false,
+  "closed": false,
+  "archived": false,
+  "posts": [
+    {
+      "id": 82,
+      "post_number": 1,
+      "username": "soggy_rigger",
+      "display_name": "Soggy Rigger",
+      "created_at": "2026-01-17T00:00:00.000Z",
+      "updated_at": "2026-04-29T00:05:25.216Z",
+      "cooked": "<p>Hey all, just wanted to bring up a frustrating issue I ran into while playing on Windows. When you try to interact with the disgraced quartermaster during the second chapter, the game softlocks completely — like the sounds keep playing, but you can’t move, skip, or do anything except force-close the game. Tried it a couple of times, and it’s super consistent for me every time I get to that part. It really breaks the flow, especially since that scene is kind of pivotal for setting up the next mission.</p>\n<p>I’ve seen a couple folks mention similar problems in other threads, but no word on when or if it might get fixed. Also, this scene has some really great voice acting that deserves to be heard without it freezing on you! Would love if the devs could patch it to prevent the game from hanging here, or at least add a quickskip option for the dialogue. Fingers crossed this gets some attention soon because otherwise, the story is really gripping and the atmosphere is on point. Anyone found any workarounds?</p>",
+      "plain_text": "Hey all, just wanted to bring up a frustrating issue I ran into while playing on Windows. When you try to interact with the disgraced quartermaster during the second chapter, the game softlocks completely — like the sounds keep playing, but you can’t move, skip, or do anything except force-close the game. Tried it a couple of times, and it’s super consistent for me every time I get to that part. It really breaks the flow, especially since that scene is kind of pivotal for setting up the next mission.\nI’ve seen a couple folks mention similar problems in other threads, but no word on when or if it might get fixed. Also, this scene has some really great voice acting that deserves to be heard without it freezing on you! Would love if the devs could patch it to prevent the game from hanging here, or at least add a quickskip option for the dialogue. Fingers crossed this gets some attention soon because otherwise, the story is really gripping and the atmosphere is on point. Anyone found any workarounds?",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    },
+    {
+      "id": 83,
+      "post_number": 2,
+      "username": "scurvy_harpooner",
+      "display_name": "Scurvy Harpooner",
+      "created_at": "2026-01-24T22:27:00.000Z",
+      "updated_at": "2026-04-29T00:05:25.733Z",
+      "cooked": "<p>Hey, I ran into the same softlock bug when trying to talk to the disgraced quartermaster after completing the main questline. The game just freezes during their dialogue, and the voice acting keeps looping, which is super immersion-breaking. It’s frustrating because I was really looking forward to that interaction, especially since the quartermaster’s story arc looked promising.</p>\n<p>I noticed this only happens on the Windows version, at least from what I’ve seen on other posts. Maybe it’s something about how the game handles the voiceover files during that scene? It’d be great if the devs could patch it soon because the quartermaster’s voice work is pretty solid, and losing that part really hurts the storytelling.</p>\n<p>As a feature request, maybe they could add an option to skip or replay the dialogue if something like this happens again? That way, even if the glitch pops up, players won’t be stuck in a hard freeze. Fingers crossed they fix it quickly, because this bug definitely puts a damper on an otherwise awesome experience.</p>",
+      "plain_text": "Hey, I ran into the same softlock bug when trying to talk to the disgraced quartermaster after completing the main questline. The game just freezes during their dialogue, and the voice acting keeps looping, which is super immersion-breaking. It’s frustrating because I was really looking forward to that interaction, especially since the quartermaster’s story arc looked promising.\nI noticed this only happens on the Windows version, at least from what I’ve seen on other posts. Maybe it’s something about how the game handles the voiceover files during that scene? It’d be great if the devs could patch it soon because the quartermaster’s voice work is pretty solid, and losing that part really hurts the storytelling.\nAs a feature request, maybe they could add an option to skip or replay the dialogue if something like this happens again? That way, even if the glitch pops up, players won’t be stuck in a hard freeze. Fingers crossed they fix it quickly, because this bug definitely puts a damper on an otherwise awesome experience.",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    }
+  ],
+  "fetched_at": "2026-04-29T00:08:09.402571+00:00"
+}

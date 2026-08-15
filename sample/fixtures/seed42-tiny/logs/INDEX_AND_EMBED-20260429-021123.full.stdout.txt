@@ -1,0 +1,1029 @@
+Clearing existing graph at /path/to/discourse-explorer/sample/fixtures/seed42-tiny/graphrag...
+Indexing 33 topics into LightRAG...
+  Provider: OpenAI
+  LLM: gpt-4.1-mini
+  Gleaning passes: 1  (0=cheap/baseline recall, 1=recommended, 2+=diminishing returns)
+  Embeddings: OpenAI/text-embedding-3-small (1536d)  (override via OPENAI_EMBED_MODEL in <data-dir>/config/.env; OPENAI_EMBED_DIM for non-standard models)
+  Concurrency: 8 parallel requests
+  Graph dir: /path/to/discourse-explorer/sample/fixtures/seed42-tiny/graphrag
+
+Preparing ingest of 33 topics...
+INFO: [] Created new empty graph file: /path/to/discourse-explorer/sample/fixtures/seed42-tiny/graphrag/graph_chunk_entity_relation.graphml
+  02:12:15  Loading faiss.
+  02:12:15  Successfully loaded faiss.
+WARNING: [] No existing Faiss index file found for entities
+WARNING: [] No existing Faiss index file found for relationships
+WARNING: [] No existing Faiss index file found for chunks
+INFO: [] Process 22316 KV load full_docs with 0 records
+INFO: [] Process 22316 KV load text_chunks with 0 records
+INFO: [] Process 22316 KV load full_entities with 0 records
+INFO: [] Process 22316 KV load full_relations with 0 records
+INFO: [] Process 22316 KV load entity_chunks with 0 records
+INFO: [] Process 22316 KV load relation_chunks with 0 records
+INFO: [] Process 22316 KV load llm_response_cache with 0 records
+INFO: [] Process 22316 doc status load doc_status with 0 records
+Pass 1: Inserting structural KG for 33 topics...
+INFO: Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+Pass 1 complete: 33/33 successful, 0 failed.
+Pass 2: LLM extraction over 33 topic bodies...
+INFO: Processing 33 document(s)
+INFO: Extracting stage 1/33: topic-18.json
+INFO: Processing d-id: doc-17db7f1fd3181db65c0602e11860133e
+INFO: Extracting stage 2/33: topic-25.json
+INFO: Processing d-id: doc-e6646723530317274a426093a223bd40
+INFO: Extracting stage 3/33: topic-38.json
+INFO: Processing d-id: doc-6e47864ec6178c41b815896a4f5c6acf
+INFO: Extracting stage 4/33: topic-31.json
+INFO: Processing d-id: doc-7c1ce92fd365785e235a23728b020d73
+INFO: LLM func: 8 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+INFO:  == LLM cache == saving: default:extract:8f4f9aa02444e74d8b8c8a7b04226f48
+INFO:  == LLM cache == saving: default:extract:8f8be087e78f7fdc005a99ba26ed52f4
+INFO:  == LLM cache == saving: default:extract:bedf798490da29a34a08b553d1ae01da
+INFO: Chunk 1 of 2 extracted 0 Ent + 0 Rel chunk-6aedc82c849b31a798f9769a4b0e3f53
+INFO:  == LLM cache == saving: default:extract:929bb430acbd763326baae792bc58fd3
+INFO: Chunk 1 of 2 extracted 0 Ent + 0 Rel chunk-d05626b294728f43b5384b3400246108
+INFO:  == LLM cache == saving: default:extract:e07d09ea688b85c302db26b928ff4502
+INFO:  == LLM cache == saving: default:extract:f0883d5f77040efef2a531b2f6bbabac
+INFO:  == LLM cache == saving: default:extract:32677b9b3d47bb21561b4c30848fe54c
+INFO:  == LLM cache == saving: default:extract:2fa57266faf5d3e145a61053098647cb
+INFO:  == LLM cache == saving: default:extract:be923b6a6d991c3d8433c49c50715475
+INFO: Chunk 1 of 2 extracted 17 Ent + 11 Rel chunk-6a13678402573cc3e73bc43b3ea412ac
+INFO:  == LLM cache == saving: default:extract:96d0ab9d03d0b59c56f64810201d617a
+INFO: Chunk 2 of 2 extracted 14 Ent + 13 Rel chunk-e94205c01e35a57821a39020b87a9301
+INFO: Merging stage 4/33: topic-31.json
+INFO: Phase 1: Processing 28 entities from doc-7c1ce92fd365785e235a23728b020d73 (async: 16)
+INFO:  == LLM cache == saving: default:extract:ad3681fd42909f84f5a157476ad27d93
+INFO:  == LLM cache == saving: default:extract:9932562144895a51479191df2e33e453
+INFO: Chunk 1 of 1 extracted 13 Ent + 15 Rel chunk-e6646723530317274a426093a223bd40
+INFO: Merging stage 2/33: topic-25.json
+INFO: Phase 1: Processing 13 entities from doc-e6646723530317274a426093a223bd40 (async: 16)
+INFO:  == LLM cache == saving: default:extract:3c4cb82a351faa52829f515cab175982
+INFO: Chunk 2 of 2 extracted 10 Ent + 9 Rel chunk-6e47864ec6178c41b815896a4f5c6acf
+INFO: Merging stage 3/33: topic-38.json
+INFO: Phase 1: Processing 10 entities from doc-6e47864ec6178c41b815896a4f5c6acf (async: 16)
+INFO: Merged: `Scurvy_Harpooner` | 1+1
+INFO: Phase 2: Processing 23 relations from doc-7c1ce92fd365785e235a23728b020d73 (async: 16)
+INFO: Phase 2: Processing 15 relations from doc-e6646723530317274a426093a223bd40 (async: 16)
+INFO: Phase 2: Processing 9 relations from doc-6e47864ec6178c41b815896a4f5c6acf (async: 16)
+INFO: Phase 3: Updating final 10(10+0) entities and  9 relations from doc-6e47864ec6178c41b815896a4f5c6acf
+INFO: Completed merging: 10 entities, 0 extra entities, 9 relations
+INFO: Completed processing file 3/33: topic-38.json
+INFO: Extracting stage 5/33: topic-29.json
+INFO: Processing d-id: doc-c4f4af8e72c04a161f49d743827f2491
+INFO: Phase 3: Updating final 13(13+0) entities and  15 relations from doc-e6646723530317274a426093a223bd40
+INFO: Completed merging: 13 entities, 0 extra entities, 15 relations
+INFO: Completed processing file 2/33: topic-25.json
+INFO: Extracting stage 6/33: topic-22.json
+INFO: Processing d-id: doc-d23c970cb0582d3bc6d11b937ccae337
+INFO: Phase 3: Updating final 28(28+0) entities and  23 relations from doc-7c1ce92fd365785e235a23728b020d73
+INFO: Completed merging: 28 entities, 0 extra entities, 23 relations
+INFO: Completed processing file 4/33: topic-31.json
+INFO: Extracting stage 7/33: topic-39.json
+INFO: Processing d-id: doc-2634b570c60c91d5cfb5be23847fbd86
+INFO:  == LLM cache == saving: default:extract:85410a268fe2a29bc2c1f1da143bdfef
+INFO: Chunk 2 of 2 extracted 16 Ent + 18 Rel chunk-17db7f1fd3181db65c0602e11860133e
+INFO: Merging stage 1/33: topic-18.json
+INFO: Phase 1: Processing 16 entities from doc-17db7f1fd3181db65c0602e11860133e (async: 16)
+INFO: Merged: `Salty_Cabin-Boy` | 1+1
+INFO: Merged: `Soggy_Rigger` | 1+1
+INFO: Merged: `Rusty_Quartermaster` | 1+1
+INFO: Merged: `Scurvy_Harpooner` | 2+1
+INFO: Phase 2: Processing 18 relations from doc-17db7f1fd3181db65c0602e11860133e (async: 16)
+INFO:  == LLM cache == saving: default:extract:86ea9b5ca58143781d96e88f2be81abc
+INFO: Phase 3: Updating final 17(16+1) entities and  18 relations from doc-17db7f1fd3181db65c0602e11860133e
+INFO: Completed merging: 16 entities, 1 extra entities, 18 relations
+INFO: Completed processing file 1/33: topic-18.json
+INFO: Extracting stage 8/33: topic-42.json
+INFO: Processing d-id: doc-e49542a2243a39d767cd5cd1f624d09c
+INFO:  == LLM cache == saving: default:extract:d4b64abd7314228030f19f3e4caf1e45
+INFO:  == LLM cache == saving: default:extract:940ff50556065179077af7a41fcfa4cb
+INFO: Chunk 1 of 2 extracted 7 Ent + 5 Rel chunk-9903495ba67aac5c0a482bac1b66238e
+INFO:  == LLM cache == saving: default:extract:21e1ca115e005d06e44f04ae2267e75b
+INFO: Chunk 1 of 1 extracted 7 Ent + 7 Rel chunk-c4f4af8e72c04a161f49d743827f2491
+INFO: Merging stage 5/33: topic-29.json
+INFO: Phase 1: Processing 7 entities from doc-c4f4af8e72c04a161f49d743827f2491 (async: 16)
+INFO: Merged: `Rusty_Quartermaster` | 2+1
+INFO: Merged: `Scurvy_Harpooner` | 3+1
+INFO: Phase 2: Processing 7 relations from doc-c4f4af8e72c04a161f49d743827f2491 (async: 16)
+INFO: Phase 3: Updating final 7(7+0) entities and  7 relations from doc-c4f4af8e72c04a161f49d743827f2491
+INFO: Completed merging: 7 entities, 0 extra entities, 7 relations
+INFO: Completed processing file 5/33: topic-29.json
+INFO: Extracting stage 9/33: topic-14.json
+INFO: Processing d-id: doc-96f190c786ce4257203c3d6b66d025a4
+INFO:  == LLM cache == saving: default:extract:5437899d0c6398ac6741b14b8542b4b1
+INFO:  == LLM cache == saving: default:extract:69400266445886bb2322515b9999e3d3
+INFO:  == LLM cache == saving: default:extract:d9f5d7d396b360cfb40a3c19d166feeb
+INFO:  == LLM cache == saving: default:extract:dfafee76d8ae511a5a640033466c60b4
+INFO:  == LLM cache == saving: default:extract:0c8e8937f23b76b5b3a2a2a74112ac68
+INFO: Chunk 1 of 1 extracted 6 Ent + 11 Rel chunk-e49542a2243a39d767cd5cd1f624d09c
+INFO: Merging stage 8/33: topic-42.json
+INFO: Phase 1: Processing 6 entities from doc-e49542a2243a39d767cd5cd1f624d09c (async: 16)
+INFO: Merged: `Scurvy_Harpooner` | 4+1
+INFO: Merged: `Salty_Cabin-Boy` | 2+1
+INFO: Merged: `iOS` | 1+1
+INFO: Phase 2: Processing 11 relations from doc-e49542a2243a39d767cd5cd1f624d09c (async: 16)
+INFO: Phase 3: Updating final 7(6+1) entities and  11 relations from doc-e49542a2243a39d767cd5cd1f624d09c
+INFO: Completed merging: 6 entities, 1 extra entities, 11 relations
+INFO: Completed processing file 8/33: topic-42.json
+INFO: Extracting stage 10/33: topic-26.json
+INFO: Processing d-id: doc-1e3000b4af96c385d975af2e2b636806
+INFO:  == LLM cache == saving: default:extract:9a6afe6b9909e57286a931ef4b5e7df1
+INFO: Chunk 2 of 2 extracted 9 Ent + 18 Rel chunk-8d5fba55f42c843403203cd0057eff7b
+INFO: Merging stage 6/33: topic-22.json
+INFO: Phase 1: Processing 16 entities from doc-d23c970cb0582d3bc6d11b937ccae337 (async: 16)
+INFO: Merged: `Salty Cabin-Boy` | 1+1
+INFO: Merged: `Soggy Rigger` | 1+1
+INFO: Phase 2: Processing 22 relations from doc-d23c970cb0582d3bc6d11b937ccae337 (async: 16)
+INFO: Phase 3: Updating final 16(16+0) entities and  22 relations from doc-d23c970cb0582d3bc6d11b937ccae337
+INFO: Completed merging: 16 entities, 0 extra entities, 22 relations
+INFO: Completed processing file 6/33: topic-22.json
+INFO: Extracting stage 11/33: topic-28.json
+INFO: Processing d-id: doc-20b7be9b5d12da156b24257a76041740
+INFO:  == LLM cache == saving: default:extract:e8a6df2b04f9c16f9e7e6b3ddb50baf0
+INFO: Chunk 1 of 1 extracted 12 Ent + 18 Rel chunk-2634b570c60c91d5cfb5be23847fbd86
+INFO: Merging stage 7/33: topic-39.json
+INFO: Phase 1: Processing 12 entities from doc-2634b570c60c91d5cfb5be23847fbd86 (async: 16)
+INFO: Merged: `Fan Event` | 1+1
+INFO: Merged: `Salty_Cabin-Boy` | 3+1
+INFO: Merged: `Soggy_Rigger` | 2+1
+INFO: Phase 2: Processing 16 relations from doc-2634b570c60c91d5cfb5be23847fbd86 (async: 16)
+INFO: Phase 3: Updating final 12(12+0) entities and  16 relations from doc-2634b570c60c91d5cfb5be23847fbd86
+INFO: Completed merging: 12 entities, 0 extra entities, 16 relations
+INFO: Completed processing file 7/33: topic-39.json
+INFO: Extracting stage 12/33: topic-41.json
+INFO: Processing d-id: doc-7787d1295d99122e8d6b0ddde291fddb
+INFO:  == LLM cache == saving: default:extract:a10e813f88a00d26a43532e5dd134cbf
+INFO: Chunk 1 of 1 extracted 9 Ent + 10 Rel chunk-96f190c786ce4257203c3d6b66d025a4
+INFO: Merging stage 9/33: topic-14.json
+INFO: Phase 1: Processing 9 entities from doc-96f190c786ce4257203c3d6b66d025a4 (async: 16)
+INFO: Phase 2: Processing 10 relations from doc-96f190c786ce4257203c3d6b66d025a4 (async: 16)
+INFO: Phase 3: Updating final 9(9+0) entities and  10 relations from doc-96f190c786ce4257203c3d6b66d025a4
+INFO: Completed merging: 9 entities, 0 extra entities, 10 relations
+INFO: Completed processing file 9/33: topic-14.json
+INFO: Extracting stage 13/33: topic-27.json
+INFO: Processing d-id: doc-f4083cc931322e1a12e2fd9dedc83a40
+INFO:  == LLM cache == saving: default:extract:53e70ea78172cee29795cacca2e64db2
+INFO:  == LLM cache == saving: default:extract:e4ad34f380b6b2f8dbeaaeb205c82189
+INFO: Chunk 1 of 1 extracted 5 Ent + 5 Rel chunk-20b7be9b5d12da156b24257a76041740
+INFO: Merging stage 11/33: topic-28.json
+INFO: Phase 1: Processing 5 entities from doc-20b7be9b5d12da156b24257a76041740 (async: 16)
+INFO: Merged: `Scurvy Harpooner` | 1+1
+INFO: Phase 2: Processing 5 relations from doc-20b7be9b5d12da156b24257a76041740 (async: 16)
+INFO:  == LLM cache == saving: default:extract:6f3666755fda8a23697b00a3ebeb560c
+INFO: Phase 3: Updating final 5(5+0) entities and  5 relations from doc-20b7be9b5d12da156b24257a76041740
+INFO: Completed merging: 5 entities, 0 extra entities, 5 relations
+INFO: Completed processing file 11/33: topic-28.json
+INFO: Extracting stage 14/33: topic-5.json
+INFO: Processing d-id: doc-8ad5a3e3d3e8b6c1a00e329f5dd5f21b
+INFO:  == LLM cache == saving: default:extract:c30b435a694135ac4f2ee4ea49ce56be
+INFO:  == LLM cache == saving: default:extract:ce2ade3141feb1b521df34a885e28fc5
+INFO:  == LLM cache == saving: default:extract:663498482a20189ee50bd7fefc6ecc09
+INFO:  == LLM cache == saving: default:extract:667cc949d2845ec184737c170024a209
+INFO: Chunk 1 of 2 extracted 7 Ent + 6 Rel chunk-c30b0ebef9a74782bd6344e4c1f04ec7
+INFO:  == LLM cache == saving: default:extract:6c779dfbddf4b863aacf45ecfc4d756d
+INFO: Chunk 1 of 1 extracted 6 Ent + 8 Rel chunk-7787d1295d99122e8d6b0ddde291fddb
+INFO: Merging stage 12/33: topic-41.json
+INFO: Phase 1: Processing 6 entities from doc-7787d1295d99122e8d6b0ddde291fddb (async: 16)
+INFO: Merged: `Rusty_Quartermaster` | 3+1
+INFO: Merged: `Scurvy_Harpooner` | 5+1
+INFO: Merged: `Weathered_Harpooner` | 1+1
+INFO: Phase 2: Processing 8 relations from doc-7787d1295d99122e8d6b0ddde291fddb (async: 16)
+INFO:  == LLM cache == saving: default:extract:a2278ed0e2cae1132aaf174e1bd0b326
+INFO: Chunk 1 of 1 extracted 5 Ent + 8 Rel chunk-8ad5a3e3d3e8b6c1a00e329f5dd5f21b
+INFO: Merging stage 14/33: topic-5.json
+INFO: Phase 1: Processing 5 entities from doc-8ad5a3e3d3e8b6c1a00e329f5dd5f21b (async: 16)
+INFO: Phase 2: Processing 8 relations from doc-8ad5a3e3d3e8b6c1a00e329f5dd5f21b (async: 16)
+INFO: Phase 3: Updating final 5(5+0) entities and  8 relations from doc-8ad5a3e3d3e8b6c1a00e329f5dd5f21b
+INFO: Completed merging: 5 entities, 0 extra entities, 8 relations
+INFO: Completed processing file 14/33: topic-5.json
+INFO: Extracting stage 15/33: topic-35.json
+INFO: Processing d-id: doc-a5daba517158c3c6464e556ea908ac29
+INFO: Phase 3: Updating final 6(6+0) entities and  8 relations from doc-7787d1295d99122e8d6b0ddde291fddb
+INFO: Completed merging: 6 entities, 0 extra entities, 8 relations
+INFO: Completed processing file 12/33: topic-41.json
+INFO: Extracting stage 16/33: topic-36.json
+INFO: Processing d-id: doc-e9dca83ba0205d167887ed3c0fc9f7ba
+INFO:  == LLM cache == saving: default:extract:b2470b73f163207bb29fceacd94d5a94
+INFO: Chunk 1 of 1 extracted 17 Ent + 16 Rel chunk-1e3000b4af96c385d975af2e2b636806
+INFO: Merging stage 10/33: topic-26.json
+INFO: Phase 1: Processing 17 entities from doc-1e3000b4af96c385d975af2e2b636806 (async: 16)
+INFO: Merged: `Game-2` | 1+1
+INFO: Merged: `Voice Acting` | 1+1
+INFO: Merged: `Rusty_Quartermaster` | 4+1
+INFO: Merged: `Weathered_Harpooner` | 2+1
+INFO: Merged: `Scurvy_Harpooner` | 6+1
+INFO: Merged: `Salty_Cabin-Boy` | 4+1
+INFO:  == LLM cache == saving: default:extract:9ff03cec85ed7b16adbf101765a80f05
+INFO: Phase 2: Processing 16 relations from doc-1e3000b4af96c385d975af2e2b636806 (async: 16)
+INFO:  == LLM cache == saving: default:extract:9a2886c20166dcb1ac5b63b4eb5e3543
+INFO: Phase 3: Updating final 17(17+0) entities and  16 relations from doc-1e3000b4af96c385d975af2e2b636806
+INFO: Completed merging: 17 entities, 0 extra entities, 16 relations
+INFO: Completed processing file 10/33: topic-26.json
+INFO: Extracting stage 17/33: topic-20.json
+INFO: Processing d-id: doc-b24429bc6441c1022c9e6a38dc557705
+INFO:  == LLM cache == saving: default:extract:ffac1281c660f7afe440de0552e04efb
+INFO:  == LLM cache == saving: default:extract:adab07ba071bd2aa58c8cee46000e967
+INFO:  == LLM cache == saving: default:extract:9c400bbe6142b3633b7f816a92d7cb60
+INFO: Chunk 1 of 2 extracted 8 Ent + 8 Rel chunk-976b0b38affc91ce64e175128337fad5
+INFO:  == LLM cache == saving: default:extract:3f67564a8f6172bce6d795eeab15452a
+INFO: Chunk 2 of 2 extracted 15 Ent + 20 Rel chunk-bc812cbe5c40ece6d16b6ab1ca27343d
+INFO: Merging stage 13/33: topic-27.json
+INFO: Phase 1: Processing 21 entities from doc-f4083cc931322e1a12e2fd9dedc83a40 (async: 16)
+INFO: Merged: `Scurvy Harpooner` | 2+1
+INFO: Merged: `Soggy_Marlin` | 1+1
+INFO: Merged: `Rusty_Quartermaster` | 5+1
+INFO:  == LLM cache == saving: default:extract:b6ac3d08634055c21d979805385d308d
+INFO: Chunk 2 of 2 extracted 8 Ent + 8 Rel chunk-183aa200ddb20ce576c2f8949ad2edfb
+INFO: Merging stage 15/33: topic-35.json
+INFO: Phase 1: Processing 15 entities from doc-a5daba517158c3c6464e556ea908ac29 (async: 16)
+INFO: Merged: `Spectral Cutlass` | 1+2
+INFO: Merged: `Weathered_Harpooner` | 3+1
+INFO: Merged: `Jolly_Helmsman` | 1+1
+INFO: Merged: `Salty_Cabin-Boy` | 5+1
+INFO: Merged: `Soggy_Gull` | 1+1
+INFO:  == LLM cache == saving: default:extract:8580b14a7c4b726010beb498190395b7
+INFO: Chunk 1 of 1 extracted 8 Ent + 11 Rel chunk-e9dca83ba0205d167887ed3c0fc9f7ba
+INFO: Merging stage 16/33: topic-36.json
+INFO: Phase 1: Processing 8 entities from doc-e9dca83ba0205d167887ed3c0fc9f7ba (async: 16)
+INFO: Merged: `Lighthouse Hermit` | 1+1
+INFO: Merged: `Walkthrough` | 1+1
+INFO: Merged: `Rusty_Quartermaster` | 6+1
+INFO: Merged: `Soggy_Rigger` | 3+1
+INFO: Merged: `Salty_Cabin-Boy` | 6+1
+INFO:  == LLM cache == saving: default:extract:48059d05f16cd3100a493ad7f55bf4e4
+INFO:  == LLM cache == saving: default:summary:b349bb79be4edc356c9f03a328e18736
+INFO: LLMmrg: `Scurvy_Harpooner` | 7+1
+INFO:  == LLM cache == saving: default:extract:979480b7c5c80f173f966cf06acd418b
+INFO: Chunk 1 of 1 extracted 9 Ent + 9 Rel chunk-b24429bc6441c1022c9e6a38dc557705
+INFO: Merging stage 17/33: topic-20.json
+INFO: Phase 1: Processing 9 entities from doc-b24429bc6441c1022c9e6a38dc557705 (async: 16)
+INFO: Merged: `Drowned Market` | 1+1
+INFO: Merged: `Remaster` | 1+1
+INFO: Merged: `Help & Hints` | 1+1
+INFO: Phase 2: Processing 26 relations from doc-f4083cc931322e1a12e2fd9dedc83a40 (async: 16)
+INFO: Merged: `Scurvy_Harpooner` | 1+1
+INFO: Phase 2: Processing 16 relations from doc-a5daba517158c3c6464e556ea908ac29 (async: 16)
+INFO: Merged: `Scurvy_Harpooner` | 2+1
+INFO: Phase 2: Processing 9 relations from doc-b24429bc6441c1022c9e6a38dc557705 (async: 16)
+INFO: Phase 2: Processing 11 relations from doc-e9dca83ba0205d167887ed3c0fc9f7ba (async: 16)
+INFO: Phase 3: Updating final 9(9+0) entities and  9 relations from doc-b24429bc6441c1022c9e6a38dc557705
+INFO: Completed merging: 9 entities, 0 extra entities, 9 relations
+INFO: Completed processing file 17/33: topic-20.json
+INFO: Extracting stage 18/33: topic-21.json
+INFO: Processing d-id: doc-3f5ed9910f163808d0d6bfa4e9bd3d4f
+INFO: Phase 3: Updating final 8(8+0) entities and  11 relations from doc-e9dca83ba0205d167887ed3c0fc9f7ba
+INFO: Completed merging: 8 entities, 0 extra entities, 11 relations
+INFO: Completed processing file 16/33: topic-36.json
+INFO: Extracting stage 19/33: topic-37.json
+INFO: Processing d-id: doc-9fef00793a255df2a6503deabcb8f95a
+INFO: Phase 3: Updating final 15(15+0) entities and  16 relations from doc-a5daba517158c3c6464e556ea908ac29
+INFO: Completed merging: 15 entities, 0 extra entities, 16 relations
+INFO: Completed processing file 15/33: topic-35.json
+INFO: Extracting stage 20/33: topic-6.json
+INFO: Processing d-id: doc-037d160db1681c63b86a91a23c267b3d
+INFO: Phase 3: Updating final 21(21+0) entities and  26 relations from doc-f4083cc931322e1a12e2fd9dedc83a40
+INFO: Completed merging: 21 entities, 0 extra entities, 26 relations
+INFO: [] Writing graph with 239 nodes, 435 edges
+INFO: In memory DB persist to disk
+INFO: Completed processing file 13/33: topic-27.json
+INFO: Extracting stage 21/33: topic-13.json
+INFO: Processing d-id: doc-3295e205feea8d3b15dc68124078cc5b
+INFO:  == LLM cache == saving: default:extract:9fd7323cca79549c4aa8fba46fcd91e5
+INFO:  == LLM cache == saving: default:extract:d74877b59db162b6dd63eef6f8571f67
+INFO: Chunk 1 of 1 extracted 5 Ent + 6 Rel chunk-3f5ed9910f163808d0d6bfa4e9bd3d4f
+INFO: Merging stage 18/33: topic-21.json
+INFO: Phase 1: Processing 5 entities from doc-3f5ed9910f163808d0d6bfa4e9bd3d4f (async: 16)
+INFO: Phase 2: Processing 6 relations from doc-3f5ed9910f163808d0d6bfa4e9bd3d4f (async: 16)
+INFO: Phase 3: Updating final 5(5+0) entities and  6 relations from doc-3f5ed9910f163808d0d6bfa4e9bd3d4f
+INFO: Completed merging: 5 entities, 0 extra entities, 6 relations
+INFO: Completed processing file 18/33: topic-21.json
+INFO: Extracting stage 22/33: topic-19.json
+INFO: Processing d-id: doc-8000c6408e9a72afbe529fdd4da50be5
+INFO:  == LLM cache == saving: default:extract:5bff0435671f303680b28c6cf5cbed31
+INFO:  == LLM cache == saving: default:extract:04433124c1b48ea6f465cff5242f5de2
+INFO:  == LLM cache == saving: default:extract:ebf4f24807fe22c1f232594ac1fb1d98
+INFO:  == LLM cache == saving: default:extract:08a44879023da9078e009015fa927563
+INFO: Chunk 1 of 1 extracted 12 Ent + 14 Rel chunk-3295e205feea8d3b15dc68124078cc5b
+INFO: Merging stage 21/33: topic-13.json
+INFO: Phase 1: Processing 12 entities from doc-3295e205feea8d3b15dc68124078cc5b (async: 16)
+INFO: Merged: `Crown Of Brine: Reborn` | 1+1
+INFO:  == LLM cache == saving: default:extract:8b467019a45fe2af39c45e1b0f23404c
+INFO: Chunk 1 of 1 extracted 7 Ent + 10 Rel chunk-8000c6408e9a72afbe529fdd4da50be5
+INFO: Merging stage 22/33: topic-19.json
+INFO: Phase 1: Processing 7 entities from doc-8000c6408e9a72afbe529fdd4da50be5 (async: 16)
+INFO: Merged: `Crown Of Brine: Reborn` | 2+1
+INFO: Merged: `Soggy_Marlin` | 2+1
+INFO: Phase 2: Processing 14 relations from doc-3295e205feea8d3b15dc68124078cc5b (async: 16)
+INFO:  == LLM cache == saving: default:extract:d6b9c3092bd73a3c28878ea05edef552
+INFO: Chunk 1 of 2 extracted 28 Ent + 14 Rel chunk-b85128779b41ef91731744d7e22cf01c
+INFO: Phase 3: Updating final 12(12+0) entities and  14 relations from doc-3295e205feea8d3b15dc68124078cc5b
+INFO: Completed merging: 12 entities, 0 extra entities, 14 relations
+INFO: Completed processing file 21/33: topic-13.json
+INFO: Extracting stage 23/33: topic-30.json
+INFO: Processing d-id: doc-8cb40b7b88f8ddedfd10a5ec14d2e48a
+INFO:  == LLM cache == saving: default:extract:750750d3389a4dc4567ac6c394d3269d
+INFO:  == LLM cache == saving: default:extract:7691232bcc73bb5a3daaa73a91a47a3e
+INFO: Chunk 1 of 1 extracted 18 Ent + 15 Rel chunk-9fef00793a255df2a6503deabcb8f95a
+INFO: Merging stage 19/33: topic-37.json
+INFO: Phase 1: Processing 18 entities from doc-9fef00793a255df2a6503deabcb8f95a (async: 16)
+INFO: Merged: `Soggy_Rigger` | 4+1
+INFO: Merged: `Scurvy_Harpooner` | 3+1
+INFO:  == LLM cache == saving: default:extract:a70ada210a02633dcd63e6a2a8a55905
+INFO:  == LLM cache == saving: default:summary:bd41bd4bce04d51723a16776c2349a1e
+INFO: LLMmrg: `Rusty_Quartermaster` | 7+1
+INFO: Phase 2: Processing 10 relations from doc-8000c6408e9a72afbe529fdd4da50be5 (async: 16)
+INFO: Merged: `Rusty_Quartermaster` | 1+1
+INFO: Phase 2: Processing 15 relations from doc-9fef00793a255df2a6503deabcb8f95a (async: 16)
+INFO: Phase 3: Updating final 7(7+0) entities and  10 relations from doc-8000c6408e9a72afbe529fdd4da50be5
+INFO: Completed merging: 7 entities, 0 extra entities, 10 relations
+INFO: Completed processing file 22/33: topic-19.json
+INFO: Extracting stage 24/33: topic-40.json
+INFO: Processing d-id: doc-8ec0190b5f2a551e2f44389a925b07b6
+INFO: Phase 3: Updating final 19(18+1) entities and  15 relations from doc-9fef00793a255df2a6503deabcb8f95a
+INFO: Completed merging: 18 entities, 1 extra entities, 15 relations
+INFO: Completed processing file 19/33: topic-37.json
+INFO: Extracting stage 25/33: topic-15.json
+INFO: Processing d-id: doc-b5d01af907c9787e5a8e8eed592e67de
+INFO:  == LLM cache == saving: default:extract:39b0b6f1f5f8ebdb0dbc4c3ee6d2da47
+INFO:  == LLM cache == saving: default:extract:d2afa5231beee6cdddb2b03fb31e2ea5
+INFO: Chunk 1 of 2 extracted 0 Ent + 0 Rel chunk-9668ea4bb908ae24d24f143dcb580ba0
+INFO:  == LLM cache == saving: default:extract:8d76f843b7b96d8db67769ed13293189
+INFO:  == LLM cache == saving: default:extract:d6149f142005a0b3c1d16f69fcb134d9
+INFO:  == LLM cache == saving: default:extract:36170be03df692e58f76727fcab22c34
+INFO: Chunk 1 of 1 extracted 10 Ent + 10 Rel chunk-8cb40b7b88f8ddedfd10a5ec14d2e48a
+INFO: Merging stage 23/33: topic-30.json
+INFO: Phase 1: Processing 10 entities from doc-8cb40b7b88f8ddedfd10a5ec14d2e48a (async: 16)
+INFO: Merged: `Modded Version` | 1+1
+INFO: Merged: `Scurvy_Harpooner` | 4+1
+INFO: Phase 2: Processing 10 relations from doc-8cb40b7b88f8ddedfd10a5ec14d2e48a (async: 16)
+INFO: Phase 3: Updating final 10(10+0) entities and  10 relations from doc-8cb40b7b88f8ddedfd10a5ec14d2e48a
+INFO: Completed merging: 10 entities, 0 extra entities, 10 relations
+INFO: Completed processing file 23/33: topic-30.json
+INFO: Extracting stage 26/33: topic-17.json
+INFO: Processing d-id: doc-203216f736cbad13b535b4922d732d30
+INFO:  == LLM cache == saving: default:extract:ce774f563bd4c64cbea9f8ac9cbfea60
+INFO: Chunk 2 of 2 extracted 7 Ent + 8 Rel chunk-b5d01af907c9787e5a8e8eed592e67de
+INFO: Merging stage 25/33: topic-15.json
+INFO: Phase 1: Processing 7 entities from doc-b5d01af907c9787e5a8e8eed592e67de (async: 16)
+INFO: Merged: `Crown Of Brine: Reborn` | 3+1
+INFO: Merged: `Remaster` | 2+1
+INFO: Merged: `Voice Acting` | 2+1
+INFO: Phase 2: Processing 8 relations from doc-b5d01af907c9787e5a8e8eed592e67de (async: 16)
+INFO:  == LLM cache == saving: default:extract:dcdd780b49fbced6b981b7730f2ebdf7
+INFO: Phase 3: Updating final 7(7+0) entities and  8 relations from doc-b5d01af907c9787e5a8e8eed592e67de
+INFO: Completed merging: 7 entities, 0 extra entities, 8 relations
+INFO: Completed processing file 25/33: topic-15.json
+INFO: Extracting stage 27/33: topic-33.json
+INFO: Processing d-id: doc-0a28ded097a2d7c8624ac3f673c2161a
+INFO:  == LLM cache == saving: default:extract:4014738d5bbc8a73b721aa200acdc3aa
+INFO: Chunk 2 of 2 extracted 32 Ent + 43 Rel chunk-a5f60b93dada88f2228001d73ce3ec31
+INFO: Merging stage 20/33: topic-6.json
+INFO: Phase 1: Processing 60 entities from doc-037d160db1681c63b86a91a23c267b3d (async: 16)
+INFO: Merged: `Community Guidelines` | 1+1
+INFO: Merged: `Site Feedback` | 1+1
+INFO: Merged: `Discourse` | 1+1
+INFO: Phase 2: Processing 54 relations from doc-037d160db1681c63b86a91a23c267b3d (async: 16)
+INFO:  == LLM cache == saving: default:extract:afb59be6f0e0aacfd5a3459023a2e6a6
+INFO: Chunk 1 of 1 extracted 13 Ent + 17 Rel chunk-8ec0190b5f2a551e2f44389a925b07b6
+INFO: Merging stage 24/33: topic-40.json
+INFO: Phase 1: Processing 13 entities from doc-8ec0190b5f2a551e2f44389a925b07b6 (async: 16)
+INFO: Merged: `Voice-Acting` | 1+1
+INFO: Merged: `Walkthrough` | 2+1
+INFO: Phase 2: Processing 17 relations from doc-8ec0190b5f2a551e2f44389a925b07b6 (async: 16)
+INFO: Phase 3: Updating final 15(13+2) entities and  17 relations from doc-8ec0190b5f2a551e2f44389a925b07b6
+INFO: Completed merging: 13 entities, 2 extra entities, 17 relations
+INFO: Completed processing file 24/33: topic-40.json
+INFO: Extracting stage 28/33: topic-32.json
+INFO: Processing d-id: doc-f9c686196637ac63107dfb19abf0492f
+INFO:  == LLM cache == saving: default:extract:1e9bdbc8d64bb3f792661b8bb6458ea8
+INFO: Phase 3: Updating final 60(60+0) entities and  54 relations from doc-037d160db1681c63b86a91a23c267b3d
+INFO: Completed merging: 60 entities, 0 extra entities, 54 relations
+INFO: Completed processing file 20/33: topic-6.json
+INFO: Extracting stage 29/33: topic-24.json
+INFO: Processing d-id: doc-a2fe33f5c7a4988acf2761b9deccbfbc
+INFO:  == LLM cache == saving: default:extract:afde7a1ce94c0335fb01f36cba8fc83d
+INFO:  == LLM cache == saving: default:extract:ee0f1b09bdce0bbafa3d4e40337fdb85
+INFO: Chunk 1 of 1 extracted 9 Ent + 11 Rel chunk-203216f736cbad13b535b4922d732d30
+INFO: Merging stage 26/33: topic-17.json
+INFO: Phase 1: Processing 9 entities from doc-203216f736cbad13b535b4922d732d30 (async: 16)
+INFO: Merged: `Softlock Bug` | 1+1
+INFO: Merged: `Pirate-Hopeful Protagonist` | 1+1
+INFO: Merged: `Amiga` | 1+1
+INFO:  == LLM cache == saving: default:extract:2f89d4c6995f7cb53a2dfcc5f18d33c8
+INFO: Chunk 1 of 1 extracted 7 Ent + 7 Rel chunk-0a28ded097a2d7c8624ac3f673c2161a
+INFO: Merging stage 27/33: topic-33.json
+INFO: Phase 1: Processing 7 entities from doc-0a28ded097a2d7c8624ac3f673c2161a (async: 16)
+INFO: Merged: `Softlock` | 1+1
+INFO: Merged: `Voice Acting` | 3+1
+INFO: Phase 2: Processing 11 relations from doc-203216f736cbad13b535b4922d732d30 (async: 16)
+INFO: Merged: `Pirate-Hopeful Protagonist`~`Softlock Bug` | 1+1
+INFO: Phase 2: Processing 7 relations from doc-0a28ded097a2d7c8624ac3f673c2161a (async: 16)
+INFO: Merged: `Softlock`~`Voice Acting` | 1+1
+INFO: Phase 3: Updating final 7(7+0) entities and  7 relations from doc-0a28ded097a2d7c8624ac3f673c2161a
+INFO: Completed merging: 7 entities, 0 extra entities, 7 relations
+INFO: Completed processing file 27/33: topic-33.json
+INFO: Extracting stage 30/33: topic-4.json
+INFO: Processing d-id: doc-f2b36ca183906a0b7771d01fac5b264e
+INFO: Phase 3: Updating final 9(9+0) entities and  11 relations from doc-203216f736cbad13b535b4922d732d30
+INFO: Completed merging: 9 entities, 0 extra entities, 11 relations
+INFO: Completed processing file 26/33: topic-17.json
+INFO: Extracting stage 31/33: topic-34.json
+INFO: Processing d-id: doc-2f8ce44bf8ef408e89d00a2f2439e6bc
+INFO:  == LLM cache == saving: default:extract:312bcd535b95cd9b14cc422036ea2f2d
+INFO:  == LLM cache == saving: default:extract:f6b87afa2a6164169882e68e5b5d4a9a
+INFO: Chunk 1 of 1 extracted 11 Ent + 12 Rel chunk-f9c686196637ac63107dfb19abf0492f
+INFO: Merging stage 28/33: topic-32.json
+INFO: Phase 1: Processing 11 entities from doc-f9c686196637ac63107dfb19abf0492f (async: 16)
+INFO: Merged: `Game-1` | 1+1
+INFO: Phase 2: Processing 12 relations from doc-f9c686196637ac63107dfb19abf0492f (async: 16)
+INFO: Phase 3: Updating final 12(11+1) entities and  12 relations from doc-f9c686196637ac63107dfb19abf0492f
+INFO: Completed merging: 11 entities, 1 extra entities, 12 relations
+INFO: Completed processing file 28/33: topic-32.json
+INFO: Extracting stage 32/33: topic-23.json
+INFO: Processing d-id: doc-d3bde729c55ddd1bac32df5200454efc
+INFO:  == LLM cache == saving: default:extract:cf9db4b5437881cc88ed234251ba3aa0
+WARNING: chunk-f2b36ca183906a0b7771d01fac5b264e: LLM output format error; found 5/4 fields on ENTITY `FAQ Guidelines` @ `Civilized Place For Public Discussion`
+WARNING: chunk-f2b36ca183906a0b7771d01fac5b264e: LLM output format error; found 5/4 fields on ENTITY `Discussion Improvement` @ `FAQ Guidelines`
+WARNING: chunk-f2b36ca183906a0b7771d01fac5b264e: LLM output format error; found 5/4 fields on ENTITY `Disagreement Etiquette` @ `FAQ Guidelines`
+WARNING: chunk-f2b36ca183906a0b7771d01fac5b264e: LLM output format error; found 5/4 fields on ENTITY `Participation Importance` @ `FAQ Guidelines`
+WARNING: chunk-f2b36ca183906a0b7771d01fac5b264e: LLM output format error; found 5/4 fields on ENTITY `Discourse Tools` @ `Participation Importance`
+WARNING: chunk-f2b36ca183906a0b7771d01fac5b264e: LLM output format error; found 5/4 fields on ENTITY `Problem Flagging` @ `Moderator Authority`
+WARNING: chunk-f2b36ca183906a0b7771d01fac5b264e: LLM output format error; found 5/4 fields on ENTITY `Civility Requirement` @ `FAQ Guidelines`
+WARNING: chunk-f2b36ca183906a0b7771d01fac5b264e: LLM output format error; found 5/4 fields on ENTITY `Forum Cleanliness` @ `FAQ Guidelines`
+WARNING: chunk-f2b36ca183906a0b7771d01fac5b264e: LLM output format error; found 5/4 fields on ENTITY `Content Ownership` @ `FAQ Guidelines`
+WARNING: chunk-f2b36ca183906a0b7771d01fac5b264e: LLM output format error; found 5/4 fields on ENTITY `Moderator Team` @ `Moderator Authority`
+WARNING: chunk-f2b36ca183906a0b7771d01fac5b264e: LLM output format error; found 5/4 fields on ENTITY `Site Feedback Topic` @ `Moderator Team`
+INFO:  == LLM cache == saving: default:extract:d46fdc20edcd7c765724a17b818db043
+INFO:  == LLM cache == saving: default:extract:8870c819e4f9e36c964d89be2fa46e69
+INFO: Chunk 1 of 1 extracted 15 Ent + 2 Rel chunk-f2b36ca183906a0b7771d01fac5b264e
+INFO: Merging stage 30/33: topic-4.json
+INFO: Phase 1: Processing 15 entities from doc-f2b36ca183906a0b7771d01fac5b264e (async: 16)
+INFO: Merged: `Staff` | 1+1
+INFO: Phase 2: Processing 2 relations from doc-f2b36ca183906a0b7771d01fac5b264e (async: 16)
+INFO: Phase 3: Updating final 15(15+0) entities and  2 relations from doc-f2b36ca183906a0b7771d01fac5b264e
+INFO: Completed merging: 15 entities, 0 extra entities, 2 relations
+INFO: Completed processing file 30/33: topic-4.json
+INFO: Extracting stage 33/33: topic-16.json
+INFO: Processing d-id: doc-1ab9843b6bce34731001dbe1823ad79d
+INFO:  == LLM cache == saving: default:extract:3a8a05d4bda5f680f62021c4de66a7fb
+INFO: Chunk 1 of 2 extracted 12 Ent + 13 Rel chunk-85c16fae2334d444c9212b6502181b3d
+INFO:  == LLM cache == saving: default:extract:b1aacc32fd400d3fcbe4bc8baa7db2d9
+INFO:  == LLM cache == saving: default:extract:de7c417464693f237a3afb270b7200d5
+INFO:  == LLM cache == saving: default:extract:ee35891579ba1d197bdd1c80baf61742
+INFO:  == LLM cache == saving: default:extract:ebc16ae46bfe95340ea90b8780df895e
+INFO: Chunk 1 of 1 extracted 7 Ent + 8 Rel chunk-d3bde729c55ddd1bac32df5200454efc
+INFO: Merging stage 32/33: topic-23.json
+INFO: Phase 1: Processing 7 entities from doc-d3bde729c55ddd1bac32df5200454efc (async: 16)
+INFO: Merged: `Soggy_Gull` | 2+1
+INFO: Merged: `Fan Translations` | 1+1
+INFO: Phase 2: Processing 8 relations from doc-d3bde729c55ddd1bac32df5200454efc (async: 16)
+INFO: Phase 3: Updating final 7(7+0) entities and  8 relations from doc-d3bde729c55ddd1bac32df5200454efc
+INFO: Completed merging: 7 entities, 0 extra entities, 8 relations
+INFO: Completed processing file 32/33: topic-23.json
+INFO:  == LLM cache == saving: default:extract:bab94c9d8e56b129cf72a582c427e4fe
+INFO: Chunk 2 of 2 extracted 8 Ent + 12 Rel chunk-07f4ec6e0ca4202e8d8347800628e9b8
+INFO: Merging stage 31/33: topic-34.json
+INFO: Phase 1: Processing 17 entities from doc-2f8ce44bf8ef408e89d00a2f2439e6bc (async: 16)
+INFO: Merged: `Doubloon SDK` | 1+2
+INFO: Merged: `Game-1` | 2+2
+INFO: Merged: `Game-2` | 2+2
+INFO: Merged: `Rusty Quartermaster` | 1+1
+INFO: Merged: `Briny Privateer` | 1+1
+INFO: Merged: `Salty Cabin-Boy` | 2+1
+INFO: Merged: `jolly_Helmsman` | 1+1
+INFO:  == LLM cache == saving: default:extract:4131e47aa670f513481b78546f122cd2
+INFO: Chunk 1 of 1 extracted 7 Ent + 9 Rel chunk-a2fe33f5c7a4988acf2761b9deccbfbc
+INFO: Merging stage 29/33: topic-24.json
+INFO: Phase 1: Processing 7 entities from doc-a2fe33f5c7a4988acf2761b9deccbfbc (async: 16)
+INFO: Merged: `Walkthrough` | 3+1
+INFO: Merged: `Jolly_Helmsman` | 2+1
+INFO: Merged: `Harbor Scene` | 1+1
+INFO: Phase 2: Processing 25 relations from doc-2f8ce44bf8ef408e89d00a2f2439e6bc (async: 16)
+INFO: Phase 2: Processing 9 relations from doc-a2fe33f5c7a4988acf2761b9deccbfbc (async: 16)
+INFO: Phase 3: Updating final 7(7+0) entities and  9 relations from doc-a2fe33f5c7a4988acf2761b9deccbfbc
+INFO: Completed merging: 7 entities, 0 extra entities, 9 relations
+INFO: Completed processing file 29/33: topic-24.json
+INFO:  == LLM cache == saving: default:extract:2e5615a645e0324af3135a506c027322
+INFO: Phase 3: Updating final 17(17+0) entities and  25 relations from doc-2f8ce44bf8ef408e89d00a2f2439e6bc
+INFO: Completed merging: 17 entities, 0 extra entities, 25 relations
+INFO: Completed processing file 31/33: topic-34.json
+INFO:  == LLM cache == saving: default:extract:2df8bf08cc8379a3cf5e40e65398450d
+INFO: Chunk 1 of 2 extracted 5 Ent + 5 Rel chunk-3a5bca56008536f3778ac77f556b229e
+INFO:  == LLM cache == saving: default:extract:4ca7db072d01495d92ca3e1220b79eec
+INFO:  == LLM cache == saving: default:extract:006a4cee67a22ffdc14ba301e1115fd1
+INFO: Chunk 2 of 2 extracted 16 Ent + 17 Rel chunk-ae96fd9a28374f12100f276b1519d9c8
+INFO: Merging stage 33/33: topic-16.json
+INFO: Phase 1: Processing 21 entities from doc-1ab9843b6bce34731001dbe1823ad79d (async: 16)
+INFO: Merged: `Lucky Cooper` | 1+1
+INFO: Merged: `Soggy Rigger` | 2+1
+INFO: Merged: `Scurvy Harpooner` | 3+1
+INFO: Merged: `Localization` | 1+1
+INFO: Phase 2: Processing 22 relations from doc-1ab9843b6bce34731001dbe1823ad79d (async: 16)
+INFO: Phase 3: Updating final 21(21+0) entities and  22 relations from doc-1ab9843b6bce34731001dbe1823ad79d
+INFO: Completed merging: 21 entities, 0 extra entities, 22 relations
+INFO: Completed processing file 33/33: topic-16.json
+INFO: Enqueued document processing pipeline stopped
+INFO: [] Writing graph with 429 nodes, 663 edges
+INFO: In memory DB persist to disk
+Pass 3: Re-asserting structural entity types (concurrency=8)...
+INFO: Entity Edit: `Help & Hints` successfully updated
+INFO: Entity Edit: `Staff` successfully updated
+  (of 78 successes, 76 were already-correct skips; 2 required an aedit_entity write)
+INFO: [] Writing graph with 429 nodes, 663 edges
+Pass 3 complete: 78/78 structural entities re-asserted to deterministic types.
+Pass 4: Canonicalizing entity-name dupes (case + paraphrase)...
+  Pass 4a: 22 case-fold buckets to merge (25 source nodes will be collapsed)
+INFO: Entity Merge: Updated target 'remaster'
+INFO: Entity Merge: updatign 21 relations
+INFO: Entity Merge: updating relation `remaster`~`Fog Of Memory Mechanic`
+INFO: Entity Merge: updating relation `remaster`~`Hint System Update`
+INFO: Entity Merge: updating relation `remaster`~`Salty_Cabin-Boy`
+INFO: Entity Merge: updating relation `remaster`~`Soggy_Rigger`
+INFO: Entity Merge: updating relation `remaster`~`Soggy_Marlin`
+INFO: Entity Merge: updating relation `remaster`~`Fan Event`
+INFO: Entity Merge: updating relation `remaster`~`Crown Of Brine III: Tides Of Forgetting`
+INFO: Entity Merge: updating relation `remaster`~`Community Panel`
+INFO: Entity Merge: updating relation `remaster`~`Audio Cues`
+INFO: Entity Merge: updating relation `remaster`~`Crown Of Brine: Reborn`
+INFO: Entity Merge: updating relation `remaster`~`Localization`
+INFO: Entity Merge: updating relation `remaster`~`Crown of Brine: Reborn crashes on Android during the lighthouse arc`
+INFO: Entity Merge: updating relation `remaster`~`Doubloon SDK fails to load sprites`
+INFO: Entity Merge: updating relation `remaster`~`Untranslated dialogue trees in Crown of Brine: Reborn`
+INFO: Entity Merge: updating relation `remaster`~`Can't get past the Drowned Market — any tips?`
+INFO: Entity Merge: updating relation `remaster`~`Softlock when interacting with the pirate-hopeful protagonist (2)`
+INFO: Entity Merge: updating relation `remaster`~`Untranslated music stems in Crown of Brine II: The Phantom Galleon`
+INFO: Entity Merge: updating relation `remaster`~`Doubloon SDK update — what's new`
+INFO: Entity Merge: updating relation `remaster`~`Embroidered the spectral cutlass — finished piece`
+INFO: Entity Merge: updating relation `remaster`~`Reminder: tagging convention for `solved``
+INFO: Entity Merge: updating relation `remaster`~`Mark your calendars: fan event for Crown of Brine III: Tides of Forgetting`
+INFO: Entity Merge: 21 relation chunk tracking records updated
+INFO: Entity Merge: 21 relations in vdb updated
+INFO: Entity Merge: updating vdb `remaster`
+INFO: Entity Merge: find 3 chunks related to 'remaster'
+INFO: Entity Merge: deleting 'Remaster' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'remaster'
+INFO: Entity Merge: Updated target 'game-2'
+INFO: Entity Merge: updatign 9 relations
+INFO: Entity Merge: updating relation `game-2`~`Drowned Market`
+INFO: Entity Merge: updating relation `game-2`~`Softlock`
+INFO: Entity Merge: updating relation `game-2`~`Music Stem Loading Issue`
+INFO: Entity Merge: updating relation `game-2`~`Music Stems Loading Issue`
+INFO: Entity Merge: updating relation `game-2`~`Crown of Brine: Reborn crashes on Android during the lighthouse arc`
+INFO: Entity Merge: updating relation `game-2`~`Localization notes for Chapter 3: Below the Brine`
+INFO: Entity Merge: updating relation `game-2`~`Painted miniature of the Drowned Market`
+INFO: Entity Merge: updating relation `game-2`~`Softlock when interacting with the lighthouse hermit`
+INFO: Entity Merge: updating relation `game-2`~`Doubloon SDK fails to load music stems`
+INFO: Entity Merge: 9 relation chunk tracking records updated
+INFO: Entity Merge: 9 relations in vdb updated
+INFO: Entity Merge: updating vdb `game-2`
+INFO: Entity Merge: find 4 chunks related to 'game-2'
+INFO: Entity Merge: deleting 'Game-2' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'game-2'
+INFO: Entity Merge: Updated target 'tide-engine'
+INFO: Entity Merge: updatign 5 relations
+INFO: Entity Merge: updating relation `tide-engine`~`Dynamic Lighting Effects`
+INFO: Entity Merge: updating relation `tide-engine`~`Weather Effects`
+INFO: Entity Merge: updating relation `tide-engine`~`Particle Effects`
+INFO: Entity Merge: updating relation `tide-engine`~`Crash On Android`
+INFO: Entity Merge: updating relation `tide-engine`~`Crown of Brine: Reborn crashes on Android during the lighthouse arc`
+INFO: Entity Merge: 5 relation chunk tracking records updated
+INFO: Entity Merge: 5 relations in vdb updated
+INFO: Entity Merge: updating vdb `tide-engine`
+INFO: Entity Merge: find 1 chunks related to 'tide-engine'
+INFO: Entity Merge: deleting 'Tide-Engine' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'tide-engine'
+INFO: Entity Merge: Updated target 'salty_cabin-boy'
+INFO: Entity Merge: updatign 31 relations
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Tagging Convention Reminder`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Spectral Cutlass`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Alternative Weapons`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`No-the Spectral Cutlass Challenge`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Save Corruption After Decoding The Salt-Bone Amulet`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Saurvy_Harpooner`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Weathered_Harpooner`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`iOS`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Fan Event`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Softlock`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Modded Environment`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Embroidered Spectral Cutlass`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Fan-Art`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`remaster`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`jolly_Helmsman`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Music Stems Loading Issue`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Community Tool`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Doubloon SDK`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Crown of Brine: Reborn crashes on Android during the lighthouse arc`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Doubloon SDK fails to load sprites`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`No-the spectral cutlass challenge — feasible?`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Softlock when interacting with the pirate-hopeful protagonist (2)`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Painted miniature of the Drowned Market`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Mark your calendars: fan event for Crown of Brine: Reborn (2)`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Softlock when interacting with the lighthouse hermit`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Doubloon SDK fails to load music stems`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Embroidered the spectral cutlass — finished piece`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`My fan-art of the lighthouse hermit`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Reminder: tagging convention for `solved``
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Mark your calendars: fan event for Crown of Brine III: Tides of Forgetting`
+INFO: Entity Merge: updating relation `salty_cabin-boy`~`Save corruption after decodeing the salt-bone amulet`
+INFO: Entity Merge: 31 relation chunk tracking records updated
+INFO: Entity Merge: 31 relations in vdb updated
+INFO: Entity Merge: updating vdb `salty_cabin-boy`
+INFO: Entity Merge: find 8 chunks related to 'salty_cabin-boy'
+INFO: Entity Merge: deleting 'Salty_Cabin-Boy' from KG and vdb
+INFO: Entity Merge: deleting 'salty_Cabin-Boy' from KG and vdb
+INFO: Entity Merge: successfully merged 2 entities into 'salty_cabin-boy'
+INFO: Entity Merge: Updated target 'jolly_helmsman'
+INFO: Entity Merge: updatign 20 relations
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Tagging Convention Reminder`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Embroidered Spectral Cutlass`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Harbor-Master`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Glitch Near Dock`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Walkthrough`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Briny_Privateer`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Chapter 1: Salt and Sorrow`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Music Stems Loading Issue`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Audio Workflow`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Doubloon SDK`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`salty_cabin-boy`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Crown of Brine: Reborn crashes on Android during the lighthouse arc`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Doubloon SDK fails to load sprites`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Softlock when interacting with the pirate-hopeful protagonist`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Can't get past the Drowned Market — any tips?`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`My fan-art of the harbor-master`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Doubloon SDK fails to load music stems`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Embroidered the spectral cutlass — finished piece`
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Reminder: tagging convention for `solved``
+INFO: Entity Merge: updating relation `jolly_helmsman`~`Walkthrough request — Chapter 1: Salt and Sorrow`
+INFO: Entity Merge: 20 relation chunk tracking records updated
+INFO: Entity Merge: 20 relations in vdb updated
+INFO: Entity Merge: updating vdb `jolly_helmsman`
+INFO: Entity Merge: find 5 chunks related to 'jolly_helmsman'
+INFO: Entity Merge: deleting 'Jolly_Helmsman' from KG and vdb
+INFO: Entity Merge: deleting 'jolly_Helmsman' from KG and vdb
+INFO: Entity Merge: successfully merged 2 entities into 'jolly_helmsman'
+INFO: Entity Merge: Updated target 'rusty_quartermaster'
+INFO: Entity Merge: updatign 28 relations
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Glitchless Category`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Parry Timing`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Airplane Mode`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`No-the Spectral Cutlass Challenge`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Focus Shard`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Save Corruption Bug`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Race: Who Can Appease The Parrot's Whistle Fastest?`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Parrot's Whistle`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Softlock`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Fan-Art`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Lighthouse Cipher`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Duplicate Thread Issue`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Brig Escape`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Moderators`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Fan Event For Crown Of Brine: Reborn`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Control Panel`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Crown of Brine: Reborn crashes on Android during the lighthouse arc`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Untranslated dialogue trees in Crown of Brine: Reborn`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`No-the spectral cutlass challenge — feasible?`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Mark your calendars: fan event for Crown of Brine: Reborn`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Softlock when interacting with the lighthouse hermit`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Hint needed: the lighthouse cipher`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Save corruption after pacifying the parrot's whistle`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Glitchless category for Crown of Brine`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Doubloon SDK fails to load music stems`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`My fan-art of the lighthouse hermit`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Walkthrough request — the brig escape`
+INFO: Entity Merge: updating relation `rusty_quartermaster`~`Race: who can appease the parrot's whistle fastest?`
+INFO: Entity Merge: 28 relation chunk tracking records updated
+INFO: Entity Merge: 28 relations in vdb updated
+INFO: Entity Merge: updating vdb `rusty_quartermaster`
+INFO: Entity Merge: find 9 chunks related to 'rusty_quartermaster'
+INFO: Entity Merge: deleting 'Rusty_Quartermaster' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'rusty_quartermaster'
+INFO: Entity Merge: Updated target 'soggy_gull'
+INFO: Entity Merge: updatign 13 relations
+INFO: Entity Merge: updating relation `soggy_gull`~`Tagging Convention Reminder`
+INFO: Entity Merge: updating relation `soggy_gull`~`Embroidered Spectral Cutlass`
+INFO: Entity Merge: updating relation `soggy_gull`~`Untranslated Music Stems`
+INFO: Entity Merge: updating relation `soggy_gull`~`Music Stems Translations Patch`
+INFO: Entity Merge: updating relation `soggy_gull`~`Deep-Sea Ballads`
+INFO: Entity Merge: updating relation `soggy_gull`~`Fan Translations`
+INFO: Entity Merge: updating relation `soggy_gull`~`Doubloon SDK fails to load sprites`
+INFO: Entity Merge: updating relation `soggy_gull`~`Untranslated dialogue trees in Crown of Brine: Reborn`
+INFO: Entity Merge: updating relation `soggy_gull`~`Painted miniature of the Drowned Market`
+INFO: Entity Merge: updating relation `soggy_gull`~`Untranslated music stems in Crown of Brine II: The Phantom Galleon`
+INFO: Entity Merge: updating relation `soggy_gull`~`Glitchless category for Crown of Brine`
+INFO: Entity Merge: updating relation `soggy_gull`~`Embroidered the spectral cutlass — finished piece`
+INFO: Entity Merge: updating relation `soggy_gull`~`Reminder: tagging convention for `solved``
+INFO: Entity Merge: 13 relation chunk tracking records updated
+INFO: Entity Merge: 13 relations in vdb updated
+INFO: Entity Merge: updating vdb `soggy_gull`
+INFO: Entity Merge: find 3 chunks related to 'soggy_gull'
+INFO: Entity Merge: deleting 'Soggy_Gull' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'soggy_gull'
+INFO: Entity Merge: Updated target 'soggy_marlin'
+INFO: Entity Merge: updatign 14 relations
+INFO: Entity Merge: updating relation `soggy_marlin`~`Fan Event`
+INFO: Entity Merge: updating relation `soggy_marlin`~`Lighthouse Wave Chart`
+INFO: Entity Merge: updating relation `soggy_marlin`~`Island Geography`
+INFO: Entity Merge: updating relation `soggy_marlin`~`Lighthouse Cipher`
+INFO: Entity Merge: updating relation `soggy_marlin`~`Moderators`
+INFO: Entity Merge: updating relation `soggy_marlin`~`Fan Event For Crown Of Brine: Reborn`
+INFO: Entity Merge: updating relation `soggy_marlin`~`Crown Of Brine: Reborn`
+INFO: Entity Merge: updating relation `soggy_marlin`~`remaster`
+INFO: Entity Merge: updating relation `soggy_marlin`~`Doubloon SDK fails to load sprites`
+INFO: Entity Merge: updating relation `soggy_marlin`~`Softlock when interacting with the pirate-hopeful protagonist`
+INFO: Entity Merge: updating relation `soggy_marlin`~`Mark your calendars: fan event for Crown of Brine: Reborn`
+INFO: Entity Merge: updating relation `soggy_marlin`~`Hint needed: the lighthouse cipher`
+INFO: Entity Merge: updating relation `soggy_marlin`~`Doubloon SDK update — what's new`
+INFO: Entity Merge: updating relation `soggy_marlin`~`Mark your calendars: fan event for Crown of Brine III: Tides of Forgetting`
+INFO: Entity Merge: 14 relation chunk tracking records updated
+INFO: Entity Merge: 14 relations in vdb updated
+INFO: Entity Merge: updating vdb `soggy_marlin`
+INFO: Entity Merge: find 3 chunks related to 'soggy_marlin'
+INFO: Entity Merge: deleting 'Soggy_Marlin' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'soggy_marlin'
+INFO: Entity Merge: Updated target 'voice-acting'
+INFO: Entity Merge: updatign 12 relations
+INFO: Entity Merge: updating relation `voice-acting`~`Fan Fiction`
+INFO: Entity Merge: updating relation `voice-acting`~`Salty Cabin-Boy`
+INFO: Entity Merge: updating relation `voice-acting`~`Briny Privateer`
+INFO: Entity Merge: updating relation `voice-acting`~`Drowned Market`
+INFO: Entity Merge: updating relation `voice-acting`~`Campfire Scene`
+INFO: Entity Merge: updating relation `voice-acting`~`Chapter 1: Salt and Sorrow`
+INFO: Entity Merge: updating relation `voice-acting`~`Untranslated dialogue trees in Crown of Brine: Reborn`
+INFO: Entity Merge: updating relation `voice-acting`~`Painted miniature of the Drowned Market`
+INFO: Entity Merge: updating relation `voice-acting`~`Softlock when interacting with the lighthouse hermit`
+INFO: Entity Merge: updating relation `voice-acting`~`Save corruption after pacifying the parrot's whistle`
+INFO: Entity Merge: updating relation `voice-acting`~`Softlock when interacting with the disgraced quartermaster`
+INFO: Entity Merge: updating relation `voice-acting`~`Walkthrough request — Chapter 1: Salt and Sorrow`
+INFO: Entity Merge: 12 relation chunk tracking records updated
+INFO: Entity Merge: 12 relations in vdb updated
+INFO: Entity Merge: updating vdb `voice-acting`
+INFO: Entity Merge: find 2 chunks related to 'voice-acting'
+INFO: Entity Merge: deleting 'Voice-Acting' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'voice-acting'
+INFO: Entity Merge: Updated target 'localization'
+INFO: Entity Merge: updatign 10 relations
+INFO: Entity Merge: updating relation `localization`~`Untranslated Dialogue Trees`
+INFO: Entity Merge: updating relation `localization`~`Side Quests`
+INFO: Entity Merge: updating relation `localization`~`Puzzle`
+INFO: Entity Merge: updating relation `localization`~`Visual Hints`
+INFO: Entity Merge: updating relation `localization`~`Chapter`
+INFO: Entity Merge: updating relation `localization`~`Reading Directions`
+INFO: Entity Merge: updating relation `localization`~`remaster`
+INFO: Entity Merge: updating relation `localization`~`Untranslated dialogue trees in Crown of Brine: Reborn`
+INFO: Entity Merge: updating relation `localization`~`Localization notes for Chapter 3: Below the Brine`
+INFO: Entity Merge: updating relation `localization`~`Can't get past the Drowned Market — any tips?`
+INFO: Entity Merge: 10 relation chunk tracking records updated
+INFO: Entity Merge: 10 relations in vdb updated
+INFO: Entity Merge: updating vdb `localization`
+INFO: Entity Merge: find 2 chunks related to 'localization'
+INFO: Entity Merge: deleting 'Localization' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'localization'
+    Pass 4a progress: 10/22  (10 ok, 0 failed)  elapsed=0s  ETA=0s
+INFO: Entity Merge: Updated target 'scurvy_harpooner'
+INFO: Entity Merge: updatign 37 relations
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Tagging Convention Reminder`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Glitchless Category`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Environmental Control`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Shadow Assassins`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Earphones`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`No-the Spectral Cutlass Challenge`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Save Corruption Bug`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Weathered_Harpooner`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`iOS`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Save Corruption After Decoding The Salt-Bone Amulet`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Race: Who Can Appease The Parrot's Whistle Fastest?`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Parrot's Whistle`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Softlock`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Tide Chart`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Fan-Art`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Lighthouse Cipher`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Embroidered Spectral Cutlass`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Brig Escape`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Modded Version`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Audio Dropout`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Untranslated dialogue trees in Crown of Brine: Reborn`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Localization notes for Chapter 3: Below the Brine`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`No-the spectral cutlass challenge — feasible?`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Mark your calendars: fan event for Crown of Brine: Reborn (2)`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Softlock when interacting with the lighthouse hermit`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Hint needed: the lighthouse cipher`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Embroidered the lost map — finished piece`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Save corruption after pacifying the parrot's whistle`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Audio dropout in the Forgotten Lighthouse on C64`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Glitchless category for Crown of Brine`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Softlock when interacting with the disgraced quartermaster`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Embroidered the spectral cutlass — finished piece`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`My fan-art of the lighthouse hermit`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Walkthrough request — the brig escape`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Reminder: tagging convention for `solved``
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Race: who can appease the parrot's whistle fastest?`
+INFO: Entity Merge: updating relation `scurvy_harpooner`~`Save corruption after decodeing the salt-bone amulet`
+INFO: Entity Merge: 37 relation chunk tracking records updated
+INFO: Entity Merge: 37 relations in vdb updated
+INFO: Entity Merge: updating vdb `scurvy_harpooner`
+INFO: Entity Merge: find 12 chunks related to 'scurvy_harpooner'
+INFO: Entity Merge: deleting 'Scurvy_Harpooner' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'scurvy_harpooner'
+INFO: Entity Merge: Updated target 'soggy_rigger'
+INFO: Entity Merge: updatign 19 relations
+INFO: Entity Merge: updating relation `soggy_rigger`~`Tagging Convention Reminder`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Agility Upgrade`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Quickstrike Combo`
+INFO: Entity Merge: updating relation `soggy_rigger`~`No-the Spectral Cutlass Challenge`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Fan Event`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Fan-Art`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Brig Escape`
+INFO: Entity Merge: updating relation `soggy_rigger`~`remaster`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Untranslated dialogue trees in Crown of Brine: Reborn`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Localization notes for Chapter 3: Below the Brine`
+INFO: Entity Merge: updating relation `soggy_rigger`~`No-the spectral cutlass challenge — feasible?`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Painted miniature of the Drowned Market`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Mark your calendars: fan event for Crown of Brine: Reborn (2)`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Glitchless category for Crown of Brine`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Softlock when interacting with the disgraced quartermaster`
+INFO: Entity Merge: updating relation `soggy_rigger`~`My fan-art of the lighthouse hermit`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Walkthrough request — the brig escape`
+INFO: Entity Merge: updating relation `soggy_rigger`~`Reminder: tagging convention for `solved``
+INFO: Entity Merge: updating relation `soggy_rigger`~`Mark your calendars: fan event for Crown of Brine III: Tides of Forgetting`
+INFO: Entity Merge: 19 relation chunk tracking records updated
+INFO: Entity Merge: 19 relations in vdb updated
+INFO: Entity Merge: updating vdb `soggy_rigger`
+INFO: Entity Merge: find 5 chunks related to 'soggy_rigger'
+INFO: Entity Merge: deleting 'Soggy_Rigger' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'soggy_rigger'
+INFO: Entity Merge: Updated target 'lucky_cooper'
+INFO: Entity Merge: updatign 4 relations
+INFO: Entity Merge: updating relation `lucky_cooper`~`Brig Escape`
+INFO: Entity Merge: updating relation `lucky_cooper`~`Localization notes for Chapter 3: Below the Brine`
+INFO: Entity Merge: updating relation `lucky_cooper`~`Hint needed: the lighthouse cipher`
+INFO: Entity Merge: updating relation `lucky_cooper`~`Walkthrough request — the brig escape`
+INFO: Entity Merge: 4 relation chunk tracking records updated
+INFO: Entity Merge: 4 relations in vdb updated
+INFO: Entity Merge: updating vdb `lucky_cooper`
+INFO: Entity Merge: find 1 chunks related to 'lucky_cooper'
+INFO: Entity Merge: deleting 'Lucky_Cooper' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'lucky_cooper'
+INFO: Entity Merge: Updated target 'weathered_harpooner'
+INFO: Entity Merge: updatign 16 relations
+INFO: Entity Merge: updating relation `weathered_harpooner`~`iOS`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Save Corruption After Decoding The Salt-Bone Amulet`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Race: Who Can Appease The Parrot's Whistle Fastest?`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Parrot's Whistle`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Softlock`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Embroidered Spectral Cutlass`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Ghostly Seas Adventure`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`salty_cabin-boy`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`scurvy_harpooner`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Chapter 1: Salt and Sorrow`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Localization notes for Chapter 3: Below the Brine`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Softlock when interacting with the lighthouse hermit`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Embroidered the spectral cutlass — finished piece`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Walkthrough request — Chapter 1: Salt and Sorrow`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Race: who can appease the parrot's whistle fastest?`
+INFO: Entity Merge: updating relation `weathered_harpooner`~`Save corruption after decodeing the salt-bone amulet`
+INFO: Entity Merge: 16 relation chunk tracking records updated
+INFO: Entity Merge: 16 relations in vdb updated
+INFO: Entity Merge: updating vdb `weathered_harpooner`
+INFO: Entity Merge: find 5 chunks related to 'weathered_harpooner'
+INFO: Entity Merge: deleting 'Weathered_Harpooner' from KG and vdb
+INFO: Entity Merge: deleting 'weathered_Harpooner' from KG and vdb
+INFO: Entity Merge: successfully merged 2 entities into 'weathered_harpooner'
+INFO: Entity Merge: Updated target 'game-1'
+INFO: Entity Merge: updatign 10 relations
+INFO: Entity Merge: updating relation `game-1`~`Softlock Bug`
+INFO: Entity Merge: updating relation `game-1`~`Pirate-Hopeful Protagonist`
+INFO: Entity Merge: updating relation `game-1`~`Amiga`
+INFO: Entity Merge: updating relation `game-1`~`Remaster Projects`
+INFO: Entity Merge: updating relation `game-1`~`Music Stem Loading Issue`
+INFO: Entity Merge: updating relation `game-1`~`Music Stems Loading Issue`
+INFO: Entity Merge: updating relation `game-1`~`Softlock when interacting with the pirate-hopeful protagonist`
+INFO: Entity Merge: updating relation `game-1`~`Doubloon SDK update — what's new`
+INFO: Entity Merge: updating relation `game-1`~`Doubloon SDK fails to load music stems`
+INFO: Entity Merge: updating relation `game-1`~`Walkthrough request — the brig escape`
+INFO: Entity Merge: 10 relation chunk tracking records updated
+INFO: Entity Merge: 10 relations in vdb updated
+INFO: Entity Merge: updating vdb `game-1`
+INFO: Entity Merge: find 4 chunks related to 'game-1'
+INFO: Entity Merge: deleting 'Game-1' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'game-1'
+INFO: Entity Merge: Updated target 'amiga'
+INFO: Entity Merge: updatign 4 relations
+INFO: Entity Merge: updating relation `amiga`~`Remaster Version`
+INFO: Entity Merge: updating relation `amiga`~`game-1`
+INFO: Entity Merge: updating relation `amiga`~`Softlock when interacting with the pirate-hopeful protagonist`
+INFO: Entity Merge: updating relation `amiga`~`Softlock when interacting with the pirate-hopeful protagonist (2)`
+INFO: Entity Merge: 4 relation chunk tracking records updated
+INFO: Entity Merge: 4 relations in vdb updated
+INFO: Entity Merge: updating vdb `amiga`
+INFO: Entity Merge: find 2 chunks related to 'amiga'
+INFO: Entity Merge: deleting 'Amiga' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'amiga'
+INFO: Entity Merge: Updated target 'ios'
+INFO: Entity Merge: updatign 7 relations
+INFO: Entity Merge: updating relation `ios`~`No-the Spectral Cutlass Challenge`
+INFO: Entity Merge: updating relation `ios`~`Save Corruption After Decoding The Salt-Bone Amulet`
+INFO: Entity Merge: updating relation `ios`~`salty_cabin-boy`
+INFO: Entity Merge: updating relation `ios`~`scurvy_harpooner`
+INFO: Entity Merge: updating relation `ios`~`weathered_harpooner`
+INFO: Entity Merge: updating relation `ios`~`No-the spectral cutlass challenge — feasible?`
+INFO: Entity Merge: updating relation `ios`~`Save corruption after decodeing the salt-bone amulet`
+INFO: Entity Merge: 7 relation chunk tracking records updated
+INFO: Entity Merge: 7 relations in vdb updated
+INFO: Entity Merge: updating vdb `ios`
+INFO: Entity Merge: find 2 chunks related to 'ios'
+INFO: Entity Merge: deleting 'iOS' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'ios'
+INFO: Entity Merge: Updated target 'music'
+INFO: Entity Merge: updatign 3 relations
+INFO: Entity Merge: updating relation `music`~`Audio Cues`
+INFO: Entity Merge: updating relation `music`~`Drowned Market`
+INFO: Entity Merge: updating relation `music`~`Can't get past the Drowned Market — any tips?`
+INFO: Entity Merge: 3 relation chunk tracking records updated
+INFO: Entity Merge: 3 relations in vdb updated
+INFO: Entity Merge: updating vdb `music`
+INFO: Entity Merge: find 1 chunks related to 'music'
+INFO: Entity Merge: deleting 'Music' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'music'
+INFO: Entity Merge: Updated target 'briny_privateer'
+INFO: Entity Merge: updatign 8 relations
+INFO: Entity Merge: updating relation `briny_privateer`~`Harbor-Master`
+INFO: Entity Merge: updating relation `briny_privateer`~`Quest Trigger Bug`
+INFO: Entity Merge: updating relation `briny_privateer`~`Walkthrough`
+INFO: Entity Merge: updating relation `briny_privateer`~`jolly_helmsman`
+INFO: Entity Merge: updating relation `briny_privateer`~`Painted miniature of the Drowned Market`
+INFO: Entity Merge: updating relation `briny_privateer`~`My fan-art of the harbor-master`
+INFO: Entity Merge: updating relation `briny_privateer`~`Doubloon SDK update — what's new`
+INFO: Entity Merge: updating relation `briny_privateer`~`Doubloon SDK fails to load music stems`
+INFO: Entity Merge: 8 relation chunk tracking records updated
+INFO: Entity Merge: 8 relations in vdb updated
+INFO: Entity Merge: updating vdb `briny_privateer`
+INFO: Entity Merge: find 1 chunks related to 'briny_privateer'
+INFO: Entity Merge: deleting 'Briny_Privateer' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'briny_privateer'
+INFO: Entity Merge: Updated target 'walkthrough'
+INFO: Entity Merge: updatign 14 relations
+INFO: Entity Merge: updating relation `walkthrough`~`Softlock`
+INFO: Entity Merge: updating relation `walkthrough`~`Modded Environment`
+INFO: Entity Merge: updating relation `walkthrough`~`Lighthouse Hermit`
+INFO: Entity Merge: updating relation `walkthrough`~`Fan-Art`
+INFO: Entity Merge: updating relation `walkthrough`~`Salt Crystals Riddle`
+INFO: Entity Merge: updating relation `walkthrough`~`Cliffs With Slippery Rocks`
+INFO: Entity Merge: updating relation `walkthrough`~`Flooded Ruins`
+INFO: Entity Merge: updating relation `walkthrough`~`Chapter 1: Salt and Sorrow`
+INFO: Entity Merge: updating relation `walkthrough`~`jolly_helmsman`
+INFO: Entity Merge: updating relation `walkthrough`~`briny_privateer`
+INFO: Entity Merge: updating relation `walkthrough`~`My fan-art of the harbor-master`
+INFO: Entity Merge: updating relation `walkthrough`~`Mark your calendars: fan event for Crown of Brine: Reborn (2)`
+INFO: Entity Merge: updating relation `walkthrough`~`Softlock when interacting with the lighthouse hermit`
+INFO: Entity Merge: updating relation `walkthrough`~`My fan-art of the lighthouse hermit`
+INFO: Entity Merge: 14 relation chunk tracking records updated
+INFO: Entity Merge: 14 relations in vdb updated
+INFO: Entity Merge: updating vdb `walkthrough`
+INFO: Entity Merge: find 4 chunks related to 'walkthrough'
+INFO: Entity Merge: deleting 'Walkthrough' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'walkthrough'
+    Pass 4a progress: 20/22  (20 ok, 0 failed)  elapsed=0s  ETA=0s
+INFO: Entity Merge: Updated target 'Race: who can appease the parrot's whistle fastest?'
+INFO: Entity Merge: updatign 6 relations
+INFO: Entity Merge: updating relation `Race: who can appease the parrot's whistle fastest?`~`Parrot's Whistle`
+INFO: Entity Merge: updating relation `Race: who can appease the parrot's whistle fastest?`~`rusty_quartermaster`
+INFO: Entity Merge: updating relation `Race: who can appease the parrot's whistle fastest?`~`scurvy_harpooner`
+INFO: Entity Merge: updating relation `Race: who can appease the parrot's whistle fastest?`~`weathered_harpooner`
+INFO: Entity Merge: updating relation `Race: who can appease the parrot's whistle fastest?`~`Speedruns & Challenges`
+INFO: Entity Merge: updating relation `Race: who can appease the parrot's whistle fastest?`~`wont-fix`
+INFO: Entity Merge: 6 relation chunk tracking records updated
+INFO: Entity Merge: 6 relations in vdb updated
+INFO: Entity Merge: updating vdb `Race: who can appease the parrot's whistle fastest?`
+INFO: Entity Merge: find 1 chunks related to 'Race: who can appease the parrot's whistle fastest?'
+INFO: Entity Merge: deleting 'Race: Who Can Appease The Parrot's Whistle Fastest?' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'Race: who can appease the parrot's whistle fastest?'
+INFO: Entity Merge: Updated target 'Crown Of Brine'
+INFO: Entity Merge: updatign 1 relations
+INFO: Entity Merge: updating relation `Crown Of Brine`~`Glitchless Category`
+INFO: Entity Merge: 1 relation chunk tracking records updated
+INFO: Entity Merge: 1 relations in vdb updated
+INFO: Entity Merge: updating vdb `Crown Of Brine`
+INFO: Entity Merge: find 2 chunks related to 'Crown Of Brine'
+INFO: Entity Merge: deleting 'Crown of Brine' from KG and vdb
+INFO: Entity Merge: successfully merged 1 entities into 'Crown Of Brine'
+    Pass 4a progress: 22/22  (22 ok, 0 failed)  elapsed=0s  ETA=0s
+  Pass 4b: 0 user-paraphrase buckets to merge (0 source nodes will be collapsed)
+Pass 4 merges complete: 22 case-fold + 0 user-paraphrase buckets (buffered: 22 ent-upserts, 272 rel-upserts, 25 ent-deletes, 456 rel-deletes).
+  Pass 4 apply: deleting 25 stale entity vectors...
+  Pass 4 apply: deleting 456 stale edge vectors...
+  Pass 4 apply: re-embedding 22 entities (Faiss internal-batches at 10 per OpenAI call)...
+  Pass 4 apply: re-embedding 272 edges...
+Pass 4 apply complete: {'ent_deleted': 25, 'rel_deleted': 456, 'ent_upserted': 22, 'rel_upserted': 272}
+INFO: [] Writing graph with 404 nodes, 660 edges
+Pass 4 complete (graphml + VDBs flushed to disk).
+INFO: Successfully finalized 12 storages
+
+Post-index verification
+  Topics in graph    : 33 (source: 33)
+  Categories in graph: 8
+  Tags in graph      : 26
+  Users in graph     : 11
+  Total nodes        : 404
+  Total edges        : 660
+
+Indexing complete. Graph stored in: /path/to/discourse-explorer/sample/fixtures/seed42-tiny/graphrag

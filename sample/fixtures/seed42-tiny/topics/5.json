@@ -1,0 +1,36 @@
+{
+  "id": 5,
+  "title": "Welcome to Discourse! :wave:",
+  "slug": "welcome-to-discourse",
+  "category_id": 4,
+  "category_name": "General",
+  "created_at": "2026-04-28T23:55:19.445Z",
+  "last_posted_at": "2026-04-28T23:55:19.461Z",
+  "bumped_at": "",
+  "tags": [],
+  "views": 0,
+  "like_count": 0,
+  "posts_count": 1,
+  "reply_count": 0,
+  "pinned": true,
+  "closed": false,
+  "archived": false,
+  "posts": [
+    {
+      "id": 6,
+      "post_number": 1,
+      "username": "system",
+      "display_name": "system",
+      "created_at": "2026-04-28T23:55:19.461Z",
+      "updated_at": "2026-04-28T23:55:19.461Z",
+      "cooked": "<p>We are so glad you joined us.</p>\n<p>Here are some things you can do to get started:</p>\n<p><img src=\"/images/emoji/twitter/speaking_head.png?v=12\" title=\":speaking_head:\" class=\"emoji\" alt=\":speaking_head:\" loading=\"lazy\" width=\"20\" height=\"20\"> <strong>Introduce yourself</strong> by adding your picture and information about yourself and your interests to <a href=\"/my/preferences/account\">your profile</a>. What is one thing you’d like to be asked about?</p>\n<p><img src=\"/images/emoji/twitter/open_book.png?v=12\" title=\":open_book:\" class=\"emoji\" alt=\":open_book:\" loading=\"lazy\" width=\"20\" height=\"20\"> <strong>Get to know the community</strong> by <a href=\"/latest\">browsing discussions</a> that are already happening here. When you find a post interesting, informative, or entertaining, use the <img src=\"/images/emoji/twitter/heart.png?v=12\" title=\":heart:\" class=\"emoji\" alt=\":heart:\" loading=\"lazy\" width=\"20\" height=\"20\"> to show your appreciation or support!</p>\n<p><img src=\"/images/emoji/twitter/handshake.png?v=12\" title=\":handshake:\" class=\"emoji\" alt=\":handshake:\" loading=\"lazy\" width=\"20\" height=\"20\"> <strong>Contribute</strong> by commenting, sharing your own perspective, asking questions, or offering feedback in the discussion. Before replying or starting new topics, please review the <a href=\"/faq\">Community Guidelines</a>.</p>\n<blockquote>\n<p>If you need help or have a suggestion, feel free to ask in <a class=\"hashtag-cooked\" href=\"/c/site-feedback/2\" data-type=\"category\" data-slug=\"site-feedback\" data-id=\"2\"><span class=\"hashtag-icon-placeholder\"><svg class=\"fa d-icon d-icon-square-full svg-icon svg-node\"><use href=\"#square-full\"></use></svg></span><span>Site Feedback</span></a> or <a href=\"/about\">contact the admins</a>.</p>\n</blockquote>",
+      "plain_text": "We are so glad you joined us.\nHere are some things you can do to get started:\n Introduce yourself by adding your picture and information about yourself and your interests to your profile. What is one thing you’d like to be asked about?\n Get to know the community by browsing discussions that are already happening here. When you find a post interesting, informative, or entertaining, use the  to show your appreciation or support!\n Contribute by commenting, sharing your own perspective, asking questions, or offering feedback in the discussion. Before replying or starting new topics, please review the Community Guidelines.\n\nIf you need help or have a suggestion, feel free to ask in Site Feedback or contact the admins.",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    }
+  ],
+  "fetched_at": "2026-04-29T00:07:57.423022+00:00"
+}

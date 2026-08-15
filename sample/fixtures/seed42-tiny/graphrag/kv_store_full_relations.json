@@ -1,0 +1,2106 @@
+{
+  "doc-6e47864ec6178c41b815896a4f5c6acf": {
+    "relation_pairs": [
+      [
+        "Community Forum",
+        "Tagging Convention Reminder"
+      ],
+      [
+        "Salty_Cabin-Boy",
+        "Tagging Convention Reminder"
+      ],
+      [
+        "Duplicate Tag",
+        "Solved Tag"
+      ],
+      [
+        "Scurvy_Harpooner",
+        "Tagging Convention Reminder"
+      ],
+      [
+        "Remaster Tag",
+        "Solved Tag"
+      ],
+      [
+        "Duplicate Tag",
+        "Remaster Tag"
+      ],
+      [
+        "Soggy_Rigger",
+        "Tagging Convention Reminder"
+      ],
+      [
+        "Jolly_Helmsman",
+        "Tagging Convention Reminder"
+      ],
+      [
+        "Soggy_Gull",
+        "Tagging Convention Reminder"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1777421597,
+    "update_time": 1777421597,
+    "_id": "doc-6e47864ec6178c41b815896a4f5c6acf"
+  },
+  "doc-e6646723530317274a426093a223bd40": {
+    "relation_pairs": [
+      [
+        "Crown Of Brine: Reborn",
+        "Soggy Rigger"
+      ],
+      [
+        "Depths Of Sorrow",
+        "Salty Cabin-Boy"
+      ],
+      [
+        "Fan Event",
+        "Soggy Rigger"
+      ],
+      [
+        "Soggy Rigger",
+        "Tidecallers"
+      ],
+      [
+        "Hidden Shrine",
+        "Salty Cabin-Boy"
+      ],
+      [
+        "Scurvy Harpooner",
+        "Secret Endings"
+      ],
+      [
+        "Maze Of Echoes",
+        "Soggy Rigger"
+      ],
+      [
+        "Soggy Rigger",
+        "Sunken Isles"
+      ],
+      [
+        "Crown Of Brine: Reborn",
+        "Salty Cabin-Boy"
+      ],
+      [
+        "Fan Event",
+        "Salty Cabin-Boy"
+      ],
+      [
+        "Crown Of Brine: Reborn",
+        "Scurvy Harpooner"
+      ],
+      [
+        "Fan Event",
+        "Scurvy Harpooner"
+      ],
+      [
+        "Crown Of Brine: Reborn",
+        "Fan Event"
+      ],
+      [
+        "Scurvy Harpooner",
+        "Tideworn Lords"
+      ],
+      [
+        "Scurvy Harpooner",
+        "Underwater Labyrinth Quests"
+      ]
+    ],
+    "count": 15,
+    "create_time": 1777421597,
+    "update_time": 1777421597,
+    "_id": "doc-e6646723530317274a426093a223bd40"
+  },
+  "doc-7c1ce92fd365785e235a23728b020d73": {
+    "relation_pairs": [
+      [
+        "Community Guides",
+        "Glitchless Mode"
+      ],
+      [
+        "Duplicate Shrine Sequence",
+        "Visual Tweaks"
+      ],
+      [
+        "Glitchless Runs",
+        "Segment Times"
+      ],
+      [
+        "Community",
+        "Glitchless Category"
+      ],
+      [
+        "Glitchless Category",
+        "Scurvy_Harpooner"
+      ],
+      [
+        "Glitchless Category",
+        "Modded Versions"
+      ],
+      [
+        "Duplicate Exploits",
+        "Glitchless Category"
+      ],
+      [
+        "Duplicate Enemies",
+        "Glitchless Category"
+      ],
+      [
+        "Glitchless Runs",
+        "Modded Versions With Solved Patch"
+      ],
+      [
+        "Glitchless Category",
+        "Leaderboard"
+      ],
+      [
+        "Pure Category",
+        "Runners"
+      ],
+      [
+        "Community Organized Races",
+        "Glitchless Category"
+      ],
+      [
+        "Glitchless Leaderboard",
+        "Glitchless Runs"
+      ],
+      [
+        "Glitchless Category",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "Glitchless Category",
+        "Starter Guide"
+      ],
+      [
+        "Classic Mac Build",
+        "Glitchless Category"
+      ],
+      [
+        "Glitchless Category",
+        "Solved Puzzles"
+      ],
+      [
+        "Classic Mac Build",
+        "Glitchless Runs"
+      ],
+      [
+        "Glitchless Runs",
+        "Runners"
+      ],
+      [
+        "Glitchless Category",
+        "Tidal Caves Section"
+      ],
+      [
+        "Classic Mac Mod",
+        "Duplicate Shrine Sequence"
+      ],
+      [
+        "Crown of Brine",
+        "Glitchless Category"
+      ],
+      [
+        "Community",
+        "Solved Guides"
+      ]
+    ],
+    "count": 23,
+    "create_time": 1777421599,
+    "update_time": 1777421599,
+    "_id": "doc-7c1ce92fd365785e235a23728b020d73"
+  },
+  "doc-17db7f1fd3181db65c0602e11860133e": {
+    "relation_pairs": [
+      [
+        "Parry Timing",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "Focus Shard",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "No-the Spectral Cutlass Challenge",
+        "Spectral Cutlass"
+      ],
+      [
+        "Agility Upgrade",
+        "Soggy_Rigger"
+      ],
+      [
+        "Scurvy_Harpooner",
+        "Shadow Assassins"
+      ],
+      [
+        "No-the Spectral Cutlass Challenge",
+        "Scurvy_Harpooner"
+      ],
+      [
+        "No-the Spectral Cutlass Challenge",
+        "iOS"
+      ],
+      [
+        "Focus Shard",
+        "No-the Spectral Cutlass Challenge"
+      ],
+      [
+        "No-the Spectral Cutlass Challenge",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "Quickstrike Combo",
+        "Soggy_Rigger"
+      ],
+      [
+        "Salty_Cabin-Boy",
+        "Spectral Cutlass"
+      ],
+      [
+        "Earphones",
+        "Scurvy_Harpooner"
+      ],
+      [
+        "Airplane Mode",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "Alternative Weapons",
+        "Salty_Cabin-Boy"
+      ],
+      [
+        "Environmental Control",
+        "Scurvy_Harpooner"
+      ],
+      [
+        "No-the Spectral Cutlass Challenge",
+        "Salty_Cabin-Boy"
+      ],
+      [
+        "No-the Spectral Cutlass Challenge",
+        "Soggy_Rigger"
+      ],
+      [
+        "Greenwater Bay",
+        "No-the Spectral Cutlass Challenge"
+      ]
+    ],
+    "count": 18,
+    "create_time": 1777421604,
+    "update_time": 1777421604,
+    "_id": "doc-17db7f1fd3181db65c0602e11860133e"
+  },
+  "doc-c4f4af8e72c04a161f49d743827f2491": {
+    "relation_pairs": [
+      [
+        "Rusty_Quartermaster",
+        "Save Corruption Bug"
+      ],
+      [
+        "Voice-Acting Disable Mod",
+        "Voice-Acting Sequence"
+      ],
+      [
+        "Save Corruption Bug",
+        "Voice-Acting Disable Mod"
+      ],
+      [
+        "Parrots Whistle Event",
+        "Save Corruption Bug"
+      ],
+      [
+        "Save Corruption Bug",
+        "Voice-Acting Sequence"
+      ],
+      [
+        "Linux Build",
+        "Save Corruption Bug"
+      ],
+      [
+        "Save Corruption Bug",
+        "Scurvy_Harpooner"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1777421609,
+    "update_time": 1777421609,
+    "_id": "doc-c4f4af8e72c04a161f49d743827f2491"
+  },
+  "doc-e49542a2243a39d767cd5cd1f624d09c": {
+    "relation_pairs": [
+      [
+        "Salty_Cabin-Boy",
+        "Saurvy_Harpooner"
+      ],
+      [
+        "Salty_Cabin-Boy",
+        "Save Corruption After Decoding The Salt-Bone Amulet"
+      ],
+      [
+        "Salty_Cabin-Boy",
+        "Weathered_Harpooner"
+      ],
+      [
+        "Weathered_Harpooner",
+        "iOS"
+      ],
+      [
+        "Scurvy_Harpooner",
+        "iOS"
+      ],
+      [
+        "Save Corruption After Decoding The Salt-Bone Amulet",
+        "Weathered_Harpooner"
+      ],
+      [
+        "Salty_Cabin-Boy",
+        "iOS"
+      ],
+      [
+        "Salt-Bone Amulet",
+        "Save Corruption After Decoding The Salt-Bone Amulet"
+      ],
+      [
+        "Save Corruption After Decoding The Salt-Bone Amulet",
+        "iOS"
+      ],
+      [
+        "Scurvy_Harpooner",
+        "Weathered_Harpooner"
+      ],
+      [
+        "Save Corruption After Decoding The Salt-Bone Amulet",
+        "Scurvy_Harpooner"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1777421619,
+    "update_time": 1777421619,
+    "_id": "doc-e49542a2243a39d767cd5cd1f624d09c"
+  },
+  "doc-d23c970cb0582d3bc6d11b937ccae337": {
+    "relation_pairs": [
+      [
+        "Drowned Market",
+        "Soggy Gull"
+      ],
+      [
+        "Drowned Market",
+        "Voice-Acting"
+      ],
+      [
+        "Miniatures",
+        "Soggy Rigger"
+      ],
+      [
+        "Salty Cabin-Boy",
+        "Voice-Acting"
+      ],
+      [
+        "Drowned Market",
+        "Miniatures"
+      ],
+      [
+        "Shadowy Traders And Lost Sailors",
+        "Voice-Acting Clips"
+      ],
+      [
+        "Miniatures",
+        "Salty Cabin-Boy"
+      ],
+      [
+        "Briny Privateer",
+        "Drowned Market"
+      ],
+      [
+        "Drowned Market",
+        "Fan Fiction"
+      ],
+      [
+        "Fanfic",
+        "Miniature"
+      ],
+      [
+        "Briny Privateer",
+        "Voice-Acting"
+      ],
+      [
+        "Miniatures",
+        "Soggy Gull"
+      ],
+      [
+        "Miniature",
+        "Shadowy Traders And Lost Sailors"
+      ],
+      [
+        "Briny Privateer",
+        "Miniatures"
+      ],
+      [
+        "Drowned Market",
+        "Soggy Rigger"
+      ],
+      [
+        "Shadowy Traders And Lost Sailors",
+        "Voice Acting"
+      ],
+      [
+        "Drowned Market",
+        "Salty Cabin-Boy"
+      ],
+      [
+        "Briny Privateer",
+        "Fan Fiction"
+      ],
+      [
+        "Fan Fiction",
+        "Voice-Acting"
+      ],
+      [
+        "Fan Fiction",
+        "Soggy Gull"
+      ],
+      [
+        "Drowned Market",
+        "Game-2"
+      ],
+      [
+        "Voice Acting",
+        "Voice-Acting Clips"
+      ]
+    ],
+    "count": 22,
+    "create_time": 1777421623,
+    "update_time": 1777421623,
+    "_id": "doc-d23c970cb0582d3bc6d11b937ccae337"
+  },
+  "doc-2634b570c60c91d5cfb5be23847fbd86": {
+    "relation_pairs": [
+      [
+        "Fan Event",
+        "Salty_Cabin-Boy"
+      ],
+      [
+        "Community Panel",
+        "Submerged City Puzzle"
+      ],
+      [
+        "Fan Event",
+        "Soggy_Rigger"
+      ],
+      [
+        "Fan Event",
+        "Soggy_Marlin"
+      ],
+      [
+        "Community Panel",
+        "Remaster"
+      ],
+      [
+        "Hint System Update",
+        "Lighthouse Riddle"
+      ],
+      [
+        "Hint System Update",
+        "Remaster"
+      ],
+      [
+        "Remaster",
+        "Salty_Cabin-Boy"
+      ],
+      [
+        "Crown Of Brine III: Tides Of Forgetting",
+        "Fan Event"
+      ],
+      [
+        "Remaster",
+        "Soggy_Rigger"
+      ],
+      [
+        "Fan Event",
+        "Remaster"
+      ],
+      [
+        "Remaster",
+        "Soggy_Marlin"
+      ],
+      [
+        "Community Panel",
+        "Fan Event"
+      ],
+      [
+        "Fog Of Memory Mechanic",
+        "Remaster"
+      ],
+      [
+        "Crown Of Brine III: Tides Of Forgetting",
+        "Remaster"
+      ],
+      [
+        "Fan Event",
+        "Whispering Depths"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1777421626,
+    "update_time": 1777421626,
+    "_id": "doc-2634b570c60c91d5cfb5be23847fbd86"
+  },
+  "doc-96f190c786ce4257203c3d6b66d025a4": {
+    "relation_pairs": [
+      [
+        "Remaster Project",
+        "Sprites Loading Issue"
+      ],
+      [
+        "Refresh Assets Command",
+        "Sprites Loading Issue"
+      ],
+      [
+        "Compass Editor",
+        "Sprites Loading Issue"
+      ],
+      [
+        "Asset Manifest",
+        "Sprites Loading Issue"
+      ],
+      [
+        "Doubloon SDK",
+        "Sprites Loading Issue"
+      ],
+      [
+        "Doubloon SDK",
+        "Remaster Project"
+      ],
+      [
+        "Reload Assets Option",
+        "Sprites Loading Issue"
+      ],
+      [
+        "Compass Editor",
+        "Doubloon SDK"
+      ],
+      [
+        "Modded Version",
+        "Sprites Loading Issue"
+      ],
+      [
+        "Base Assets Directory",
+        "Sprites Loading Issue"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1777421629,
+    "update_time": 1777421629,
+    "_id": "doc-96f190c786ce4257203c3d6b66d025a4"
+  },
+  "doc-20b7be9b5d12da156b24257a76041740": {
+    "relation_pairs": [
+      [
+        "Embroidery Stitch Tutorial",
+        "Scurvy Harpooner"
+      ],
+      [
+        "Compass Rose Bug",
+        "Wayfarer's Hollow"
+      ],
+      [
+        "Compass Rose Bug",
+        "Lost Map"
+      ],
+      [
+        "Lost Map",
+        "Scurvy Harpooner"
+      ],
+      [
+        "Lost Map",
+        "Wayfarer's Hollow"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1777421635,
+    "update_time": 1777421635,
+    "_id": "doc-20b7be9b5d12da156b24257a76041740"
+  },
+  "doc-8ad5a3e3d3e8b6c1a00e329f5dd5f21b": {
+    "relation_pairs": [
+      [
+        "Community Guidelines",
+        "Discourse"
+      ],
+      [
+        "Community Guidelines",
+        "Welcome Message"
+      ],
+      [
+        "Admins",
+        "Community Guidelines"
+      ],
+      [
+        "Admins",
+        "Discourse"
+      ],
+      [
+        "Discourse",
+        "Welcome Message"
+      ],
+      [
+        "Admins",
+        "Welcome Message"
+      ],
+      [
+        "Site Feedback",
+        "Welcome Message"
+      ],
+      [
+        "Discourse",
+        "Site Feedback"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1777421644,
+    "update_time": 1777421644,
+    "_id": "doc-8ad5a3e3d3e8b6c1a00e329f5dd5f21b"
+  },
+  "doc-7787d1295d99122e8d6b0ddde291fddb": {
+    "relation_pairs": [
+      [
+        "Race: Who Can Appease The Parrot's Whistle Fastest?",
+        "Scurvy_Harpooner"
+      ],
+      [
+        "Parrot's Whistle",
+        "Weathered_Harpooner"
+      ],
+      [
+        "Parrot's Whistle",
+        "Race: Who Can Appease The Parrot's Whistle Fastest?"
+      ],
+      [
+        "Race: Who Can Appease The Parrot's Whistle Fastest?",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "Race: Who Can Appease The Parrot's Whistle Fastest?",
+        "Weathered_Harpooner"
+      ],
+      [
+        "Parrot's Whistle",
+        "Won't-Fix Tag"
+      ],
+      [
+        "Parrot's Whistle",
+        "Scurvy_Harpooner"
+      ],
+      [
+        "Parrot's Whistle",
+        "Rusty_Quartermaster"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1777421644,
+    "update_time": 1777421644,
+    "_id": "doc-7787d1295d99122e8d6b0ddde291fddb"
+  },
+  "doc-1e3000b4af96c385d975af2e2b636806": {
+    "relation_pairs": [
+      [
+        "Game-2",
+        "Softlock"
+      ],
+      [
+        "Softlock",
+        "Walkthrough"
+      ],
+      [
+        "Softlock",
+        "Storm Cave Section"
+      ],
+      [
+        "Softlock",
+        "Walkthrough Mission"
+      ],
+      [
+        "Softlock",
+        "Weathered_Harpooner"
+      ],
+      [
+        "Lighthouse Hermit",
+        "Softlock"
+      ],
+      [
+        "Softlock",
+        "Voice Acting"
+      ],
+      [
+        "Salty_Cabin-Boy",
+        "Softlock"
+      ],
+      [
+        "Softlock",
+        "Subtitles"
+      ],
+      [
+        "Lantern Being Lit",
+        "Softlock"
+      ],
+      [
+        "Softlock",
+        "Voice-Acting Side Quest"
+      ],
+      [
+        "Softlock",
+        "Sound Settings"
+      ],
+      [
+        "Softlock",
+        "Voice-Acting Files Not Loading Correctly"
+      ],
+      [
+        "Lighthouse Hermit",
+        "Side Quest With Fishermen"
+      ],
+      [
+        "Rusty_Quartermaster",
+        "Softlock"
+      ],
+      [
+        "Scurvy_Harpooner",
+        "Softlock"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1777421653,
+    "update_time": 1777421653,
+    "_id": "doc-1e3000b4af96c385d975af2e2b636806"
+  },
+  "doc-b24429bc6441c1022c9e6a38dc557705": {
+    "relation_pairs": [
+      [
+        "Audio Cues",
+        "Remaster"
+      ],
+      [
+        "Drowned Market",
+        "Help & Hints"
+      ],
+      [
+        "Drowned Market",
+        "Line Of Sight"
+      ],
+      [
+        "Audio Cues",
+        "Music"
+      ],
+      [
+        "Audio Cues",
+        "Drowned Market"
+      ],
+      [
+        "Drowned Market",
+        "Music"
+      ],
+      [
+        "Drowned Market",
+        "Underwater Passages"
+      ],
+      [
+        "Drowned Market",
+        "Key Items"
+      ],
+      [
+        "Drowned Market",
+        "Shifting Platforms"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1777421668,
+    "update_time": 1777421668,
+    "_id": "doc-b24429bc6441c1022c9e6a38dc557705"
+  },
+  "doc-e9dca83ba0205d167887ed3c0fc9f7ba": {
+    "relation_pairs": [
+      [
+        "Fan-Art",
+        "Scurvy_Harpooner"
+      ],
+      [
+        "Fan-Art",
+        "Modded Environment"
+      ],
+      [
+        "Fan-Art",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "Fan-Art",
+        "Walkthrough"
+      ],
+      [
+        "Modded Environment",
+        "Walkthrough"
+      ],
+      [
+        "Fan-Art",
+        "Lighthouse Hermit"
+      ],
+      [
+        "Lighthouse Hermit",
+        "Modded Environment"
+      ],
+      [
+        "Fan-Art",
+        "Salty_Cabin-Boy"
+      ],
+      [
+        "Fan-Art",
+        "Soggy_Rigger"
+      ],
+      [
+        "Modded Environment",
+        "Salty_Cabin-Boy"
+      ],
+      [
+        "Lighthouse Hermit",
+        "Walkthrough"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1777421668,
+    "update_time": 1777421668,
+    "_id": "doc-e9dca83ba0205d167887ed3c0fc9f7ba"
+  },
+  "doc-a5daba517158c3c6464e556ea908ac29": {
+    "relation_pairs": [
+      [
+        "Chapter Six",
+        "Forgotten Sigil From Chapter Six"
+      ],
+      [
+        "Ghostly Seas Adventure",
+        "Weathered_Harpooner"
+      ],
+      [
+        "In-Game Modding",
+        "Spectral Cutlass"
+      ],
+      [
+        "Original Spirit",
+        "Remastered Lore"
+      ],
+      [
+        "Embroidered Spectral Cutlass",
+        "Weathered_Harpooner"
+      ],
+      [
+        "Ghostly Seas Adventure",
+        "Spectral Cutlass"
+      ],
+      [
+        "Embroidered Spectral Cutlass",
+        "Salty_Cabin-Boy"
+      ],
+      [
+        "Embroidery",
+        "In-Game Modding"
+      ],
+      [
+        "Blade Aura",
+        "Spectral Cutlass"
+      ],
+      [
+        "Embroidered Spectral Cutlass",
+        "Spectral Cutlass"
+      ],
+      [
+        "Embroidered Spectral Cutlass",
+        "Soggy_Gull"
+      ],
+      [
+        "Embroidered Spectral Cutlass",
+        "Scurvy_Harpooner"
+      ],
+      [
+        "Embroidered Spectral Cutlass",
+        "Jolly_Helmsman"
+      ],
+      [
+        "Forgotten Sigil From Chapter Six",
+        "Spectral Cutlass"
+      ],
+      [
+        "Remastered Lore",
+        "Spectral Cutlass"
+      ],
+      [
+        "Embroidery",
+        "Spectral Cutlass"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1777421669,
+    "update_time": 1777421669,
+    "_id": "doc-a5daba517158c3c6464e556ea908ac29"
+  },
+  "doc-f4083cc931322e1a12e2fd9dedc83a40": {
+    "relation_pairs": [
+      [
+        "Lighthouse Cipher",
+        "Scurvy Harpooner"
+      ],
+      [
+        "Lighthouse Cipher",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "Light Symbols",
+        "Lighthouse Cipher"
+      ],
+      [
+        "Environmental Clues",
+        "Tide Levels"
+      ],
+      [
+        "Flashing Patterns",
+        "Lighthouse Cipher"
+      ],
+      [
+        "Light Symbols",
+        "Lucky Cooper"
+      ],
+      [
+        "Lighthouse",
+        "Lighthouse Cipher"
+      ],
+      [
+        "Lighthouse Cipher",
+        "Rusty Quartermaster"
+      ],
+      [
+        "Color Sequences",
+        "Flashing Patterns"
+      ],
+      [
+        "Color Sequences",
+        "Scurvy Harpooner"
+      ],
+      [
+        "Lighthouse Cipher",
+        "Lucky Cooper"
+      ],
+      [
+        "Color Sequences",
+        "Rusty Quartermaster"
+      ],
+      [
+        "Scurvy_Harpooner",
+        "Tide Chart"
+      ],
+      [
+        "Environmental Clues",
+        "Rusty Quartermaster"
+      ],
+      [
+        "Environmental Clues",
+        "Sun Position"
+      ],
+      [
+        "Island Geography",
+        "Soggy_Marlin"
+      ],
+      [
+        "Environmental Clues",
+        "Foghorn Sounds"
+      ],
+      [
+        "Lighthouse Cipher",
+        "Soggy_Marlin"
+      ],
+      [
+        "Environmental Clues",
+        "Moon Position"
+      ],
+      [
+        "Flashing Patterns",
+        "Soggy Marlin"
+      ],
+      [
+        "Lighthouse Cipher",
+        "Scurvy_Harpooner"
+      ],
+      [
+        "Lighthouse Wave Chart",
+        "Soggy_Marlin"
+      ],
+      [
+        "Environmental Clues",
+        "Lighthouse Cipher"
+      ],
+      [
+        "Color Sequences",
+        "Lighthouse Cipher"
+      ],
+      [
+        "Lighthouse Cipher",
+        "Soggy Marlin"
+      ],
+      [
+        "Environmental Clues",
+        "Nearby Rocks"
+      ]
+    ],
+    "count": 26,
+    "create_time": 1777421669,
+    "update_time": 1777421669,
+    "_id": "doc-f4083cc931322e1a12e2fd9dedc83a40"
+  },
+  "doc-3f5ed9910f163808d0d6bfa4e9bd3d4f": {
+    "relation_pairs": [
+      [
+        "Pirate-Hopeful Protagonist",
+        "Softlock Bug"
+      ],
+      [
+        "Remaster Version",
+        "Softlock Bug"
+      ],
+      [
+        "Quest at the Docks",
+        "Softlock Bug"
+      ],
+      [
+        "Pirate-Hopeful Protagonist",
+        "Remaster Version"
+      ],
+      [
+        "Amiga",
+        "Remaster Version"
+      ],
+      [
+        "Pirate-Hopeful Protagonist",
+        "Quest at the Docks"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1777421678,
+    "update_time": 1777421678,
+    "_id": "doc-3f5ed9910f163808d0d6bfa4e9bd3d4f"
+  },
+  "doc-3295e205feea8d3b15dc68124078cc5b": {
+    "relation_pairs": [
+      [
+        "Crash On Android",
+        "In-Game Bug Report"
+      ],
+      [
+        "Crash On Android",
+        "Lighthouse Arc"
+      ],
+      [
+        "Crash On Android",
+        "Tide-Engine"
+      ],
+      [
+        "Crash On Android",
+        "Graphical Settings"
+      ],
+      [
+        "Tide-Engine",
+        "Weather Effects"
+      ],
+      [
+        "Dynamic Lighting Effects",
+        "Tide-Engine"
+      ],
+      [
+        "Crash On Android",
+        "Save File"
+      ],
+      [
+        "Crash On Android",
+        "Dynamic Lighting Effects"
+      ],
+      [
+        "Crash On Android",
+        "Weather Effects"
+      ],
+      [
+        "Lighthouse Arc",
+        "Tidal Waves Sequence"
+      ],
+      [
+        "Particle Effects",
+        "Tide-Engine"
+      ],
+      [
+        "Crash On Android",
+        "Tidal Waves Sequence"
+      ],
+      [
+        "Crash On Android",
+        "Crown Of Brine: Reborn"
+      ],
+      [
+        "Android Devices",
+        "Crash On Android"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1777421694,
+    "update_time": 1777421694,
+    "_id": "doc-3295e205feea8d3b15dc68124078cc5b"
+  },
+  "doc-8000c6408e9a72afbe529fdd4da50be5": {
+    "relation_pairs": [
+      [
+        "Fan Event For Crown Of Brine: Reborn",
+        "Soggy_Marlin"
+      ],
+      [
+        "Crown Of Brine: Reborn",
+        "Soggy_Marlin"
+      ],
+      [
+        "Moderators",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "Duplicate Thread Issue",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "Crown Of Brine: Reborn",
+        "Fan Event For Crown Of Brine: Reborn"
+      ],
+      [
+        "Duplicate Thread Issue",
+        "Spoilers"
+      ],
+      [
+        "Fan Event For Crown Of Brine: Reborn",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "Duplicate Thread Issue",
+        "Moderators"
+      ],
+      [
+        "Moderators",
+        "Spoilers"
+      ],
+      [
+        "Moderators",
+        "Soggy_Marlin"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1777421699,
+    "update_time": 1777421699,
+    "_id": "doc-8000c6408e9a72afbe529fdd4da50be5"
+  },
+  "doc-9fef00793a255df2a6503deabcb8f95a": {
+    "relation_pairs": [
+      [
+        "Guard Patrol",
+        "Loose Alarm Panel"
+      ],
+      [
+        "Control Panel",
+        "Guard Patrol"
+      ],
+      [
+        "Brig Escape",
+        "Soggy_Rigger"
+      ],
+      [
+        "Brig Escape",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "Metal Rod",
+        "Vent Cover"
+      ],
+      [
+        "Final Door",
+        "Makeshift Key"
+      ],
+      [
+        "Control Panel",
+        "Laser Grid"
+      ],
+      [
+        "Control Panel",
+        "Rusty_Quartermaster"
+      ],
+      [
+        "Door Unlocking",
+        "Hairpin"
+      ],
+      [
+        "Brig Escape",
+        "Guard Patrol"
+      ],
+      [
+        "Brig Escape",
+        "Scurvy_Harpooner"
+      ],
+      [
+        "Brig Escape",
+        "Lucky_Cooper"
+      ],
+      [
+        "Stun Grenade",
+        "Supply Room"
+      ],
+      [
+        "Brig Escape",
+        "Ventilation Shaft"
+      ],
+      [
+        "Brig Escape",
+        "Security Drones"
+      ]
+    ],
+    "count": 15,
+    "create_time": 1777421700,
+    "update_time": 1777421700,
+    "_id": "doc-9fef00793a255df2a6503deabcb8f95a"
+  },
+  "doc-8cb40b7b88f8ddedfd10a5ec14d2e48a": {
+    "relation_pairs": [
+      [
+        "Modded Version",
+        "Sound Routine"
+      ],
+      [
+        "Custom SID Chip",
+        "IRQ Timing"
+      ],
+      [
+        "C64",
+        "Expanded Memory Mod"
+      ],
+      [
+        "Custom SID Chip",
+        "Modded Version"
+      ],
+      [
+        "Modded Version",
+        "Patched Snippet"
+      ],
+      [
+        "Expanded Memory Mod",
+        "Modded Version"
+      ],
+      [
+        "Audio Dropout",
+        "Scurvy_Harpooner"
+      ],
+      [
+        "Modded Version",
+        "Scurvy_Harpooner"
+      ],
+      [
+        "Audio Dropout",
+        "Modded Version"
+      ],
+      [
+        "Audio Dropout",
+        "Forgotten Lighthouse"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1777421712,
+    "update_time": 1777421712,
+    "_id": "doc-8cb40b7b88f8ddedfd10a5ec14d2e48a"
+  },
+  "doc-b5d01af907c9787e5a8e8eed592e67de": {
+    "relation_pairs": [
+      [
+        "Localization",
+        "Untranslated Dialogue Trees"
+      ],
+      [
+        "Localization",
+        "Remaster"
+      ],
+      [
+        "Fan Translations",
+        "Untranslated Dialogue Trees"
+      ],
+      [
+        "Side Quests",
+        "Untranslated Dialogue Trees"
+      ],
+      [
+        "Untranslated Dialogue Trees",
+        "Voice Acting"
+      ],
+      [
+        "Localization",
+        "Side Quests"
+      ],
+      [
+        "Crown Of Brine: Reborn",
+        "Remaster"
+      ],
+      [
+        "Crown Of Brine: Reborn",
+        "Untranslated Dialogue Trees"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1777421716,
+    "update_time": 1777421716,
+    "_id": "doc-b5d01af907c9787e5a8e8eed592e67de"
+  },
+  "doc-8ec0190b5f2a551e2f44389a925b07b6": {
+    "relation_pairs": [
+      [
+        "Chapter 1: Salt and Sorrow",
+        "Cliffs With Slippery Rocks"
+      ],
+      [
+        "Chapter 1: Salt and Sorrow",
+        "weathered_Harpooner"
+      ],
+      [
+        "Chapter 1: Salt and Sorrow",
+        "Walkthrough"
+      ],
+      [
+        "Campfire Scene",
+        "Voice-Acting"
+      ],
+      [
+        "Chapter 1: Salt and Sorrow",
+        "Flooded Ruins"
+      ],
+      [
+        "Salt Crystals Riddle",
+        "Walkthrough"
+      ],
+      [
+        "Chapter 1: Salt and Sorrow",
+        "Salt Crystals Riddle"
+      ],
+      [
+        "Flooded Ruins",
+        "Shadowy Guardians"
+      ],
+      [
+        "Chapter 1: Salt and Sorrow",
+        "jolly_Helmsman"
+      ],
+      [
+        "Cliffs With Slippery Rocks",
+        "Stamina"
+      ],
+      [
+        "Flooded Ruins",
+        "Walkthrough"
+      ],
+      [
+        "Hidden Alcoves",
+        "Voice Logs"
+      ],
+      [
+        "Cliffs With Slippery Rocks",
+        "Walkthrough"
+      ],
+      [
+        "Moon Phases",
+        "Salt Crystals Riddle"
+      ],
+      [
+        "Cliffs With Slippery Rocks",
+        "Hidden Alcoves"
+      ],
+      [
+        "Chapter 1: Salt and Sorrow",
+        "Voice-Acting"
+      ],
+      [
+        "Flooded Ruins",
+        "Lost Relic"
+      ]
+    ],
+    "count": 17,
+    "create_time": 1777421724,
+    "update_time": 1777421724,
+    "_id": "doc-8ec0190b5f2a551e2f44389a925b07b6"
+  },
+  "doc-037d160db1681c63b86a91a23c267b3d": {
+    "relation_pairs": [
+      [
+        "Automatic Daily Backups",
+        "Maintaining Your Server"
+      ],
+      [
+        "Discourse",
+        "Discourse Update Process"
+      ],
+      [
+        "#General",
+        "#Site Feedback"
+      ],
+      [
+        "Admin Guide To Tags",
+        "Groups And Category Permissions"
+      ],
+      [
+        "#Staff",
+        "Community Discussions"
+      ],
+      [
+        "Admin Guide",
+        "Recommended Email Providers for Discourse"
+      ],
+      [
+        "#Staff",
+        "Admin Role"
+      ],
+      [
+        "Invitations To Add Users",
+        "Site Feedback"
+      ],
+      [
+        "Admin Role",
+        "Moderator Role"
+      ],
+      [
+        "Admin Guide",
+        "Setup Wizard"
+      ],
+      [
+        "Admin Role",
+        "Grant Admin"
+      ],
+      [
+        "#General",
+        "Inviting Members"
+      ],
+      [
+        "Moderation Documentation Topics",
+        "Site Management Documentation Topics"
+      ],
+      [
+        "Admin Role",
+        "Grant Moderator"
+      ],
+      [
+        "Admin Guide",
+        "Community Launch"
+      ],
+      [
+        "Community Customizations",
+        "Navigation Menu"
+      ],
+      [
+        "Admin Role",
+        "Community Customizations"
+      ],
+      [
+        "Admin Guide",
+        "Chat"
+      ],
+      [
+        "Bootstrap Mode",
+        "Inviting Members"
+      ],
+      [
+        "Admin Guide",
+        "Welcome Topic"
+      ],
+      [
+        "Configure Firewall",
+        "Maintaining Your Server"
+      ],
+      [
+        "Import And Export Your Data",
+        "Import Old Content"
+      ],
+      [
+        "Building A Discourse Community",
+        "Understanding Trust Levels"
+      ],
+      [
+        "Admin Guide",
+        "Discourse API"
+      ],
+      [
+        "Admin Guide",
+        "Community Guidelines"
+      ],
+      [
+        "Discourse",
+        "Docker Container Install"
+      ],
+      [
+        "Discourse",
+        "Maintaining Your Server"
+      ],
+      [
+        "Admin Guide",
+        "Inviting Members"
+      ],
+      [
+        "Admin Guide",
+        "Social Login Options"
+      ],
+      [
+        "Email Configuration Test",
+        "Recommended Email Providers for Discourse"
+      ],
+      [
+        "Community Customizations",
+        "Custom User Fields"
+      ],
+      [
+        "Chat",
+        "Community Discussions"
+      ],
+      [
+        "Community Discussions",
+        "New Topic Button"
+      ],
+      [
+        "Admin Guide",
+        "meta.discourse.org"
+      ],
+      [
+        "#General",
+        "Community Discussions"
+      ],
+      [
+        "Admin Guide",
+        "Civilized Discourse Construction Kit"
+      ],
+      [
+        "#Site Feedback",
+        "Community Discussions"
+      ],
+      [
+        "Maintaining Your Server",
+        "Minimum Server Requirements"
+      ],
+      [
+        "Maintaining Your Server",
+        "User Friendly Offline Page"
+      ],
+      [
+        "Admin Guide",
+        "Single Sign-On Setup"
+      ],
+      [
+        "Discourse Update Process",
+        "Docker Container Install"
+      ],
+      [
+        "Invite Button",
+        "Inviting Members"
+      ],
+      [
+        "Admin Guide",
+        "Bootstrap Mode"
+      ],
+      [
+        "Community Launch",
+        "Member Participation"
+      ],
+      [
+        "Admin Guide",
+        "Community Customizations"
+      ],
+      [
+        "Admin Guide",
+        "Email Configuration Test"
+      ],
+      [
+        "Admin Guide",
+        "Embedding Discourse"
+      ],
+      [
+        "Admin Role",
+        "Welcome Topic"
+      ],
+      [
+        "Admin Role",
+        "Community Guidelines"
+      ],
+      [
+        "#Staff",
+        "Moderator Role"
+      ],
+      [
+        "Bootstrap Mode",
+        "Discourse Meta Documentation"
+      ],
+      [
+        "Admin Guide",
+        "Community Discussions"
+      ],
+      [
+        "Configuring Discourse Chat",
+        "Overview Of Discourse Chat For Users"
+      ],
+      [
+        "Community Customizations",
+        "Terms of Service and Privacy Policies"
+      ]
+    ],
+    "count": 54,
+    "create_time": 1777421726,
+    "update_time": 1777421726,
+    "_id": "doc-037d160db1681c63b86a91a23c267b3d"
+  },
+  "doc-0a28ded097a2d7c8624ac3f673c2161a": {
+    "relation_pairs": [
+      [
+        "Softlock",
+        "Voice Acting"
+      ],
+      [
+        "Disgraced Quartermaster",
+        "Softlock"
+      ],
+      [
+        "Second Chapter",
+        "Softlock"
+      ],
+      [
+        "Disgraced Quartermaster",
+        "Voice Acting"
+      ],
+      [
+        "Softlock",
+        "Windows Version"
+      ],
+      [
+        "Quickskip Option",
+        "Softlock"
+      ],
+      [
+        "Main Questline",
+        "Softlock"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1777421732,
+    "update_time": 1777421732,
+    "_id": "doc-0a28ded097a2d7c8624ac3f673c2161a"
+  },
+  "doc-203216f736cbad13b535b4922d732d30": {
+    "relation_pairs": [
+      [
+        "Crystal Compass",
+        "Softlock Bug"
+      ],
+      [
+        "Pirate-Hopeful Protagonist",
+        "Softlock Bug"
+      ],
+      [
+        "Event Flags",
+        "Softlock Bug"
+      ],
+      [
+        "Gather the Compass Quest",
+        "Softlock Bug"
+      ],
+      [
+        "Harbor Scene",
+        "Softlock Bug"
+      ],
+      [
+        "Game-1",
+        "Softlock Bug"
+      ],
+      [
+        "Pirate-Hopeful Protagonist",
+        "Set Sail Mission"
+      ],
+      [
+        "Gather the Compass Quest",
+        "Pirate-Hopeful Protagonist"
+      ],
+      [
+        "Game-1",
+        "Pirate-Hopeful Protagonist"
+      ],
+      [
+        "Set Sail Mission",
+        "Softlock Bug"
+      ],
+      [
+        "Amiga",
+        "Game-1"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1777421732,
+    "update_time": 1777421732,
+    "_id": "doc-203216f736cbad13b535b4922d732d30"
+  },
+  "doc-f9c686196637ac63107dfb19abf0492f": {
+    "relation_pairs": [
+      [
+        "Doubloon SDK Update",
+        "Remaster Projects"
+      ],
+      [
+        "Lighting System",
+        "Real-Time Shadows"
+      ],
+      [
+        "Doubloon SDK Update",
+        "Lighting System"
+      ],
+      [
+        "Game-1",
+        "Remaster Projects"
+      ],
+      [
+        "Cross-Platform Compatibility",
+        "Lower-End Rigs"
+      ],
+      [
+        "Lighting System",
+        "Lower-End Rigs"
+      ],
+      [
+        "Animation Framework",
+        "Performance"
+      ],
+      [
+        "Ambient Occlusion",
+        "Lighting System"
+      ],
+      [
+        "Cross-Platform Compatibility",
+        "Doubloon SDK Update"
+      ],
+      [
+        "Animation Framework",
+        "Doubloon SDK Update"
+      ],
+      [
+        "Doubloon SDK Update",
+        "Updated Asset Pipeline"
+      ],
+      [
+        "Doubloon SDK Update",
+        "Expanded Scripting API"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1777421744,
+    "update_time": 1777421744,
+    "_id": "doc-f9c686196637ac63107dfb19abf0492f"
+  },
+  "doc-f2b36ca183906a0b7771d01fac5b264e": {
+    "relation_pairs": [
+      [
+        "FAQ Guidelines",
+        "Staff"
+      ],
+      [
+        "Civilized Place For Public Discussion",
+        "Public Park"
+      ]
+    ],
+    "count": 2,
+    "create_time": 1777421755,
+    "update_time": 1777421755,
+    "_id": "doc-f2b36ca183906a0b7771d01fac5b264e"
+  },
+  "doc-d3bde729c55ddd1bac32df5200454efc": {
+    "relation_pairs": [
+      [
+        "Fan Translations",
+        "Soggy_Gull"
+      ],
+      [
+        "Crown Of Brine II: The Phantom Galleon",
+        "Untranslated Music Stems"
+      ],
+      [
+        "Fan Translations",
+        "Untranslated Music Stems"
+      ],
+      [
+        "Translations And Localization",
+        "Untranslated Music Stems"
+      ],
+      [
+        "Deep-Sea Ballads",
+        "Soggy_Gull"
+      ],
+      [
+        "Crown Of Brine II: The Phantom Galleon",
+        "Deep-Sea Ballads"
+      ],
+      [
+        "Soggy_Gull",
+        "Untranslated Music Stems"
+      ],
+      [
+        "Music Stems Translations Patch",
+        "Soggy_Gull"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1777421763,
+    "update_time": 1777421763,
+    "_id": "doc-d3bde729c55ddd1bac32df5200454efc"
+  },
+  "doc-a2fe33f5c7a4988acf2761b9deccbfbc": {
+    "relation_pairs": [
+      [
+        "Harbor-Master",
+        "Jolly_Helmsman"
+      ],
+      [
+        "Jolly_Helmsman",
+        "Walkthrough"
+      ],
+      [
+        "Glitch Near Dock",
+        "Jolly_Helmsman"
+      ],
+      [
+        "Glitch Near Dock",
+        "Harbor Scene"
+      ],
+      [
+        "Briny_Privateer",
+        "Quest Trigger Bug"
+      ],
+      [
+        "Briny_Privateer",
+        "Jolly_Helmsman"
+      ],
+      [
+        "Briny_Privateer",
+        "Harbor-Master"
+      ],
+      [
+        "Briny_Privateer",
+        "Walkthrough"
+      ],
+      [
+        "Harbor Scene",
+        "Harbor-Master"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1777421765,
+    "update_time": 1777421765,
+    "_id": "doc-a2fe33f5c7a4988acf2761b9deccbfbc"
+  },
+  "doc-2f8ce44bf8ef408e89d00a2f2439e6bc": {
+    "relation_pairs": [
+      [
+        "Manual Stem Bundling Workaround",
+        "Rusty Quartermaster"
+      ],
+      [
+        "Game-2",
+        "Music Stems Loading Issue"
+      ],
+      [
+        "Music Stems Loading Issue",
+        "jolly_Helmsman"
+      ],
+      [
+        "Doubloon SDK",
+        "Salty Cabin-Boy"
+      ],
+      [
+        "Community Tool",
+        "salty_Cabin-Boy"
+      ],
+      [
+        "Audio Workflow",
+        "Music Stems Loading Issue"
+      ],
+      [
+        "Doubloon SDK",
+        "Music Stem Loading Issue"
+      ],
+      [
+        "Audio Workflow",
+        "jolly_Helmsman"
+      ],
+      [
+        "Manual Stem Bundling Workaround",
+        "Music Stem Loading Issue"
+      ],
+      [
+        "Briny Privateer",
+        "Doubloon SDK"
+      ],
+      [
+        "Community Tool",
+        "Music Stems Loading Issue"
+      ],
+      [
+        "Audio File Format Compatibility",
+        "Music Stem Loading Issue"
+      ],
+      [
+        "Game-2",
+        "Music Stem Loading Issue"
+      ],
+      [
+        "Music Stem Loading Issue",
+        "Stem Metadata"
+      ],
+      [
+        "Doubloon SDK",
+        "Jolly Helmsman"
+      ],
+      [
+        "Doubloon SDK",
+        "salty_Cabin-Boy"
+      ],
+      [
+        "Music Stems Loading Issue",
+        "salty_Cabin-Boy"
+      ],
+      [
+        "Game-1",
+        "Music Stems Loading Issue"
+      ],
+      [
+        "jolly_Helmsman",
+        "salty_Cabin-Boy"
+      ],
+      [
+        "Jolly Helmsman",
+        "Stem Metadata"
+      ],
+      [
+        "Doubloon SDK",
+        "Music Stems Loading Issue"
+      ],
+      [
+        "Doubloon SDK",
+        "Rusty Quartermaster"
+      ],
+      [
+        "Doubloon SDK",
+        "Wont-Fix Developer Status"
+      ],
+      [
+        "Doubloon SDK",
+        "jolly_Helmsman"
+      ],
+      [
+        "Game-1",
+        "Music Stem Loading Issue"
+      ]
+    ],
+    "count": 25,
+    "create_time": 1777421766,
+    "update_time": 1777421766,
+    "_id": "doc-2f8ce44bf8ef408e89d00a2f2439e6bc"
+  },
+  "doc-1ab9843b6bce34731001dbe1823ad79d": {
+    "relation_pairs": [
+      [
+        "Localization Choices",
+        "Voice Work Changes"
+      ],
+      [
+        "Localization Choices",
+        "Soggy Rigger"
+      ],
+      [
+        "Localization",
+        "Puzzle"
+      ],
+      [
+        "Chapter 3: Below The Brine",
+        "Underwater Theme"
+      ],
+      [
+        "Idiomatic Expression Adaptation",
+        "Localization Choices"
+      ],
+      [
+        "Localization Choices",
+        "Lucky Cooper"
+      ],
+      [
+        "Localization Choices",
+        "Puzzle Design"
+      ],
+      [
+        "Puzzle Difficulty",
+        "Scurvy Harpooner"
+      ],
+      [
+        "Briny Chorus Riddle",
+        "Scurvy Harpooner"
+      ],
+      [
+        "Chapter 3: Below The Brine",
+        "Puzzle Design"
+      ],
+      [
+        "Localization Choices",
+        "Weathered Harpooner"
+      ],
+      [
+        "Localization Choices",
+        "Puzzle Difficulty"
+      ],
+      [
+        "Localization",
+        "Reading Directions"
+      ],
+      [
+        "Localization Choices",
+        "NPC Dialogue Tone"
+      ],
+      [
+        "Environmental Storytelling",
+        "Localization Choices"
+      ],
+      [
+        "Localization Choices",
+        "Scurvy Harpooner"
+      ],
+      [
+        "Chapter",
+        "Localization"
+      ],
+      [
+        "Chapter",
+        "Visual Hints"
+      ],
+      [
+        "Chapter 3: Below The Brine",
+        "Localization Choices"
+      ],
+      [
+        "Localization Choices",
+        "Visual Hint Adjustments"
+      ],
+      [
+        "Flora And Fauna Naming",
+        "Localization Choices"
+      ],
+      [
+        "Localization",
+        "Visual Hints"
+      ]
+    ],
+    "count": 22,
+    "create_time": 1777421796,
+    "update_time": 1777421796,
+    "_id": "doc-1ab9843b6bce34731001dbe1823ad79d"
+  }
+}

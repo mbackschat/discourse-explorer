@@ -1,0 +1,83 @@
+{
+  "id": 37,
+  "title": "Walkthrough request — the brig escape",
+  "slug": "walkthrough-request-the-brig-escape",
+  "category_id": 6,
+  "category_name": "Help & Hints",
+  "created_at": "2026-03-09T00:00:00.000Z",
+  "last_posted_at": "2026-03-10T08:39:00.000Z",
+  "bumped_at": "",
+  "tags": [
+    "game-1"
+  ],
+  "views": 0,
+  "like_count": 0,
+  "posts_count": 4,
+  "reply_count": 0,
+  "pinned": false,
+  "closed": false,
+  "archived": false,
+  "posts": [
+    {
+      "id": 102,
+      "post_number": 1,
+      "username": "rusty_quartermaster",
+      "display_name": "Rusty Quartermaster",
+      "created_at": "2026-03-09T00:00:00.000Z",
+      "updated_at": "2026-04-29T00:06:09.121Z",
+      "cooked": "<p>Hey everyone, I just got stuck in the brig section and could really use some help! I’m playing through game-1 and I’m at the part where you’re locked up, and the door’s guarded by that patrolling bot. I’ve tried sneaking around but it seems like it spots me instantly or the timing is just super tight. Has anyone found a reliable way to get past that without alerting the whole place?</p>\n<p>Also, I noticed there’s some sort of control panel near the cells, but I haven’t been able to figure out how to hack it or if it’s even usable. If someone could share a step-by-step on what to do with that or a trick to distract the guard, that’d be awesome. I’m eager to move on to the next area but this part’s really holding me back. Thanks in advance!</p>",
+      "plain_text": "Hey everyone, I just got stuck in the brig section and could really use some help! I’m playing through game-1 and I’m at the part where you’re locked up, and the door’s guarded by that patrolling bot. I’ve tried sneaking around but it seems like it spots me instantly or the timing is just super tight. Has anyone found a reliable way to get past that without alerting the whole place?\nAlso, I noticed there’s some sort of control panel near the cells, but I haven’t been able to figure out how to hack it or if it’s even usable. If someone could share a step-by-step on what to do with that or a trick to distract the guard, that’d be awesome. I’m eager to move on to the next area but this part’s really holding me back. Thanks in advance!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    },
+    {
+      "id": 103,
+      "post_number": 2,
+      "username": "lucky_cooper",
+      "display_name": "Lucky Cooper",
+      "created_at": "2026-03-14T21:50:00.000Z",
+      "updated_at": "2026-04-29T00:06:09.638Z",
+      "cooked": "<p>Hey! The brig escape can definitely be tricky if you’re trying to go in stealthy. The key is to start by grabbing that loose metal rod on the floor right inside the cell — it’s easy to overlook but super useful. You can use it to pry open the vent cover in the corner. Once you’re inside the vent, stick to the right side; there’s a hidden passage that leads around the guards’ patrol routes.</p>\n<p>Also, keep an eye on the guard patterns — they follow a pretty predictable loop, but they pause longer near the control panel. Timing your move right when the front guard walks away gives you just enough window to slip past the locked door without triggering the alarm. If you manage to get to the panel, you can disable the alarms for a short while, which makes the rest of the escape much smoother.</p>\n<p>One last tip: don’t rush when you get out of the brig area. There’s a supply room nearby with some useful items like a stun grenade. It might seem like a detour, but it really helps if you end up having to confront the guards directly. Good luck! It took me a few tries, but once you get the rhythm down it’s super satisfying.</p>",
+      "plain_text": "Hey! The brig escape can definitely be tricky if you’re trying to go in stealthy. The key is to start by grabbing that loose metal rod on the floor right inside the cell — it’s easy to overlook but super useful. You can use it to pry open the vent cover in the corner. Once you’re inside the vent, stick to the right side; there’s a hidden passage that leads around the guards’ patrol routes.\nAlso, keep an eye on the guard patterns — they follow a pretty predictable loop, but they pause longer near the control panel. Timing your move right when the front guard walks away gives you just enough window to slip past the locked door without triggering the alarm. If you manage to get to the panel, you can disable the alarms for a short while, which makes the rest of the escape much smoother.\nOne last tip: don’t rush when you get out of the brig area. There’s a supply room nearby with some useful items like a stun grenade. It might seem like a detour, but it really helps if you end up having to confront the guards directly. Good luck! It took me a few tries, but once you get the rhythm down it’s super satisfying.",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    },
+    {
+      "id": 104,
+      "post_number": 3,
+      "username": "soggy_rigger",
+      "display_name": "Soggy Rigger",
+      "created_at": "2026-03-14T14:24:00.000Z",
+      "updated_at": "2026-04-29T00:06:10.281Z",
+      "cooked": "<p>Hey! The brig escape can definitely be tricky if you don’t know what to look for. First things first, keep an eye on the guard patrol patterns — they loop every couple of minutes, so time your moves right when they turn their backs. There’s a loose vent cover near the corner opposite the cell door; you can pry it open with that small metal shard you find under the bed frame.</p>\n<p>Once you’re out of the cell, don’t rush straight for the exit. There’s a hidden passage behind one of the supply crates along the far wall. You might need to distract the guards by triggering that loose alarm panel near the stairwell to get them to move away. If you wait it out, they’ll leave the corridor clear for about 10 seconds, which is enough to slip through.</p>\n<p>Also, make sure you pick up the makeshift key (it looks like a bent paperclip) from the guard’s desk before the escape. You’ll need it to unlock the last door leading to the ventilation shaft, which bypasses the main exit’s security lockdown. Hope this helps, and good luck breaking out!</p>",
+      "plain_text": "Hey! The brig escape can definitely be tricky if you don’t know what to look for. First things first, keep an eye on the guard patrol patterns — they loop every couple of minutes, so time your moves right when they turn their backs. There’s a loose vent cover near the corner opposite the cell door; you can pry it open with that small metal shard you find under the bed frame.\nOnce you’re out of the cell, don’t rush straight for the exit. There’s a hidden passage behind one of the supply crates along the far wall. You might need to distract the guards by triggering that loose alarm panel near the stairwell to get them to move away. If you wait it out, they’ll leave the corridor clear for about 10 seconds, which is enough to slip through.\nAlso, make sure you pick up the makeshift key (it looks like a bent paperclip) from the guard’s desk before the escape. You’ll need it to unlock the last door leading to the ventilation shaft, which bypasses the main exit’s security lockdown. Hope this helps, and good luck breaking out!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    },
+    {
+      "id": 105,
+      "post_number": 4,
+      "username": "scurvy_harpooner",
+      "display_name": "Scurvy Harpooner",
+      "created_at": "2026-03-10T08:39:00.000Z",
+      "updated_at": "2026-04-29T00:06:10.799Z",
+      "cooked": "<p>Hey! I just finished the brig escape section and can definitely help you out. The key thing is to keep an eye on the guard’s patrol pattern — they loop around the cell block every 45 seconds, so time your movements right after they pass to avoid detection. Also, don’t rush picking up the items in the cell; there’s a hidden hairpin behind the broken lamp that you’ll need to unlock the door quietly.</p>\n<p>Once you get that door open, head left towards the ventilation shaft. There’s a small gap near the corner—you’ll need to crouch and wiggle through to avoid the alarm sensors. After crawling through, you’ll reach a control panel; hack it using the code you found scribbled on the guard’s clipboard (hopefully you grabbed that earlier). That disables the laser grid in the hallway, letting you slip past without triggering anything.</p>\n<p>One last tip: conserve your stamina while running because after the vent section, you’ll have to sprint through a long corridor with security drones. If you get tired, they’ll catch you in seconds. Hope this helps, and good luck breaking out!</p>",
+      "plain_text": "Hey! I just finished the brig escape section and can definitely help you out. The key thing is to keep an eye on the guard’s patrol pattern — they loop around the cell block every 45 seconds, so time your movements right after they pass to avoid detection. Also, don’t rush picking up the items in the cell; there’s a hidden hairpin behind the broken lamp that you’ll need to unlock the door quietly.\nOnce you get that door open, head left towards the ventilation shaft. There’s a small gap near the corner—you’ll need to crouch and wiggle through to avoid the alarm sensors. After crawling through, you’ll reach a control panel; hack it using the code you found scribbled on the guard’s clipboard (hopefully you grabbed that earlier). That disables the laser grid in the hallway, letting you slip past without triggering anything.\nOne last tip: conserve your stamina while running because after the vent section, you’ll have to sprint through a long corridor with security drones. If you get tired, they’ll catch you in seconds. Hope this helps, and good luck breaking out!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    }
+  ],
+  "fetched_at": "2026-04-29T00:08:06.400120+00:00"
+}

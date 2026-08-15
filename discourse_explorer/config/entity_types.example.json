@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "types": [
+    {"name": "User",      "structural": true},
+    {"name": "Topic",     "structural": true},
+    {"name": "Category",  "structural": true},
+    {"name": "Tag",       "structural": true},
+    {"name": "Model",     "structural": false},
+    {"name": "Issue",     "structural": false},
+    {"name": "Document",  "structural": false},
+    {"name": "Component", "structural": false},
+    {"name": "Version",   "structural": false},
+    {"name": "Api",       "structural": false},
+    {"name": "Rule",      "structural": false}
+  ]
+}

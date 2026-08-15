@@ -1,0 +1,34 @@
+[project]
+name = "discourse-explorer"
+version = "0.1.0"
+description = "Scrape discussions from a Discourse forum with delta sync support"
+requires-python = ">=3.10,<3.14"
+# Upper bounds are pinned to the next major to absorb point-release fixes
+# without inheriting breaking changes from a future major. Bump the upper
+# bound deliberately after testing against the next major.
+dependencies = [
+    "requests>=2.31.0,<3",
+    "beautifulsoup4>=4.12.0,<5",
+    "python-dotenv>=1.0.0,<2",
+    "lightrag-hku>=1.4.0,<2",
+    "openai>=2.0.0,<3",
+    "ollama>=0.6.0,<1",
+    "pyvis>=0.3.0,<1",
+    "scipy>=1.10.0,<2",
+    "duckdb>=1.0.0,<2",
+    "faiss-cpu>=1.7.0,<2",
+]
+
+[tool.uv]
+python-preference = "only-system"
+package = true
+
+[project.scripts]
+discourse-explorer = "discourse_explorer.cli:main"
+
+# Tell setuptools (the default uv build backend without an explicit
+# [build-system]) which package to ship — the project root also contains
+# `lib/` (bundled JS for the visualizer) which auto-discovery would
+# otherwise flag as a competing top-level package.
+[tool.setuptools.packages.find]
+include = ["discourse_explorer*", "sample*"]

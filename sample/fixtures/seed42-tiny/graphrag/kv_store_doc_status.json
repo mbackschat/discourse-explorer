@@ -1,0 +1,573 @@
+{
+  "doc-17db7f1fd3181db65c0602e11860133e": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-17db7f1fd3181db65c0602e11860133e",
+      "chunk-6aedc82c849b31a798f9769a4b0e3f53"
+    ],
+    "content_summary": "[Speedruns & Challenges] No-the spectral cutlass challenge — feasible? (tags: ios) (2025-05-28)\n\nsalty_cabin-boy:\nHey everyone, I’ve been thinking about taking on the No-the Spectral Cutlass Challenge on iOS, and I wanted to get a feel for whether it...",
+    "content_length": 5227,
+    "created_at": "2026-04-29T00:12:54.492012+00:00",
+    "updated_at": "2026-04-29T00:13:24.191373+00:00",
+    "file_path": "topic-18.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421574,
+      "processing_end_time": 1777421604
+    }
+  },
+  "doc-e6646723530317274a426093a223bd40": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-e6646723530317274a426093a223bd40"
+    ],
+    "content_summary": "[Announcements] Mark your calendars: fan event for Crown of Brine: Reborn (2) (tags: modded, walkthrough, theory) (2025-09-25)\n\nscurvy_harpooner:\nHey everyone! Just wanted to give a heads-up about an awesome fan event coming up for Crown of Brine: Re...",
+    "content_length": 4069,
+    "created_at": "2026-04-29T00:12:54.492092+00:00",
+    "updated_at": "2026-04-29T00:13:17.751060+00:00",
+    "file_path": "topic-25.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421574,
+      "processing_end_time": 1777421597
+    }
+  },
+  "doc-6e47864ec6178c41b815896a4f5c6acf": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-6e47864ec6178c41b815896a4f5c6acf",
+      "chunk-d05626b294728f43b5384b3400246108"
+    ],
+    "content_summary": "[Announcements] Reminder: tagging convention for `solved` (tags: remaster, bug, duplicate) (2026-03-09)\n\nscurvy_harpooner:\nHey everyone, just a quick reminder about how we’re handling the “solved” tag in this community. When you’re posting about a bu...",
+    "content_length": 5708,
+    "created_at": "2026-04-29T00:12:54.492236+00:00",
+    "updated_at": "2026-04-29T00:13:17.481299+00:00",
+    "file_path": "topic-38.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421574,
+      "processing_end_time": 1777421597
+    }
+  },
+  "doc-7c1ce92fd365785e235a23728b020d73": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-e94205c01e35a57821a39020b87a9301",
+      "chunk-6a13678402573cc3e73bc43b3ea412ac"
+    ],
+    "content_summary": "[Speedruns & Challenges] Glitchless category for Crown of Brine (tags: modded, solved, duplicate, classic-mac) (2025-12-04)\n\nrusty_quartermaster:\nHey everyone, I wanted to start a thread focused on the Glitchless category for Crown of Brine speedruns...",
+    "content_length": 8680,
+    "created_at": "2026-04-29T00:12:54.492158+00:00",
+    "updated_at": "2026-04-29T00:13:19.062080+00:00",
+    "file_path": "topic-31.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421574,
+      "processing_end_time": 1777421599
+    }
+  },
+  "doc-c4f4af8e72c04a161f49d743827f2491": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-c4f4af8e72c04a161f49d743827f2491"
+    ],
+    "content_summary": "[Bug Reports] Save corruption after pacifying the parrot's whistle (tags: voice-acting, linux) (2025-12-02)\n\nrusty_quartermaster:\nHey all, I just ran into a pretty frustrating bug and wondered if anyone else has experienced it or found a workaround. ...",
+    "content_length": 2050,
+    "created_at": "2026-04-29T00:12:54.492136+00:00",
+    "updated_at": "2026-04-29T00:13:29.958191+00:00",
+    "file_path": "topic-29.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421597,
+      "processing_end_time": 1777421609
+    }
+  },
+  "doc-d23c970cb0582d3bc6d11b937ccae337": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-8d5fba55f42c843403203cd0057eff7b",
+      "chunk-9903495ba67aac5c0a482bac1b66238e"
+    ],
+    "content_summary": "[Show & Tell] Painted miniature of the Drowned Market (tags: voice-acting, game-2, fan-fiction) (2025-08-30)\n\nbriny_privateer:\nHey everyone! I just finished painting my latest miniature from the Drowned Market expansion, and I’m honestly pretty proud...",
+    "content_length": 5897,
+    "created_at": "2026-04-29T00:12:54.492057+00:00",
+    "updated_at": "2026-04-29T00:13:43.581573+00:00",
+    "file_path": "topic-22.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421597,
+      "processing_end_time": 1777421623
+    }
+  },
+  "doc-2634b570c60c91d5cfb5be23847fbd86": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-2634b570c60c91d5cfb5be23847fbd86"
+    ],
+    "content_summary": "[Announcements] Mark your calendars: fan event for Crown of Brine III: Tides of Forgetting (tags: remaster, solved, hint-needed) (2026-03-10)\n\nsalty_cabin-boy:\nHey everyone! Just wanted to get the word out about an upcoming fan event celebrating Crow...",
+    "content_length": 4448,
+    "created_at": "2026-04-29T00:12:54.492247+00:00",
+    "updated_at": "2026-04-29T00:13:46.385719+00:00",
+    "file_path": "topic-39.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421599,
+      "processing_end_time": 1777421626
+    }
+  },
+  "doc-e49542a2243a39d767cd5cd1f624d09c": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-e49542a2243a39d767cd5cd1f624d09c"
+    ],
+    "content_summary": "[Bug Reports] Save corruption after decodeing the salt-bone amulet (tags: ios) (2026-03-13)\n\nscurvy_harpooner:\nHey everyone, I just ran into a weird issue when playing on my iPhone. After I decoded the salt-bone amulet, my save file got corrupted and...",
+    "content_length": 3020,
+    "created_at": "2026-04-29T00:12:54.492290+00:00",
+    "updated_at": "2026-04-29T00:13:39.033341+00:00",
+    "file_path": "topic-42.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421604,
+      "processing_end_time": 1777421619
+    }
+  },
+  "doc-96f190c786ce4257203c3d6b66d025a4": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-96f190c786ce4257203c3d6b66d025a4"
+    ],
+    "content_summary": "[Bug Reports] Doubloon SDK fails to load sprites (tags: remaster, bug, modded, compass-editor) (2025-05-24)\n\nsalty_cabin-boy:\nHey everyone, I just started playing around with the Doubloon SDK for the remaster project and hit a snag when trying to loa...",
+    "content_length": 4315,
+    "created_at": "2026-04-29T00:12:54.491957+00:00",
+    "updated_at": "2026-04-29T00:13:49.012100+00:00",
+    "file_path": "topic-14.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421609,
+      "processing_end_time": 1777421629
+    }
+  },
+  "doc-1e3000b4af96c385d975af2e2b636806": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-1e3000b4af96c385d975af2e2b636806"
+    ],
+    "content_summary": "[Bug Reports] Softlock when interacting with the lighthouse hermit (tags: voice-acting, game-2, walkthrough) (2025-10-05)\n\nrusty_quartermaster:\nHey everyone, I just ran into a pretty frustrating bug while playing game-2. When I try to interact with t...",
+    "content_length": 4318,
+    "created_at": "2026-04-29T00:12:54.492103+00:00",
+    "updated_at": "2026-04-29T00:14:13.116283+00:00",
+    "file_path": "topic-26.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421619,
+      "processing_end_time": 1777421653
+    }
+  },
+  "doc-20b7be9b5d12da156b24257a76041740": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-20b7be9b5d12da156b24257a76041740"
+    ],
+    "content_summary": "[Show & Tell] Embroidered the lost map — finished piece (tags: bug, modded, feature-request, locations) (2025-11-27)\n\nscurvy_harpooner:\nHey everyone! I finally finished embroidering the lost map from Wayfarer’s Hollow, and I’m so excited to share it ...",
+    "content_length": 1411,
+    "created_at": "2026-04-29T00:12:54.492125+00:00",
+    "updated_at": "2026-04-29T00:13:55.174998+00:00",
+    "file_path": "topic-28.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421623,
+      "processing_end_time": 1777421635
+    }
+  },
+  "doc-7787d1295d99122e8d6b0ddde291fddb": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-7787d1295d99122e8d6b0ddde291fddb"
+    ],
+    "content_summary": "[Speedruns & Challenges] Race: who can appease the parrot's whistle fastest? (tags: wont-fix) (2026-03-13)\n\nrusty_quartermaster:\nHey everyone! I’ve been messing around with the latest challenge “Race: who can appease the parrot’s whistle fastest?” an...",
+    "content_length": 4476,
+    "created_at": "2026-04-29T00:12:54.492280+00:00",
+    "updated_at": "2026-04-29T00:14:04.740002+00:00",
+    "file_path": "topic-41.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421626,
+      "processing_end_time": 1777421644
+    }
+  },
+  "doc-f4083cc931322e1a12e2fd9dedc83a40": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-bc812cbe5c40ece6d16b6ab1ca27343d",
+      "chunk-c30b0ebef9a74782bd6344e4c1f04ec7"
+    ],
+    "content_summary": "[Help & Hints] Hint needed: the lighthouse cipher (tags: hint-needed) (2025-11-05)\n\nsoggy_marlin:\nHey everyone, I’ve been stuck on the lighthouse cipher for a while now and could really use a nudge in the right direction. I’ve noticed that the symbol...",
+    "content_length": 8733,
+    "created_at": "2026-04-29T00:12:54.492114+00:00",
+    "updated_at": "2026-04-29T00:14:29.687356+00:00",
+    "file_path": "topic-27.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421629,
+      "processing_end_time": 1777421669
+    }
+  },
+  "doc-8ad5a3e3d3e8b6c1a00e329f5dd5f21b": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8ad5a3e3d3e8b6c1a00e329f5dd5f21b"
+    ],
+    "content_summary": "[General] Welcome to Discourse! :wave: (2026-04-28)\n\nsystem:\nWe are so glad you joined us.\nHere are some things you can do to get started:\n Introduce yourself by adding your picture and information about yourself and your interests to your profile. W...",
+    "content_length": 783,
+    "created_at": "2026-04-29T00:12:54.492309+00:00",
+    "updated_at": "2026-04-29T00:14:04.705268+00:00",
+    "file_path": "topic-5.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421635,
+      "processing_end_time": 1777421644
+    }
+  },
+  "doc-a5daba517158c3c6464e556ea908ac29": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-976b0b38affc91ce64e175128337fad5",
+      "chunk-183aa200ddb20ce576c2f8949ad2edfb"
+    ],
+    "content_summary": "[Show & Tell] Embroidered the spectral cutlass — finished piece (tags: remaster, modded, fan-fiction) (2026-02-18)\n\nweathered_harpooner:\nHey everyone, just wanted to share a little project I finally wrapped up—an embroidered version of the Spectral C...",
+    "content_length": 5987,
+    "created_at": "2026-04-29T00:12:54.492203+00:00",
+    "updated_at": "2026-04-29T00:14:29.172489+00:00",
+    "file_path": "topic-35.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421644,
+      "processing_end_time": 1777421669
+    }
+  },
+  "doc-e9dca83ba0205d167887ed3c0fc9f7ba": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-e9dca83ba0205d167887ed3c0fc9f7ba"
+    ],
+    "content_summary": "[Show & Tell] My fan-art of the lighthouse hermit (tags: modded, fan-fiction, walkthrough, theory) (2026-03-07)\n\nrusty_quartermaster:\nHey everyone! I just finished my latest fan-art piece of the Lighthouse Hermit, and I’m really excited to share it h...",
+    "content_length": 4336,
+    "created_at": "2026-04-29T00:12:54.492214+00:00",
+    "updated_at": "2026-04-29T00:14:28.882630+00:00",
+    "file_path": "topic-36.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421644,
+      "processing_end_time": 1777421668
+    }
+  },
+  "doc-b24429bc6441c1022c9e6a38dc557705": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-b24429bc6441c1022c9e6a38dc557705"
+    ],
+    "content_summary": "[Help & Hints] Can't get past the Drowned Market — any tips? (tags: remaster, localization, locations, music) (2025-07-21)\n\njolly_helmsman:\nHey everyone, I’m really stuck at the Drowned Market level and could use some advice. The area feels way more ...",
+    "content_length": 1086,
+    "created_at": "2026-04-29T00:12:54.492035+00:00",
+    "updated_at": "2026-04-29T00:14:28.343660+00:00",
+    "file_path": "topic-20.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421653,
+      "processing_end_time": 1777421668
+    }
+  },
+  "doc-3f5ed9910f163808d0d6bfa4e9bd3d4f": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-3f5ed9910f163808d0d6bfa4e9bd3d4f"
+    ],
+    "content_summary": "[Bug Reports] Softlock when interacting with the pirate-hopeful protagonist (2) (tags: remaster, bug, spoiler, amiga) (2025-07-29)\n\nsalty_cabin-boy:\nHey folks, just wanted to flag a pretty frustrating bug I ran into in the remaster while playing on A...",
+    "content_length": 1290,
+    "created_at": "2026-04-29T00:12:54.492047+00:00",
+    "updated_at": "2026-04-29T00:14:38.171966+00:00",
+    "file_path": "topic-21.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421668,
+      "processing_end_time": 1777421678
+    }
+  },
+  "doc-9fef00793a255df2a6503deabcb8f95a": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-9fef00793a255df2a6503deabcb8f95a"
+    ],
+    "content_summary": "[Help & Hints] Walkthrough request — the brig escape (tags: game-1) (2026-03-09)\n\nrusty_quartermaster:\nHey everyone, I just got stuck in the brig section and could really use some help! I’m playing through game-1 and I’m at the part where you’re lock...",
+    "content_length": 4123,
+    "created_at": "2026-04-29T00:12:54.492225+00:00",
+    "updated_at": "2026-04-29T00:15:00.068303+00:00",
+    "file_path": "topic-37.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421668,
+      "processing_end_time": 1777421700
+    }
+  },
+  "doc-037d160db1681c63b86a91a23c267b3d": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-a5f60b93dada88f2228001d73ce3ec31",
+      "chunk-b85128779b41ef91731744d7e22cf01c"
+    ],
+    "content_summary": "[Staff] Admin Guide: Getting Started (2026-04-28)\n\nsystem:\nCongratulations, you are now the proud owner of your very own Civilized Discourse Construction Kit!\n Overview\nDiscourse is a powerful and flexible platform with many options for customization...",
+    "content_length": 7051,
+    "created_at": "2026-04-29T00:12:54.492320+00:00",
+    "updated_at": "2026-04-29T00:15:26.147305+00:00",
+    "file_path": "topic-6.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421669,
+      "processing_end_time": 1777421726
+    }
+  },
+  "doc-3295e205feea8d3b15dc68124078cc5b": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-3295e205feea8d3b15dc68124078cc5b"
+    ],
+    "content_summary": "[Bug Reports] Crown of Brine: Reborn crashes on Android during the lighthouse arc (tags: remaster, bug, game-2, tide-engine) (2025-05-01)\n\nsalty_cabin-boy:\nHey everyone, I’ve been playing Crown of Brine: Reborn on my Android phone and I keep running ...",
+    "content_length": 4028,
+    "created_at": "2026-04-29T00:12:54.491921+00:00",
+    "updated_at": "2026-04-29T00:14:54.059625+00:00",
+    "file_path": "topic-13.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421669,
+      "processing_end_time": 1777421694
+    }
+  },
+  "doc-8000c6408e9a72afbe529fdd4da50be5": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8000c6408e9a72afbe529fdd4da50be5"
+    ],
+    "content_summary": "[Announcements] Mark your calendars: fan event for Crown of Brine: Reborn (tags: solved, duplicate, spoiler) (2025-07-06)\n\nrusty_quartermaster:\nHey everyone! Just wanted to drop a quick reminder to mark your calendars for the upcoming fan event celeb...",
+    "content_length": 1775,
+    "created_at": "2026-04-29T00:12:54.492023+00:00",
+    "updated_at": "2026-04-29T00:14:59.258594+00:00",
+    "file_path": "topic-19.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421678,
+      "processing_end_time": 1777421699
+    }
+  },
+  "doc-8cb40b7b88f8ddedfd10a5ec14d2e48a": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8cb40b7b88f8ddedfd10a5ec14d2e48a"
+    ],
+    "content_summary": "[Bug Reports] Audio dropout in the Forgotten Lighthouse on C64 (tags: modded) (2025-12-04)\n\nscurvy_harpooner:\nHey everyone, I’ve been playing the modded version of Forgotten Lighthouse on my C64 and noticed something weird—there’s a noticeable audio ...",
+    "content_length": 1955,
+    "created_at": "2026-04-29T00:12:54.492147+00:00",
+    "updated_at": "2026-04-29T00:15:12.292177+00:00",
+    "file_path": "topic-30.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421694,
+      "processing_end_time": 1777421712
+    }
+  },
+  "doc-8ec0190b5f2a551e2f44389a925b07b6": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8ec0190b5f2a551e2f44389a925b07b6"
+    ],
+    "content_summary": "[Help & Hints] Walkthrough request — Chapter 1: Salt and Sorrow (tags: voice-acting, fan-fiction) (2026-03-12)\n\njolly_helmsman:\nHey everyone! I just started playing through Chapter 1: Salt and Sorrow, and I’m finding myself a bit stuck on the part wh...",
+    "content_length": 2264,
+    "created_at": "2026-04-29T00:12:54.492269+00:00",
+    "updated_at": "2026-04-29T00:15:24.993065+00:00",
+    "file_path": "topic-40.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421699,
+      "processing_end_time": 1777421724
+    }
+  },
+  "doc-b5d01af907c9787e5a8e8eed592e67de": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-b5d01af907c9787e5a8e8eed592e67de",
+      "chunk-9668ea4bb908ae24d24f143dcb580ba0"
+    ],
+    "content_summary": "[Translations & Localization] Untranslated dialogue trees in Crown of Brine: Reborn (tags: remaster, voice-acting, localization) (2025-05-24)\n\nrusty_quartermaster:\nHas anyone else noticed that in Crown of Brine: Reborn some of the dialogue trees are ...",
+    "content_length": 5530,
+    "created_at": "2026-04-29T00:12:54.491970+00:00",
+    "updated_at": "2026-04-29T00:15:16.334859+00:00",
+    "file_path": "topic-15.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421700,
+      "processing_end_time": 1777421716
+    }
+  },
+  "doc-203216f736cbad13b535b4922d732d30": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-203216f736cbad13b535b4922d732d30"
+    ],
+    "content_summary": "[Bug Reports] Softlock when interacting with the pirate-hopeful protagonist (tags: bug, game-1, amiga) (2025-05-27)\n\njolly_helmsman:\nHey everyone, I’ve been playing through Game-1 on my Amiga and ran into a pretty annoying softlock related to the pir...",
+    "content_length": 4312,
+    "created_at": "2026-04-29T00:12:54.491999+00:00",
+    "updated_at": "2026-04-29T00:15:32.872549+00:00",
+    "file_path": "topic-17.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421712,
+      "processing_end_time": 1777421732
+    }
+  },
+  "doc-0a28ded097a2d7c8624ac3f673c2161a": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-0a28ded097a2d7c8624ac3f673c2161a"
+    ],
+    "content_summary": "[Bug Reports] Softlock when interacting with the disgraced quartermaster (tags: voice-acting, feature-request, windows) (2026-01-17)\n\nsoggy_rigger:\nHey all, just wanted to bring up a frustrating issue I ran into while playing on Windows. When you try...",
+    "content_length": 2214,
+    "created_at": "2026-04-29T00:12:54.492180+00:00",
+    "updated_at": "2026-04-29T00:15:32.758204+00:00",
+    "file_path": "topic-33.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421716,
+      "processing_end_time": 1777421732
+    }
+  },
+  "doc-f9c686196637ac63107dfb19abf0492f": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-f9c686196637ac63107dfb19abf0492f"
+    ],
+    "content_summary": "[Announcements] Doubloon SDK update — what's new (tags: remaster, game-1, theory) (2025-12-07)\n\nbriny_privateer:\nHey everyone! Just wanted to kick off a discussion about the latest Doubloon SDK update. From what I’ve dug into so far, it’s looking lik...",
+    "content_length": 2725,
+    "created_at": "2026-04-29T00:12:54.492169+00:00",
+    "updated_at": "2026-04-29T00:15:44.924501+00:00",
+    "file_path": "topic-32.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421725,
+      "processing_end_time": 1777421744
+    }
+  },
+  "doc-a2fe33f5c7a4988acf2761b9deccbfbc": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-a2fe33f5c7a4988acf2761b9deccbfbc"
+    ],
+    "content_summary": "[Show & Tell] My fan-art of the harbor-master (tags: bug, walkthrough) (2025-09-06)\n\njolly_helmsman:\nHey all, I just finished a fan-art piece of the harbor-master from the second chapter of the game, and I wanted to share it here! The way the harbor-...",
+    "content_length": 1897,
+    "created_at": "2026-04-29T00:12:54.492081+00:00",
+    "updated_at": "2026-04-29T00:16:05.340431+00:00",
+    "file_path": "topic-24.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421726,
+      "processing_end_time": 1777421765
+    }
+  },
+  "doc-f2b36ca183906a0b7771d01fac5b264e": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-f2b36ca183906a0b7771d01fac5b264e"
+    ],
+    "content_summary": "[Staff] FAQ/Guidelines (2026-04-28)\n\nsystem:\nThis is a Civilized Place for Public Discussion\nPlease treat this discussion forum with the same respect you would a public park. We, too, are a shared community resource — a place to share skills, knowled...",
+    "content_length": 4848,
+    "created_at": "2026-04-29T00:12:54.492258+00:00",
+    "updated_at": "2026-04-29T00:15:55.408238+00:00",
+    "file_path": "topic-4.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421732,
+      "processing_end_time": 1777421755
+    }
+  },
+  "doc-2f8ce44bf8ef408e89d00a2f2439e6bc": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-85c16fae2334d444c9212b6502181b3d",
+      "chunk-07f4ec6e0ca4202e8d8347800628e9b8"
+    ],
+    "content_summary": "[Bug Reports] Doubloon SDK fails to load music stems (tags: game-2, game-1, wont-fix) (2026-02-04)\n\nrusty_quartermaster:\nHey everyone, I just wanted to bring up a pretty frustrating issue I’ve been running into with the Doubloon SDK. When I try to lo...",
+    "content_length": 8466,
+    "created_at": "2026-04-29T00:12:54.492191+00:00",
+    "updated_at": "2026-04-29T00:16:06.923244+00:00",
+    "file_path": "topic-34.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421732,
+      "processing_end_time": 1777421766
+    }
+  },
+  "doc-d3bde729c55ddd1bac32df5200454efc": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-d3bde729c55ddd1bac32df5200454efc"
+    ],
+    "content_summary": "[Translations & Localization] Untranslated music stems in Crown of Brine II: The Phantom Galleon (tags: remaster, feature-request) (2025-09-02)\n\nsoggy_gull:\nHey all, I’ve been digging into Crown of Brine II: The Phantom Galleon’s remaster lately and ...",
+    "content_length": 1429,
+    "created_at": "2026-04-29T00:12:54.492069+00:00",
+    "updated_at": "2026-04-29T00:16:03.073776+00:00",
+    "file_path": "topic-23.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421744,
+      "processing_end_time": 1777421763
+    }
+  },
+  "doc-1ab9843b6bce34731001dbe1823ad79d": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-ae96fd9a28374f12100f276b1519d9c8",
+      "chunk-3a5bca56008536f3778ac77f556b229e"
+    ],
+    "content_summary": "[Translations & Localization] Localization notes for Chapter 3: Below the Brine (tags: game-2, localization, puzzle-design) (2025-05-26)\n\nlucky_cooper:\nHey everyone! I just wrapped up playing through Chapter 3: Below the Brine, and I thought it was a...",
+    "content_length": 6464,
+    "created_at": "2026-04-29T00:12:54.491983+00:00",
+    "updated_at": "2026-04-29T00:16:36.926362+00:00",
+    "file_path": "topic-16.json",
+    "track_id": "insert_20260429_021254_ea2279f8",
+    "metadata": {
+      "processing_start_time": 1777421755,
+      "processing_end_time": 1777421796
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": 21,
+  "title": "Softlock when interacting with the pirate-hopeful protagonist (2)",
+  "slug": "softlock-when-interacting-with-the-pirate-hopeful-protagonist-2",
+  "category_id": 7,
+  "category_name": "Bug Reports",
+  "created_at": "2025-07-29T00:00:00.000Z",
+  "last_posted_at": "2025-07-29T00:00:00.000Z",
+  "bumped_at": "",
+  "tags": [
+    "remaster",
+    "bug",
+    "spoiler",
+    "amiga"
+  ],
+  "views": 0,
+  "like_count": 0,
+  "posts_count": 1,
+  "reply_count": 0,
+  "pinned": false,
+  "closed": false,
+  "archived": false,
+  "posts": [
+    {
+      "id": 43,
+      "post_number": 1,
+      "username": "salty_cabin-boy",
+      "display_name": "Salty Cabin-Boy",
+      "created_at": "2025-07-29T00:00:00.000Z",
+      "updated_at": "2026-04-29T00:05:04.319Z",
+      "cooked": "<p>Hey folks, just wanted to flag a pretty frustrating bug I ran into in the remaster while playing on Amiga. When you try to interact with the pirate-hopeful protagonist during the quest at the docks, the game softlocks completely. You get stuck in this endless conversation loop with no way to break out, and the only option is to quit and reload, which can get annoying if you haven’t saved recently.</p>\n<p>It seems to happen right after you give them the map fragment—once the dialogue starts, the next prompt never comes, so you’re trapped. I checked online and didn’t see anyone else mentioning it yet, so figured I’d bring it up here to see if it’s just me or a widespread issue in this remaster version. Also, a heads-up for anyone trying to complete that side quest: maybe avoid that interaction for now unless you want to risk losing progress.</p>\n<p>Has anyone found a workaround or a way to bypass this? Hoping the devs can patch it soon because it’s such a cool character and story beat, and it’d be a shame if this bug keeps messing with that part. Would love to hear if others have had the same problem or any tips on how to avoid the freeze!</p>",
+      "plain_text": "Hey folks, just wanted to flag a pretty frustrating bug I ran into in the remaster while playing on Amiga. When you try to interact with the pirate-hopeful protagonist during the quest at the docks, the game softlocks completely. You get stuck in this endless conversation loop with no way to break out, and the only option is to quit and reload, which can get annoying if you haven’t saved recently.\nIt seems to happen right after you give them the map fragment—once the dialogue starts, the next prompt never comes, so you’re trapped. I checked online and didn’t see anyone else mentioning it yet, so figured I’d bring it up here to see if it’s just me or a widespread issue in this remaster version. Also, a heads-up for anyone trying to complete that side quest: maybe avoid that interaction for now unless you want to risk losing progress.\nHas anyone found a workaround or a way to bypass this? Hoping the devs can patch it soon because it’s such a cool character and story beat, and it’d be a shame if this bug keeps messing with that part. Would love to hear if others have had the same problem or any tips on how to avoid the freeze!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    }
+  ],
+  "fetched_at": "2026-04-29T00:08:21.430609+00:00"
+}

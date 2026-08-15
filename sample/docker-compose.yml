@@ -1,0 +1,73 @@
+# Sample-forum Discourse stack.
+#
+# IMAGE NOTE — bitnami/discourse was retired by Broadcom in Aug 2025 (the free
+# Bitnami catalog moved behind a paid "Bitnami Secure" subscription). The image
+# survives only as `bitnamilegacy/discourse`, which is FROZEN at the August 2025
+# state and receives no further updates (security or otherwise). For demo and
+# regression-testing purposes (this subtree's only goal) that's acceptable; for
+# anything closer to production, swap to a maintained image.
+#
+# bitnamilegacy/discourse retains the admin-auto-create behaviour we depend on
+# (DISCOURSE_USERNAME / EMAIL / PASSWORD env vars on first boot), which is the
+# whole reason we chose bitnami in the first place. The official
+# discourse/discourse_docker image requires manual `discourse-setup` and isn't
+# suitable for a one-shot dev stack.
+#
+# Volumes are named so `make down` keeps data and `make nuke` (-v) wipes it.
+#
+# Bring up with:   make -C sample up
+# Tear down:       make -C sample down   (keeps volumes)
+# Full reset:      make -C sample nuke   (drops volumes)
+
+services:
+  postgresql:
+    image: bitnami/postgresql:latest
+    restart: unless-stopped
+    environment:
+      - POSTGRESQL_USERNAME=${DISCOURSE_DATABASE_USER}
+      - POSTGRESQL_PASSWORD=${DISCOURSE_DATABASE_PASSWORD}
+      - POSTGRESQL_DATABASE=${DISCOURSE_DATABASE_NAME}
+    volumes:
+      - postgresql_data:/bitnami/postgresql
+
+  redis:
+    image: bitnami/redis:latest
+    restart: unless-stopped
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - redis_data:/bitnami/redis
+
+  discourse:
+    image: bitnamilegacy/discourse:latest
+    restart: unless-stopped
+    depends_on:
+      - postgresql
+      - redis
+    ports:
+      # Discourse listens on 3000 inside the container; we expose the
+      # configurable host port (default 4200).
+      - "${DISCOURSE_PORT:-4200}:3000"
+    environment:
+      - DISCOURSE_HOST=${DISCOURSE_HOST}
+      - DISCOURSE_PORT_NUMBER=3000
+      - DISCOURSE_DATABASE_HOST=postgresql
+      - DISCOURSE_DATABASE_PORT_NUMBER=5432
+      - DISCOURSE_DATABASE_NAME=${DISCOURSE_DATABASE_NAME}
+      - DISCOURSE_DATABASE_USER=${DISCOURSE_DATABASE_USER}
+      - DISCOURSE_DATABASE_PASSWORD=${DISCOURSE_DATABASE_PASSWORD}
+      - DISCOURSE_REDIS_HOST=redis
+      - DISCOURSE_REDIS_PORT_NUMBER=6379
+      - DISCOURSE_USERNAME=${DISCOURSE_USERNAME}
+      - DISCOURSE_PASSWORD=${DISCOURSE_PASSWORD}
+      - DISCOURSE_EMAIL=${DISCOURSE_EMAIL}
+      - DISCOURSE_FIRST_NAME=Sample
+      - DISCOURSE_LAST_NAME=Admin
+      - DISCOURSE_SKIP_BOOTSTRAP=no
+    volumes:
+      - discourse_data:/bitnami/discourse
+
+volumes:
+  postgresql_data:
+  redis_data:
+  discourse_data:

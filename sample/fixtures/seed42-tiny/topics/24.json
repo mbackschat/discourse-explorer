@@ -1,0 +1,54 @@
+{
+  "id": 24,
+  "title": "My fan-art of the harbor-master",
+  "slug": "my-fan-art-of-the-harbor-master",
+  "category_id": 8,
+  "category_name": "Show & Tell",
+  "created_at": "2025-09-06T00:00:00.000Z",
+  "last_posted_at": "2025-09-11T11:28:00.000Z",
+  "bumped_at": "",
+  "tags": [
+    "bug",
+    "walkthrough"
+  ],
+  "views": 0,
+  "like_count": 0,
+  "posts_count": 2,
+  "reply_count": 0,
+  "pinned": false,
+  "closed": false,
+  "archived": false,
+  "posts": [
+    {
+      "id": 50,
+      "post_number": 1,
+      "username": "jolly_helmsman",
+      "display_name": "Jolly Helmsman",
+      "created_at": "2025-09-06T00:00:00.000Z",
+      "updated_at": "2026-04-29T00:05:08.070Z",
+      "cooked": "<p>Hey all, I just finished a fan-art piece of the harbor-master from the second chapter of the game, and I wanted to share it here! The way the harbor-master’s outfit blends those rugged, sea-weathered textures with bits of almost mystical gear has always fascinated me. I tried to capture that mix of practicality and mystery, especially focusing on the intricate crates and ropes piled around him.</p>\n<p>Also, while working on the details, I noticed a weird glitch in the walkthrough where the harbor-master sometimes gets stuck near the dock’s edge, like he glitches through part of the terrain. Super odd, but perfect in a way—it made me think about how this guy almost feels like a ghost anchoring the whole harbor scene. If anyone else has noticed this or has tips on how to fix it from a modding perspective, I’d love to hear!</p>\n<p>Anyway, hope you enjoy the art as much as I enjoyed making it. Would love to see what others have created around this enigmatic character too!</p>",
+      "plain_text": "Hey all, I just finished a fan-art piece of the harbor-master from the second chapter of the game, and I wanted to share it here! The way the harbor-master’s outfit blends those rugged, sea-weathered textures with bits of almost mystical gear has always fascinated me. I tried to capture that mix of practicality and mystery, especially focusing on the intricate crates and ropes piled around him.\nAlso, while working on the details, I noticed a weird glitch in the walkthrough where the harbor-master sometimes gets stuck near the dock’s edge, like he glitches through part of the terrain. Super odd, but perfect in a way—it made me think about how this guy almost feels like a ghost anchoring the whole harbor scene. If anyone else has noticed this or has tips on how to fix it from a modding perspective, I’d love to hear!\nAnyway, hope you enjoy the art as much as I enjoyed making it. Would love to see what others have created around this enigmatic character too!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    },
+    {
+      "id": 51,
+      "post_number": 2,
+      "username": "briny_privateer",
+      "display_name": "Briny Privateer",
+      "created_at": "2025-09-11T11:28:00.000Z",
+      "updated_at": "2026-04-29T00:05:08.574Z",
+      "cooked": "<p>Wow, this is seriously impressive! You captured the harbor-master’s vibe perfectly—especially the way you got the weathered look on their coat and that subtle worn-out expression. It really feels like a moment frozen right from the game. Also, thanks for the walkthrough tips you shared about avoiding that bug near the docks; I’ve been stuck there forever, and your method saved me from losing hours of progress.</p>\n<p>I had a similar issue where the quest wouldn’t trigger after talking to the harbor-master twice, but your suggestion to reload right after the first conversation worked like a charm. It’s so frustrating how little glitches like that pop up in such a beautifully crafted world. Can’t wait to see more of your art, especially if you tackle any other NPCs with equally cool backstories. Keep it up!</p>",
+      "plain_text": "Wow, this is seriously impressive! You captured the harbor-master’s vibe perfectly—especially the way you got the weathered look on their coat and that subtle worn-out expression. It really feels like a moment frozen right from the game. Also, thanks for the walkthrough tips you shared about avoiding that bug near the docks; I’ve been stuck there forever, and your method saved me from losing hours of progress.\nI had a similar issue where the quest wouldn’t trigger after talking to the harbor-master twice, but your suggestion to reload right after the first conversation worked like a charm. It’s so frustrating how little glitches like that pop up in such a beautifully crafted world. Can’t wait to see more of your art, especially if you tackle any other NPCs with equally cool backstories. Keep it up!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    }
+  ],
+  "fetched_at": "2026-04-29T00:08:18.423785+00:00"
+}

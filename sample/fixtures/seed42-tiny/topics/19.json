@@ -1,0 +1,55 @@
+{
+  "id": 19,
+  "title": "Mark your calendars: fan event for Crown of Brine: Reborn",
+  "slug": "mark-your-calendars-fan-event-for-crown-of-brine-reborn",
+  "category_id": 5,
+  "category_name": "Announcements",
+  "created_at": "2025-07-06T00:00:00.000Z",
+  "last_posted_at": "2025-07-07T22:27:00.000Z",
+  "bumped_at": "",
+  "tags": [
+    "solved",
+    "duplicate",
+    "spoiler"
+  ],
+  "views": 0,
+  "like_count": 0,
+  "posts_count": 2,
+  "reply_count": 0,
+  "pinned": false,
+  "closed": false,
+  "archived": false,
+  "posts": [
+    {
+      "id": 40,
+      "post_number": 1,
+      "username": "rusty_quartermaster",
+      "display_name": "Rusty Quartermaster",
+      "created_at": "2025-07-06T00:00:00.000Z",
+      "updated_at": "2026-04-29T00:05:02.660Z",
+      "cooked": "<p>Hey everyone! Just wanted to drop a quick reminder to mark your calendars for the upcoming fan event celebrating Crown of Brine: Reborn. It’s happening next weekend and promises to be a fantastic gathering for all fans, with lots of cool surprises, community challenges, and some behind-the-scenes sneak peeks. Whether you’re a lore buff or a speedrunner, there’s something for everyone.</p>\n<p>Also, big shoutout to the mods who solved the recent duplicate thread issue — much appreciated! And for those worried about spoilers, this event is designed to keep things spoiler-free for newcomers, so you can join in without fear of ruining the story.</p>\n<p>Looking forward to seeing what everyone brings to the table and hearing your favorite moments from Crown of Brine: Reborn. Let’s make this a memorable celebration!</p>",
+      "plain_text": "Hey everyone! Just wanted to drop a quick reminder to mark your calendars for the upcoming fan event celebrating Crown of Brine: Reborn. It’s happening next weekend and promises to be a fantastic gathering for all fans, with lots of cool surprises, community challenges, and some behind-the-scenes sneak peeks. Whether you’re a lore buff or a speedrunner, there’s something for everyone.\nAlso, big shoutout to the mods who solved the recent duplicate thread issue — much appreciated! And for those worried about spoilers, this event is designed to keep things spoiler-free for newcomers, so you can join in without fear of ruining the story.\nLooking forward to seeing what everyone brings to the table and hearing your favorite moments from Crown of Brine: Reborn. Let’s make this a memorable celebration!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    },
+    {
+      "id": 41,
+      "post_number": 2,
+      "username": "soggy_marlin",
+      "display_name": "Soggy Marlin",
+      "created_at": "2025-07-07T22:27:00.000Z",
+      "updated_at": "2026-04-29T00:05:03.175Z",
+      "cooked": "<p>Can’t believe the fan event is finally happening! After all the waiting and those endless theories floating around, it’s awesome to have a proper space to finally talk about Crown of Brine: Reborn together. I’m especially hoping there’ll be some surprise reveals or maybe a sneak peek at the next expansion — we’ve seen how tight the devs have kept things, so any hint would be gold.</p>\n<p>Also, I saw some chatter about duplicate spoilers being posted earlier, but the moderators handled it quickly, so no major leaks ruined the fun. Honestly, I appreciate that the community is trying to keep things respectful and spoiler-free for folks who want to experience the story fresh. Can’t wait to meet others who’ve been sailing the same tricky currents in the game and swap strategies on those tough Reborn challenges!</p>",
+      "plain_text": "Can’t believe the fan event is finally happening! After all the waiting and those endless theories floating around, it’s awesome to have a proper space to finally talk about Crown of Brine: Reborn together. I’m especially hoping there’ll be some surprise reveals or maybe a sneak peek at the next expansion — we’ve seen how tight the devs have kept things, so any hint would be gold.\nAlso, I saw some chatter about duplicate spoilers being posted earlier, but the moderators handled it quickly, so no major leaks ruined the fun. Honestly, I appreciate that the community is trying to keep things respectful and spoiler-free for folks who want to experience the story fresh. Can’t wait to meet others who’ve been sailing the same tricky currents in the game and swap strategies on those tough Reborn challenges!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    }
+  ],
+  "fetched_at": "2026-04-29T00:08:23.430836+00:00"
+}

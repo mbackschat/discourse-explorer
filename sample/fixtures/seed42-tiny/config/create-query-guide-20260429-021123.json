@@ -1,0 +1,8 @@
+{
+  "skill": "create-query-guide",
+  "timestamp": "20260429-021123",
+  "settings": {
+    "section6_model": "gpt-4.1-mini",
+    "overwrite_policy": "overwrite"
+  }
+}

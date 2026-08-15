@@ -1,0 +1,297 @@
+# Sample-forum blocklist — real-world content that must NOT appear in any
+# generated body, title, username, tag, or category. Used by
+# `sample/seed/content/blocklist.py` (Sit 7) to post-filter generator output.
+#
+# Scope: content (real game franchises, studios, engines, iconic characters)
+# across genres an LLM might reach for. Hardware/OS platforms (Amiga, Atari ST,
+# C64, DOS, Steam Deck, Switch, …) are EXPLICITLY ALLOWED in the universe and
+# are NOT listed here — see `sample/CLAUDE.md`. The blocklist is for content
+# only.
+#
+# Format: one term per line. Comments via leading `#`. Blank lines ignored.
+# Matching is case-insensitive with word boundaries — keep canonical
+# capitalization here for human review; the loader lowercases on read.
+#
+# Aim: ~200 entries focused on what an LLM is most likely to reach for. The
+# genre-adjacent set (adventure-game studios + franchises + iconic characters
+# + engines) is dense; cross-genre is breadth-first on the most recognizable
+# IPs only.
+
+# === Adventure-game studios + people ===
+LucasArts
+Lucasfilm Games
+Sierra On-Line
+Revolution Software
+Wadjet Eye
+Telltale
+Telltale Games
+Double Fine
+Daedalic
+Cyan Worlds
+Westwood Studios
+Microids
+Frogwares
+Dontnod
+Campo Santo
+Inkle
+Ron Gilbert
+Tim Schafer
+Roberta Williams
+Ken Williams
+Jane Jensen
+
+# === Adventure-game franchises ===
+Monkey Island
+Day of the Tentacle
+Maniac Mansion
+Sam & Max
+Sam and Max
+King's Quest
+Space Quest
+Quest for Glory
+Police Quest
+Leisure Suit Larry
+Gabriel Knight
+Phantasmagoria
+Discworld
+Broken Sword
+Beneath a Steel Sky
+Grim Fandango
+Full Throttle
+The Dig
+Loom
+Indiana Jones and the Fate of Atlantis
+Zak McKracken
+The Longest Journey
+Dreamfall
+Syberia
+Tex Murphy
+Phoenix Wright
+Ace Attorney
+Myst
+Riven
+Thimbleweed Park
+Deponia
+Disco Elysium
+Kentucky Route Zero
+Oxenfree
+Firewatch
+Life Is Strange
+The Walking Dead
+Machinarium
+Pentiment
+Return of the Obra Dinn
+Her Story
+The Witness
+Outer Wilds
+
+# === Adventure-game engines / authoring tools ===
+SCUMM
+ScummVM
+AGI
+SCI
+AGS
+Adventure Game Studio
+GrimE
+Visionaire
+Wintermute
+Adventure Creator
+
+# === Iconic adventure-game characters ===
+Guybrush
+Guybrush Threepwood
+LeChuck
+Elaine Marley
+Manny Calavera
+Roger Wilco
+Larry Laffer
+Bernard Bernoulli
+George Stobbart
+April Ryan
+Kate Walker
+Sherlock Holmes
+Ben Throttle
+
+# === Cross-genre franchises ===
+Mario
+Super Mario
+Zelda
+The Legend of Zelda
+Ganon
+Sonic
+Sonic the Hedgehog
+Halo
+Master Chief
+Cortana
+Tomb Raider
+Lara Croft
+Final Fantasy
+Witcher
+Geralt
+Skyrim
+Elder Scrolls
+Morrowind
+Fallout
+Minecraft
+Creeper
+Pokemon
+Pokémon
+Pikachu
+Doom
+Quake
+Half-Life
+Gordon Freeman
+Portal
+GLaDOS
+Counter-Strike
+Counter Strike
+Call of Duty
+Battlefield
+Grand Theft Auto
+Red Dead
+Bioshock
+Mass Effect
+Commander Shepard
+Dragon Age
+Baldur's Gate
+Diablo
+Warcraft
+Starcraft
+World of Warcraft
+Overwatch
+League of Legends
+Dota 2
+Valorant
+Fortnite
+Apex Legends
+Destiny
+Borderlands
+Resident Evil
+Silent Hill
+Metal Gear
+Solid Snake
+Street Fighter
+Mortal Kombat
+Tekken
+Super Smash Bros
+Kirby
+Donkey Kong
+Metroid
+Samus Aran
+Animal Crossing
+Splatoon
+Persona
+Kingdom Hearts
+Cloud Strife
+Sephiroth
+Tetris
+Pac-Man
+Pac Man
+Cyberpunk 2077
+Bloodborne
+Dark Souls
+Elden Ring
+Sekiro
+Hollow Knight
+Celeste
+Hades
+Cuphead
+Stardew Valley
+Undertale
+Among Us
+Roblox
+Five Nights at Freddy's
+Subnautica
+No Man's Sky
+The Last of Us
+Uncharted
+God of War
+Kratos
+Horizon Zero Dawn
+Crash Bandicoot
+Spyro
+Yakuza
+Monster Hunter
+Dragon Quest
+
+# === Cross-genre studios / publishers ===
+# Note: `Nintendo` (the company) is intentionally NOT listed because the
+# universe uses `Nintendo Switch` as a hardware platform display name (per
+# `sample/CLAUDE.md`'s carve-out for real hardware). A single-word `Nintendo`
+# block would also flag legitimate hardware mentions; the studio block-rate
+# is covered indirectly by listing every Nintendo-published franchise above
+# (Mario, Zelda, Pokemon, Splatoon, Animal Crossing, Metroid, Donkey Kong, …).
+Sega
+Bethesda
+ZeniMax
+Bioware
+BioWare
+Blizzard
+Activision
+Valve
+id Software
+Ubisoft
+EA
+Electronic Arts
+Square Enix
+Squaresoft
+Capcom
+Konami
+Bandai Namco
+Atlus
+FromSoftware
+From Software
+CD Projekt Red
+Rockstar Games
+Take-Two
+2K Games
+Naughty Dog
+Insomniac Games
+Bungie
+Epic Games
+Riot Games
+Mojang
+Larian Studios
+Obsidian Entertainment
+Paradox Interactive
+Remedy Entertainment
+Hello Games
+Supergiant Games
+Annapurna Interactive
+Devolver Digital
+Playdead
+
+# === Real-world game engines ===
+Unreal Engine
+Unreal Engine 4
+Unreal Engine 5
+Unity Engine
+Godot Engine
+CryEngine
+Frostbite
+Source Engine
+Source 2
+Ren'Py
+RPG Maker
+GameMaker
+Construct 3
+Pygame
+
+# === Tabletop / cross-media IP an LLM might reach for ===
+Dungeons and Dragons
+Dungeons & Dragons
+D&D
+Pathfinder
+Magic: The Gathering
+Yu-Gi-Oh
+Warhammer
+Warhammer 40k
+Star Wars
+Star Trek
+Marvel
+DC Comics
+Lord of the Rings
+LOTR
+Game of Thrones
+Harry Potter
+Hogwarts

@@ -1,0 +1,53 @@
+{
+  "id": 30,
+  "title": "Audio dropout in the Forgotten Lighthouse on C64",
+  "slug": "audio-dropout-in-the-forgotten-lighthouse-on-c64",
+  "category_id": 7,
+  "category_name": "Bug Reports",
+  "created_at": "2025-12-04T00:00:00.000Z",
+  "last_posted_at": "2025-12-11T07:47:00.000Z",
+  "bumped_at": "",
+  "tags": [
+    "modded"
+  ],
+  "views": 0,
+  "like_count": 0,
+  "posts_count": 2,
+  "reply_count": 0,
+  "pinned": false,
+  "closed": false,
+  "archived": false,
+  "posts": [
+    {
+      "id": 71,
+      "post_number": 1,
+      "username": "scurvy_harpooner",
+      "display_name": "Scurvy Harpooner",
+      "created_at": "2025-12-04T00:00:00.000Z",
+      "updated_at": "2026-04-29T00:05:19.209Z",
+      "cooked": "<p>Hey everyone, I’ve been playing the modded version of Forgotten Lighthouse on my C64 and noticed something weird—there’s a noticeable audio dropout whenever the game transitions into the basement level. It’s like the music cuts out for a second or two, then comes back, which breaks the immersion a bit. I’m running this on a legit machine with an expanded memory mod and a custom SID chip, so I don’t think it’s hardware-related.</p>\n<p>Has anyone else experienced this? It seems specific to that section, because the rest of the game’s sound runs perfectly smooth. I’ve checked the mod files for any obvious issues, but nothing jumped out at me. Maybe something’s conflicting in the sound routine when the level changes? Would love to hear if anyone has a fix or a workaround—I’d hate to have to switch back to the original just because of this glitch!</p>",
+      "plain_text": "Hey everyone, I’ve been playing the modded version of Forgotten Lighthouse on my C64 and noticed something weird—there’s a noticeable audio dropout whenever the game transitions into the basement level. It’s like the music cuts out for a second or two, then comes back, which breaks the immersion a bit. I’m running this on a legit machine with an expanded memory mod and a custom SID chip, so I don’t think it’s hardware-related.\nHas anyone else experienced this? It seems specific to that section, because the rest of the game’s sound runs perfectly smooth. I’ve checked the mod files for any obvious issues, but nothing jumped out at me. Maybe something’s conflicting in the sound routine when the level changes? Would love to hear if anyone has a fix or a workaround—I’d hate to have to switch back to the original just because of this glitch!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    },
+    {
+      "id": 72,
+      "post_number": 2,
+      "username": "scurvy_harpooner",
+      "display_name": "Scurvy Harpooner",
+      "created_at": "2025-12-11T07:47:00.000Z",
+      "updated_at": "2026-04-29T00:05:19.717Z",
+      "cooked": "<p>Hey, I’ve noticed the same audio dropout issue you mentioned in the Forgotten Lighthouse, especially after modding the sound routines. It seems like the music engine can’t keep up with the complex layering when certain effects are triggered, which causes that crackle or silence for a moment. I found that reducing the number of simultaneous sound channels in the modded track helps a lot.</p>\n<p>Also, make sure your IRQ timing isn’t getting messed up by extra processing elsewhere in your code. From what I’ve dug up, the C64’s SID chip is pretty sensitive with timing — even small delays can cause audio glitches. If you’re using custom interrupts, try spacing them out or optimizing the routines so they don’t overlap with the SID updates.</p>\n<p>Haven’t fully fixed it yet, but tweaking those two areas cleared up the worst dropouts for me. If you want, I can share the patched snippet of code that seemed to stabilize things on my end. Fingers crossed we get this smoothed out for good!</p>",
+      "plain_text": "Hey, I’ve noticed the same audio dropout issue you mentioned in the Forgotten Lighthouse, especially after modding the sound routines. It seems like the music engine can’t keep up with the complex layering when certain effects are triggered, which causes that crackle or silence for a moment. I found that reducing the number of simultaneous sound channels in the modded track helps a lot.\nAlso, make sure your IRQ timing isn’t getting messed up by extra processing elsewhere in your code. From what I’ve dug up, the C64’s SID chip is pretty sensitive with timing — even small delays can cause audio glitches. If you’re using custom interrupts, try spacing them out or optimizing the routines so they don’t overlap with the SID updates.\nHaven’t fully fixed it yet, but tweaking those two areas cleared up the worst dropouts for me. If you want, I can share the patched snippet of code that seemed to stabilize things on my end. Fingers crossed we get this smoothed out for good!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    }
+  ],
+  "fetched_at": "2026-04-29T00:08:11.406317+00:00"
+}

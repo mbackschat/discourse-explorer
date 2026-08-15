@@ -1,0 +1,39 @@
+{
+  "id": 23,
+  "title": "Untranslated music stems in Crown of Brine II: The Phantom Galleon",
+  "slug": "untranslated-music-stems-in-crown-of-brine-ii-the-phantom-galleon",
+  "category_id": 10,
+  "category_name": "Translations & Localization",
+  "created_at": "2025-09-02T00:00:00.000Z",
+  "last_posted_at": "2025-09-02T00:00:00.000Z",
+  "bumped_at": "",
+  "tags": [
+    "remaster",
+    "feature-request"
+  ],
+  "views": 0,
+  "like_count": 0,
+  "posts_count": 1,
+  "reply_count": 0,
+  "pinned": false,
+  "closed": false,
+  "archived": false,
+  "posts": [
+    {
+      "id": 49,
+      "post_number": 1,
+      "username": "soggy_gull",
+      "display_name": "Soggy Gull",
+      "created_at": "2025-09-02T00:00:00.000Z",
+      "updated_at": "2026-04-29T00:05:07.508Z",
+      "cooked": "<p>Hey all, I’ve been digging into Crown of Brine II: The Phantom Galleon’s remaster lately and noticed something that’s been bugging me — some of the music stems in the game haven’t been translated or localized, especially the ones in less prominent areas. The instrumentals themselves are fantastic and really help the atmosphere, but when you look at the stems that include vocals or embedded text elements, it feels like we’re missing out on a big part of the story or even clues tied to the lore.</p>\n<p>I imagine it’s tricky since translating music stems is a whole different beast compared to regular dialogue or text, but it would be amazing if the devs or modders could release a patch or a resource that includes full translations or even subtitles for this stuff. It might also be cool if they shared some background info on the songs themselves, like their origins or meanings — those deep-sea ballads feel like they have so much hidden history, and it’d add another layer to the world-building.</p>\n<p>Has anyone else noticed this or worked on any fan translations for these musical pieces? Would love to hear if there’s any progress or cool unofficial mods out there! Also curious if people feel the same about how much the untranslated music affects the experience for them.</p>",
+      "plain_text": "Hey all, I’ve been digging into Crown of Brine II: The Phantom Galleon’s remaster lately and noticed something that’s been bugging me — some of the music stems in the game haven’t been translated or localized, especially the ones in less prominent areas. The instrumentals themselves are fantastic and really help the atmosphere, but when you look at the stems that include vocals or embedded text elements, it feels like we’re missing out on a big part of the story or even clues tied to the lore.\nI imagine it’s tricky since translating music stems is a whole different beast compared to regular dialogue or text, but it would be amazing if the devs or modders could release a patch or a resource that includes full translations or even subtitles for this stuff. It might also be cool if they shared some background info on the songs themselves, like their origins or meanings — those deep-sea ballads feel like they have so much hidden history, and it’d add another layer to the world-building.\nHas anyone else noticed this or worked on any fan translations for these musical pieces? Would love to hear if there’s any progress or cool unofficial mods out there! Also curious if people feel the same about how much the untranslated music affects the experience for them.",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    }
+  ],
+  "fetched_at": "2026-04-29T00:08:20.425954+00:00"
+}

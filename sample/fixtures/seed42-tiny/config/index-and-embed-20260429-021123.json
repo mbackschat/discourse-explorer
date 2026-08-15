@@ -1,0 +1,14 @@
+{
+  "skill": "index-and-embed",
+  "timestamp": "20260429-021123",
+  "settings": {
+    "provider": "OpenAI",
+    "extraction_model": "gpt-4.1-mini",
+    "query_model": "gpt-4.1-mini",
+    "gleaning": 1,
+    "openai_embed_model": "text-embedding-3-small",
+    "openai_embed_dim": 1536,
+    "concurrency": 8,
+    "summary_skip_threshold": 8
+  }
+}

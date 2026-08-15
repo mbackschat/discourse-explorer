@@ -1,0 +1,68 @@
+{
+  "id": 42,
+  "title": "Save corruption after decodeing the salt-bone amulet",
+  "slug": "save-corruption-after-decodeing-the-salt-bone-amulet",
+  "category_id": 7,
+  "category_name": "Bug Reports",
+  "created_at": "2026-03-13T00:00:00.000Z",
+  "last_posted_at": "2026-03-13T04:33:00.000Z",
+  "bumped_at": "",
+  "tags": [
+    "ios"
+  ],
+  "views": 0,
+  "like_count": 0,
+  "posts_count": 3,
+  "reply_count": 0,
+  "pinned": false,
+  "closed": false,
+  "archived": false,
+  "posts": [
+    {
+      "id": 123,
+      "post_number": 1,
+      "username": "scurvy_harpooner",
+      "display_name": "Scurvy Harpooner",
+      "created_at": "2026-03-13T00:00:00.000Z",
+      "updated_at": "2026-04-29T00:06:20.386Z",
+      "cooked": "<p>Hey everyone, I just ran into a weird issue when playing on my iPhone. After I decoded the salt-bone amulet, my save file got corrupted and now the game either crashes or shows some glitchy text whenever I try to load it. I double-checked that I completed the decoding sequence correctly, so it’s not like I made a mistake there. Has anyone else experienced something similar on iOS?</p>\n<p>I’ve tried restarting the app, rebooting my phone, and even reinstalling the game, but nothing seems to fix the corrupted save. The weird thing is, my backup saves from before decoding the amulet still load fine, so it definitely seems tied to that event. If there’s a workaround or any tips to recover the save, that’d be super helpful! Hoping the devs can patch this soon because I’m really loving the story up to that point.</p>",
+      "plain_text": "Hey everyone, I just ran into a weird issue when playing on my iPhone. After I decoded the salt-bone amulet, my save file got corrupted and now the game either crashes or shows some glitchy text whenever I try to load it. I double-checked that I completed the decoding sequence correctly, so it’s not like I made a mistake there. Has anyone else experienced something similar on iOS?\nI’ve tried restarting the app, rebooting my phone, and even reinstalling the game, but nothing seems to fix the corrupted save. The weird thing is, my backup saves from before decoding the amulet still load fine, so it definitely seems tied to that event. If there’s a workaround or any tips to recover the save, that’d be super helpful! Hoping the devs can patch this soon because I’m really loving the story up to that point.",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    },
+    {
+      "id": 124,
+      "post_number": 2,
+      "username": "salty_cabin-boy",
+      "display_name": "Salty Cabin-Boy",
+      "created_at": "2026-03-17T16:21:00.000Z",
+      "updated_at": "2026-04-29T00:06:20.890Z",
+      "cooked": "<p>Hey, I ran into the same issue after decoding the salt-bone amulet on my iOS device. It seems like the game tries to save some new data related to the amulet’s effects, but there’s a glitch causing the save file to get corrupted right after that scene. I noticed if I force close the app and reopen it immediately, it sometimes warns about a corrupted save, which matches what you described.</p>\n<p>What worked for me temporarily was making sure the device had enough free storage and avoiding switching apps during the save sequence—apparently, the game struggles if it doesn’t get uninterrupted time to write that specific save data. Also, if you have iCloud sync enabled, try turning it off just for a bit. Some people suggested that syncing can cause conflicts when saving new corrupted data structures, especially after unlocking those amulet abilities.</p>\n<p>Hopefully, the dev team patches this soon because it’s pretty frustrating to lose progress after putting in the work to decode that amulet. In the meantime, I’d recommend exporting your save files manually before you get to that point, just as a safety net. Fingers crossed a hotfix drops soon!</p>",
+      "plain_text": "Hey, I ran into the same issue after decoding the salt-bone amulet on my iOS device. It seems like the game tries to save some new data related to the amulet’s effects, but there’s a glitch causing the save file to get corrupted right after that scene. I noticed if I force close the app and reopen it immediately, it sometimes warns about a corrupted save, which matches what you described.\nWhat worked for me temporarily was making sure the device had enough free storage and avoiding switching apps during the save sequence—apparently, the game struggles if it doesn’t get uninterrupted time to write that specific save data. Also, if you have iCloud sync enabled, try turning it off just for a bit. Some people suggested that syncing can cause conflicts when saving new corrupted data structures, especially after unlocking those amulet abilities.\nHopefully, the dev team patches this soon because it’s pretty frustrating to lose progress after putting in the work to decode that amulet. In the meantime, I’d recommend exporting your save files manually before you get to that point, just as a safety net. Fingers crossed a hotfix drops soon!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    },
+    {
+      "id": 125,
+      "post_number": 3,
+      "username": "weathered_harpooner",
+      "display_name": "Weathered Harpooner",
+      "created_at": "2026-03-13T04:33:00.000Z",
+      "updated_at": "2026-04-29T00:06:21.395Z",
+      "cooked": "<p>Hey, I ran into the same save corruption issue right after decoding the salt-bone amulet on my iPhone. Really frustrating, especially since it happens consistently as soon as I try to reload the game. From what I’ve seen, it looks like the game’s data parser might be messing up when it processes that item’s special state—like, something goes wrong in the save file structure after the amulet’s “decoded” flag gets toggled.</p>\n<p>I’ve tried reinstalling and even restoring from an older backup, but the corrupted save still crashes the app. One workaround that helped me was avoiding the decode interaction until they patch it, which sucks since it’s such a cool story piece. Hopefully, the devs catch this soon and push an update, because right now it’s basically breaking that part of the progression. If anyone finds a more solid fix or a way to salvage the save, please share—I don’t want to have to start over!</p>",
+      "plain_text": "Hey, I ran into the same save corruption issue right after decoding the salt-bone amulet on my iPhone. Really frustrating, especially since it happens consistently as soon as I try to reload the game. From what I’ve seen, it looks like the game’s data parser might be messing up when it processes that item’s special state—like, something goes wrong in the save file structure after the amulet’s “decoded” flag gets toggled.\nI’ve tried reinstalling and even restoring from an older backup, but the corrupted save still crashes the app. One workaround that helped me was avoiding the decode interaction until they patch it, which sucks since it’s such a cool story piece. Hopefully, the devs catch this soon and push an update, because right now it’s basically breaking that part of the progression. If anyone finds a more solid fix or a way to salvage the save, please share—I don’t want to have to start over!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    }
+  ],
+  "fetched_at": "2026-04-29T00:08:04.388598+00:00"
+}

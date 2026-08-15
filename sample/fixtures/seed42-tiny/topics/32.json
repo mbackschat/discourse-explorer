@@ -1,0 +1,55 @@
+{
+  "id": 32,
+  "title": "Doubloon SDK update — what's new",
+  "slug": "doubloon-sdk-update-whats-new",
+  "category_id": 5,
+  "category_name": "Announcements",
+  "created_at": "2025-12-07T00:00:00.000Z",
+  "last_posted_at": "2025-12-12T06:24:00.000Z",
+  "bumped_at": "",
+  "tags": [
+    "remaster",
+    "game-1",
+    "theory"
+  ],
+  "views": 0,
+  "like_count": 0,
+  "posts_count": 2,
+  "reply_count": 0,
+  "pinned": false,
+  "closed": false,
+  "archived": false,
+  "posts": [
+    {
+      "id": 80,
+      "post_number": 1,
+      "username": "briny_privateer",
+      "display_name": "Briny Privateer",
+      "created_at": "2025-12-07T00:00:00.000Z",
+      "updated_at": "2026-04-29T00:05:24.156Z",
+      "cooked": "<p>Hey everyone! Just wanted to kick off a discussion about the latest Doubloon SDK update. From what I’ve dug into so far, it’s looking like a solid step forward, especially for those of us working on remaster projects. The new lighting system alone feels way more flexible and seems to really help bring out the textures and details that were kinda flat before. I’m curious how it’ll handle on lower-end rigs, but early tests look promising.</p>\n<p>One cool addition is the expanded scripting API—they’ve introduced some neat functions that let you control in-game events with much finer granularity. This could open up a lot of creative possibilities for narrative branching or dynamic environmental changes that react more intelligently to player actions. Anyone tried using the new event chaining features yet? I feel like it could really breathe new life into older maps without having to rebuild them from scratch.</p>\n<p>Also, the updated asset pipeline makes importing and tweaking models smoother. The workflow looks less clunky, which should cut down on iteration time—a huge win for modders who juggle lots of assets. Would love to hear if you’ve noticed any quirks or hidden gems in the update. Overall, feels like a solid boost for the remastering community, and I’m eager to see what everyone creates with these new tools!</p>",
+      "plain_text": "Hey everyone! Just wanted to kick off a discussion about the latest Doubloon SDK update. From what I’ve dug into so far, it’s looking like a solid step forward, especially for those of us working on remaster projects. The new lighting system alone feels way more flexible and seems to really help bring out the textures and details that were kinda flat before. I’m curious how it’ll handle on lower-end rigs, but early tests look promising.\nOne cool addition is the expanded scripting API—they’ve introduced some neat functions that let you control in-game events with much finer granularity. This could open up a lot of creative possibilities for narrative branching or dynamic environmental changes that react more intelligently to player actions. Anyone tried using the new event chaining features yet? I feel like it could really breathe new life into older maps without having to rebuild them from scratch.\nAlso, the updated asset pipeline makes importing and tweaking models smoother. The workflow looks less clunky, which should cut down on iteration time—a huge win for modders who juggle lots of assets. Would love to hear if you’ve noticed any quirks or hidden gems in the update. Overall, feels like a solid boost for the remastering community, and I’m eager to see what everyone creates with these new tools!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    },
+    {
+      "id": 81,
+      "post_number": 2,
+      "username": "soggy_marlin",
+      "display_name": "Soggy Marlin",
+      "created_at": "2025-12-12T06:24:00.000Z",
+      "updated_at": "2026-04-29T00:05:24.650Z",
+      "cooked": "<p>Thanks for the detailed rundown on the Doubloon SDK update! I’m really excited about the new lighting tools they’ve added. From what I’ve seen, the real-time shadows and ambient occlusion options seem way more flexible than before, which should help us capture the vibe of the original game while still pushing the visuals forward. It’s always tricky balancing that remaster feel without losing the essence of the first title, but these improvements might be the key.</p>\n<p>I’m also curious about the updated animation framework. If the new system lets us tweak character movements more granularly, it could make those subtle gestures feel more natural and less stiff, which was something I always wished the remaster version had nailed better. Plus, the optimized particle effects look like they’ll add a lot more punch to spellcasting sequences without sacrificing performance.</p>\n<p>One thing I’m wondering about, though, is how all these new features impact cross-platform compatibility. Has anyone tried integrating a more complex lighting setup on lower-end devices yet? Would love to hear if the community has any tips or early experiences with balancing those trade-offs. Overall, this update seems like a solid step forward for anyone working on game-1 mods or remaster projects!</p>",
+      "plain_text": "Thanks for the detailed rundown on the Doubloon SDK update! I’m really excited about the new lighting tools they’ve added. From what I’ve seen, the real-time shadows and ambient occlusion options seem way more flexible than before, which should help us capture the vibe of the original game while still pushing the visuals forward. It’s always tricky balancing that remaster feel without losing the essence of the first title, but these improvements might be the key.\nI’m also curious about the updated animation framework. If the new system lets us tweak character movements more granularly, it could make those subtle gestures feel more natural and less stiff, which was something I always wished the remaster version had nailed better. Plus, the optimized particle effects look like they’ll add a lot more punch to spellcasting sequences without sacrificing performance.\nOne thing I’m wondering about, though, is how all these new features impact cross-platform compatibility. Has anyone tried integrating a more complex lighting setup on lower-end devices yet? Would love to hear if the community has any tips or early experiences with balancing those trade-offs. Overall, this update seems like a solid step forward for anyone working on game-1 mods or remaster projects!",
+      "like_count": 0,
+      "reply_count": 0,
+      "reply_to_post_number": null,
+      "quote_count": 0,
+      "reads": 1
+    }
+  ],
+  "fetched_at": "2026-04-29T00:08:10.411706+00:00"
+}

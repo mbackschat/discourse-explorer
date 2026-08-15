@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "types": [
+    {
+      "name": "User",
+      "structural": true
+    },
+    {
+      "name": "Topic",
+      "structural": true
+    },
+    {
+      "name": "Category",
+      "structural": true
+    },
+    {
+      "name": "Tag",
+      "structural": true
+    },
+    {
+      "name": "Issue",
+      "structural": false
+    },
+    {
+      "name": "Game",
+      "structural": false
+    },
+    {
+      "name": "Character",
+      "structural": false
+    },
+    {
+      "name": "Mod",
+      "structural": false
+    },
+    {
+      "name": "Guide",
+      "structural": false
+    }
+  ]
+}
